@@ -7,7 +7,7 @@ import { AnimatePresence } from "framer-motion";
 import Home from "./pages/home";
 import Model from "./pages/model";
 //components
-import Header from "./components/header";
+import Header from "./components/header/header";
 //Styles
 import "./App.scss";
 
