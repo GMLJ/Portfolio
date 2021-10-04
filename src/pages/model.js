@@ -8,9 +8,6 @@ import ScrollForMore from "../components/scrollForMore";
 const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
 
 const firstName = {
-  initial: {
-    y: 0,
-  },
   animate: {
     y: 0,
     transition: {
@@ -22,9 +19,6 @@ const firstName = {
 };
 
 const lastName = {
-  initial: {
-    y: 0,
-  },
   animate: {
     y: 0,
     transition: {
@@ -48,7 +42,7 @@ const letter = {
 const Model = ({ imageDetails }) => {
   const { scrollYProgress } = useViewportScroll();
   const scale = useTransform(scrollYProgress, [0, 1], [1, 1.5]);
-  const x = useTransform(scrollYProgress, [0.2, 0.4], ["0", "15%"]);
+  const x = useTransform(scrollYProgress, [0, 0.4], ["0", "15%"]);
   const opacity = useTransform(scrollYProgress, [0, 0.5], ["1", "0"]);
 
   const [canScroll, setCanScroll] = useState(false);
@@ -111,10 +105,10 @@ const Model = ({ imageDetails }) => {
                 <div className="frame-single">
                   <motion.img
                     style={{ scale: scale }}
-                    initial={{ scale: 1.1, y: "5%" }}
+                    initial={{ scale: 1.1 }}
                     animate={{ transition: { delay: 0.2, ...transition }, y: window.innerWidth > 1440 ? -200 : 0 }}
                     src={require("../images/MatthiasGuilbert.webp")}
-                    alt="an image"
+                    alt="Artwork by Izzat Emmanuel"
                   />
                 </div>
               </motion.div>
