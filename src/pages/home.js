@@ -21,17 +21,17 @@ const Home = ({ imageDetails, image }) => (
             >
               <div className="frame">
                 <Link to={`/model/matthias-guilbert`}>
-                  <ProgressiveImage src={require("../images/yasmeen.webp")} placeholder={require("../images/compressed-image.jpg")}>
-                    {(src) => <motion.img whileHover={{ scale: 1.1, y: "5%" }} transition={transition} src={src} alt="Yasmeen Tariq" />}
+                  <ProgressiveImage src={require("../images/MatthiasGuilbert.webp")} placeholder={require("../images/izzat.jpg")}>
+                    {(src) => <motion.img whileHover={{ scale: 1.1, y: "5%" }} transition={transition} src={src} alt="Artwork by Izzat Emmanuel" />}
                   </ProgressiveImage>
                 </Link>
               </div>
             </div>
             <motion.div exit={{ opacity: 0 }} transition={transition} className="information">
               <div className="title">Matthias Guilbert</div>
-              <div className="location">
-                <span>28.538336</span>
-                <span>-81.379234</span>
+              <div className="devWeb">
+                <span>Développeur</span>
+                <span>Web</span>
               </div>
             </motion.div>
           </div>

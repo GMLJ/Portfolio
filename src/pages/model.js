@@ -3,6 +3,7 @@ import { motion, useTransform, useViewportScroll } from "framer-motion";
 
 //Components
 import ScrollForMore from "../components/scrollForMore";
+
 //Ease
 const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
 
@@ -65,11 +66,7 @@ const Model = ({ imageDetails }) => {
         <div className="row center top-row">
           <div className="top">
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0, transition: { delay: 1.5, ...transition } }} className="details">
-              <div className="location">
-                <span>28.538336</span>
-                <span>-81.379234</span>
-              </div>
-              <div className="mua">MUA: @mylifeascrystall</div>
+              <div className="devWeb">Développeur Web</div>
             </motion.div>
             <motion.div style={{ opacity: opacity }} className="model">
               <motion.span variants={firstName} className="first">
@@ -116,7 +113,7 @@ const Model = ({ imageDetails }) => {
                     style={{ scale: scale }}
                     initial={{ scale: 1.1, y: "5%" }}
                     animate={{ transition: { delay: 0.2, ...transition }, y: window.innerWidth > 1440 ? -200 : 0 }}
-                    src={require("../images/yasmeen.webp")}
+                    src={require("../images/MatthiasGuilbert.webp")}
                     alt="an image"
                   />
                 </div>
@@ -130,15 +127,14 @@ const Model = ({ imageDetails }) => {
         <div className="container">
           <div className="row">
             <h2 className="title">
-              The insiration behind the artwork & <br /> what it means.
+              A LITTLE BIT <br />
+              ABOUT ME
             </h2>
             <p>
-              Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it
-              over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
-              consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem
-              Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This
-              book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
-              comes from a line in section 1.10.32.
+              I am Matthias Guilbert, a WEB DEV from Paris. It has not always been as such though... Before I fell in love with programming, I was 10+ years a
+              LEADER in various fields of work such as the FRENCH NAVY COMMANDOS AND RIFLEMEN ARCHAEOLOGY SPORTS COACHING VIP SECURITY TEXTILE INDUSTRY ARTS AND
+              CULTURE... A happy/bumpy road ! However, I always felt inspired by people with the specific technical skills to build from the ground up. I always
+              knew a day will come when I'll have the opportunity to be one of them. I now dedicate 100% of my time to help DREAMS COME TO LIFE through CODING.
             </p>
           </div>
         </div>

@@ -32,7 +32,6 @@ const ScrollForMore = () => {
       </div>
       <div className="text">
         Scroll <br />
-        for more
       </div>
     </motion.div>
   );

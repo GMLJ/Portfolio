@@ -7,7 +7,7 @@ import { AnimatePresence } from "framer-motion";
 import Home from "./pages/home";
 import Model from "./pages/model";
 //components
-import Header from "./components/header/header";
+import Header from "./components/header";
 //Styles
 import "./App.scss";
 
@@ -25,7 +25,7 @@ function App() {
           <AnimatePresence initial={false} exitBeforeEnter>
             <Switch location={location} key={location.pathname}>
               <Route exact path="/" render={() => <Home imageDetails={imageDetails} />} />
-              <Route exact path="/model/:id" render={() => <Model imageDetails={imageDetails} />} />
+              <Route exact path="/model/matthias-guilbert" render={() => <Model imageDetails={imageDetails} />} />
             </Switch>
           </AnimatePresence>
         )}
