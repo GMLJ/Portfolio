@@ -118,6 +118,7 @@ body.no-scroll {
 }
 
 .container {
+  border: 2px solid green;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -153,6 +154,7 @@ body.no-scroll {
 }
 
 .container .row {
+  border: 2px solid hotpink;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -174,6 +176,7 @@ body.no-scroll {
 }
 
 header {
+  border: 2px solid yellow;
   font-size: 16px;
   position: fixed;
   z-index: 99;
@@ -263,7 +266,7 @@ main .container .row .image-container .information {
   text-transform: uppercase;
 }
 
-main .container .row .image-container .information .location span:nth-child(2) {
+main .container .row .image-container .information .devWeb span:nth-child(2) {
   margin-left: 8px;
 }
 
@@ -291,12 +294,8 @@ main .container .row .image-container .information .location span:nth-child(2) {
           justify-content: space-between;
 }
 
-.single .container .top-row .top .details .location span:nth-child(2) {
+.single .container .top-row .top .details .devWeb span:nth-child(2) {
   margin-left: 16px;
-}
-
-.single .container .top-row .top .details .mua {
-  text-transform: uppercase;
 }
 
 .single .container .top-row .top .model {
@@ -332,6 +331,7 @@ main .container .row .image-container .information .location span:nth-child(2) {
 }
 
 .single .container .bottom-row .bottom .thumbnail-single {
+  border: 10px solid green;
   width: 100%;
   height: 800px;
   margin: 0 auto;
@@ -348,8 +348,8 @@ main .container .row .image-container .information .location span:nth-child(2) {
 
 .single .container .bottom-row .scroll-for-more {
   position: absolute;
-  bottom: 200px;
-  left: 200px;
+  bottom: 250px;
+  left: 150px;
   z-index: 20;
 }
 

@@ -22,10 +22,10 @@ function App() {
       <Header />
       <Route
         render={({ location }) => (
-          <AnimatePresence initial={false} exitBeforeEnter>
+          <AnimatePresence initial={true} exitBeforeEnter>
             <Switch location={location} key={location.pathname}>
               <Route exact path="/" render={() => <Home imageDetails={imageDetails} />} />
-              <Route exact path="/model/:id" render={() => <Model imageDetails={imageDetails} />} />
+              <Route exact path="/model/matthias-guilbert" render={() => <Model imageDetails={imageDetails} />} />
             </Switch>
           </AnimatePresence>
         )}

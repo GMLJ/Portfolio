@@ -67,6 +67,7 @@ body {
 //Header
 
 .container {
+  border: 2px solid green;
   flex-grow: 1;
   margin: 0 auto;
   padding: 0 32px;
@@ -89,6 +90,7 @@ body {
   }
 
   .row {
+    border: 2px solid hotpink;
     display: flex;
     align-items: center;
     &.space-between {
@@ -101,6 +103,8 @@ body {
 }
 
 header {
+  border: 2px solid yellow;
+
   font-size: 16px;
   position: fixed;
   z-index: 99;
@@ -165,7 +169,7 @@ main {
           justify-content: space-between;
           margin-top: 20px;
           text-transform: uppercase;
-          .location {
+          .devWeb {
             span:nth-child(2) {
               margin-left: 8px;
             }
@@ -189,13 +193,10 @@ main {
           display: flex;
           align-items: center;
           justify-content: space-between;
-          .location {
+          .devWeb {
             span:nth-child(2) {
               margin-left: 16px;
             }
-          }
-          .mua {
-            text-transform: uppercase;
           }
         }
         .model {
@@ -223,6 +224,7 @@ main {
         height: 100%;
         width: 100%;
         .thumbnail-single {
+          border: 10px solid green;
           width: 100%;
           height: 800px;
           margin: 0 auto;
@@ -240,8 +242,8 @@ main {
       }
       .scroll-for-more {
         position: absolute;
-        bottom: 200px;
-        left: 200px;
+        bottom: 250px;
+        left: 150px;
         z-index: 20;
         .icon {
           svg {
