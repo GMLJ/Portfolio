@@ -20,10 +20,10 @@ const Home = ({ imageDetails, image }) => (
               }}
             >
               <div className="frame">
-                <Link to={`/model/matthias-guilbert`}>
+                <Link to={`/aboutMe/matthias-guilbert`}>
                   <ProgressiveImage
-                    src={require("../images/MatthiasGuilbert.webp")}
-                    placeholder={require("../images/izzat.jpg")}
+                    src={require("../../images/MatthiasGuilbert.webp")}
+                    placeholder={require("../../images/izzat.jpg")}
                   >
                     {(src) => (
                       <motion.img

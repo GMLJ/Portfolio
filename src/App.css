@@ -10,6 +10,7 @@ body {
   margin: 0;
   background-color: #f0d8bb;
   color: #1e1f13;
+  overflow-x: hidden;
 }
 
 body:before {
@@ -294,15 +295,15 @@ main .container .row .image-container .information .devWeb span:nth-child(2) {
   margin-left: 16px;
 }
 
-.single .container .top-row .top .model {
+.single .container .top-row .top .aboutMe {
   overflow: hidden;
 }
 
-.single .container .top-row .top .model .first {
+.single .container .top-row .top .aboutMe .first {
   margin-right: 72px;
 }
 
-.single .container .top-row .top .model span {
+.single .container .top-row .top .aboutMe span {
   display: inline-block;
   position: relative;
   font-weight: 400;
@@ -311,7 +312,7 @@ main .container .row .image-container .information .devWeb span:nth-child(2) {
 }
 
 @media (max-width: 1440px) {
-  .single .container .top-row .top .model span {
+  .single .container .top-row .top .aboutMe span {
     font-size: 128px;
   }
 }

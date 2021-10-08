@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { motion, useTransform, useViewportScroll } from "framer-motion";
 
 //Components
-import ScrollForMore from "../components/scrollForMore";
+import ScrollForMore from "../../components/scrollForMore";
 
 //Ease
 const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
@@ -39,7 +39,7 @@ const letter = {
   },
 };
 
-const Model = ({ imageDetails }) => {
+const AboutMe = ({ imageDetails }) => {
   const { scrollYProgress } = useViewportScroll();
   const scale = useTransform(scrollYProgress, [0, 1], [1, 1.5]);
   const x = useTransform(scrollYProgress, [0, 0.4], ["0", "15%"]);
@@ -76,7 +76,7 @@ const Model = ({ imageDetails }) => {
             >
               <div className="devWeb">Développeur Web</div>
             </motion.div>
-            <motion.div style={{ opacity: opacity }} className="model">
+            <motion.div style={{ opacity: opacity }} className="aboutMe">
               <motion.span variants={firstName} className="first">
                 <motion.span variants={letter}>M</motion.span>
                 <motion.span variants={letter}>a</motion.span>
@@ -130,7 +130,7 @@ const Model = ({ imageDetails }) => {
                       transition: { delay: 0.2, ...transition },
                       y: window.innerWidth > 1440 ? -200 : 0,
                     }}
-                    src={require("../images/MatthiasGuilbert.webp")}
+                    src={require("../../images/MatthiasGuilbert.webp")}
                     alt="Artwork by Izzat Emmanuel"
                   />
                 </div>
@@ -166,4 +166,4 @@ const Model = ({ imageDetails }) => {
   );
 };
 
-export default Model;
+export default AboutMe;
