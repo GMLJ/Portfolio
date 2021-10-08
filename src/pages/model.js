@@ -55,11 +55,25 @@ const Model = ({ imageDetails }) => {
   }, [canScroll]);
 
   return (
-    <motion.div onAnimationComplete={() => setCanScroll(true)} initial="initial" animate="animate" exit="exit" className="single">
+    <motion.div
+      onAnimationComplete={() => setCanScroll(true)}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+      className="single"
+    >
       <div className="container fluid">
         <div className="row center top-row">
           <div className="top">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0, transition: { delay: 1.5, ...transition } }} className="details">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{
+                opacity: 1,
+                y: 0,
+                transition: { delay: 1.5, ...transition },
+              }}
+              className="details"
+            >
               <div className="devWeb">Développeur Web</div>
             </motion.div>
             <motion.div style={{ opacity: opacity }} className="model">
@@ -91,7 +105,13 @@ const Model = ({ imageDetails }) => {
             <div className="image-container-single">
               <motion.div
                 style={{ x: x }}
-                initial={{ y: "-50%", width: imageDetails.width, height: imageDetails.height, borderTopLeftRadius: "50%", borderTopRightRadius: "50%" }}
+                initial={{
+                  y: "-50%",
+                  width: imageDetails.width,
+                  height: imageDetails.height,
+                  borderTopLeftRadius: "50%",
+                  borderTopRightRadius: "50%",
+                }}
                 animate={{
                   y: 0,
                   width: "100%",
@@ -105,8 +125,11 @@ const Model = ({ imageDetails }) => {
                 <div className="frame-single">
                   <motion.img
                     style={{ scale: scale }}
-                    initial={{ scale: 1.1 }}
-                    animate={{ transition: { delay: 0.2, ...transition }, y: window.innerWidth > 1440 ? -200 : 0 }}
+                    initial={{ scale: 1.1, y: "5%" }}
+                    animate={{
+                      transition: { delay: 0.2, ...transition },
+                      y: window.innerWidth > 1440 ? -200 : 0,
+                    }}
                     src={require("../images/MatthiasGuilbert.webp")}
                     alt="Artwork by Izzat Emmanuel"
                   />
@@ -125,10 +148,16 @@ const Model = ({ imageDetails }) => {
               ABOUT ME
             </h2>
             <p>
-              I am Matthias Guilbert, a WEB DEV from Paris. It has not always been as such though... Before I fell in love with programming, I was 10+ years a
-              LEADER in various fields of work such as the FRENCH NAVY COMMANDOS AND RIFLEMEN ARCHAEOLOGY SPORTS COACHING VIP SECURITY TEXTILE INDUSTRY ARTS AND
-              CULTURE... A happy/bumpy road ! However, I always felt inspired by people with the specific technical skills to build from the ground up. I always
-              knew a day will come when I'll have the opportunity to be one of them. I now dedicate 100% of my time to help DREAMS COME TO LIFE through CODING.
+              I am Matthias Guilbert, a WEB DEV from Paris. It has not always
+              been as such though... Before I fell in love with programming, I
+              was 10+ years a LEADER in various fields of work such as the
+              FRENCH NAVY COMMANDOS AND RIFLEMEN ARCHAEOLOGY SPORTS COACHING VIP
+              SECURITY TEXTILE INDUSTRY ARTS AND CULTURE... A happy/bumpy road !
+              However, I always felt inspired by people with the specific
+              technical skills to build from the ground up. I always knew a day
+              will come when I'll have the opportunity to be one of them. I now
+              dedicate 100% of my time to help DREAMS COME TO LIFE through
+              CODING.
             </p>
           </div>
         </div>
