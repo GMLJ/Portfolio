@@ -2,7 +2,7 @@ import gsap from "gsap";
 import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
-const Hamburger = (btnState) => {
+const Hamburger = ({ btnState }) => {
   let menu = useRef(null);
   let revealMenu = useRef(null);
   let revealMenuBackground = useRef(null);

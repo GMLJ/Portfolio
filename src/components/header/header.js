@@ -10,13 +10,13 @@ const Header = ({ history }) => {
     menuName: "Menu",
   });
 
-  // //Page change on click
-  // useEffect(() => {
-  //   //Listen for page change
-  //   history.listen(() => {
-  //     setBtnState({ clicked: false });
-  //   });
-  // });
+  //Page change on click
+  useEffect(() => {
+    //Listen for page change
+    history.listen(() => {
+      setBtnState({ clicked: false, menuName: "Menu" });
+    });
+  });
 
   const handleMenu = () => {
     if (btnState.initial === false) {
@@ -25,16 +25,20 @@ const Header = ({ history }) => {
         clicked: true,
         menuName: "Close",
       });
+      console.log(btnState);
     } else if (btnState.clicked === true) {
       setBtnState({
         clicked: !btnState.clicked,
         menuName: "Menu",
       });
-    } else if (btnState.clicked === false)
+      console.log(btnState);
+    } else if (btnState.clicked === false) {
       setBtnState({
         clicked: !btnState.clicked,
         menuName: "Menu",
       });
+      console.log(btnState);
+    }
   };
 
   return (
@@ -54,4 +58,4 @@ const Header = ({ history }) => {
   );
 };
 
-export default Header;
+export default withRouter(Header);
