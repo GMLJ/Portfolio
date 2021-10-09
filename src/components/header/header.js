@@ -1,8 +1,42 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { withRouter, Link } from "react-router-dom";
+import Hamburger from "./hamburger";
 
-import { Link } from "react-router-dom";
+const Header = ({ history }) => {
+  //State of the menu button
+  const [btnState, setBtnState] = useState({
+    initial: false,
+    clicked: null,
+    menuName: "Menu",
+  });
 
-const Header = () => {
+  // //Page change on click
+  // useEffect(() => {
+  //   //Listen for page change
+  //   history.listen(() => {
+  //     setBtnState({ clicked: false });
+  //   });
+  // });
+
+  const handleMenu = () => {
+    if (btnState.initial === false) {
+      setBtnState({
+        initial: null,
+        clicked: true,
+        menuName: "Close",
+      });
+    } else if (btnState.clicked === true) {
+      setBtnState({
+        clicked: !btnState.clicked,
+        menuName: "Menu",
+      });
+    } else if (btnState.clicked === false)
+      setBtnState({
+        clicked: !btnState.clicked,
+        menuName: "Menu",
+      });
+  };
+
   return (
     <header>
       <div className="container">
@@ -10,9 +44,12 @@ const Header = () => {
           <div className="logo">
             <Link to="/">HOME</Link>
           </div>
-          <div className="menu">MENU</div>
+          <div className="menu">
+            <button onClick={handleMenu}>MENU</button>
+          </div>
         </div>
       </div>
+      <Hamburger btnState={btnState} />
     </header>
   );
 };
