@@ -9,6 +9,8 @@ const Header = ({ history }) => {
     clicked: null,
     menuName: "Menu",
   });
+  //State for disabled button
+  const [disabled, setDisabled] = useState(false);
 
   //Page change on click
   useEffect(() => {
@@ -19,6 +21,7 @@ const Header = ({ history }) => {
   });
 
   const handleMenu = () => {
+    disableMenu();
     if (btnState.initial === false) {
       setBtnState({
         initial: null,
@@ -41,6 +44,14 @@ const Header = ({ history }) => {
     }
   };
 
+  // Menu button disabled or not
+  const disableMenu = () => {
+    setDisabled(!disabled);
+    setTimeout(() => {
+      setDisabled(false);
+    }, 1000);
+  };
+
   return (
     <header>
       <div className="container">
@@ -48,9 +59,9 @@ const Header = ({ history }) => {
           <div className="logo">
             <Link to="/">HOME</Link>
           </div>
-          <div className="menu">
-            <button onClick={handleMenu}>MENU</button>
-          </div>
+          <button className="menu" disabled={disabled} onClick={handleMenu}>
+            WORK
+          </button>
         </div>
       </div>
       <Hamburger btnState={btnState} />
