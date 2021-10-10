@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { motion, useTransform, useViewportScroll } from "framer-motion";
+import Header from "../../components/header/header";
 
 //Components
 import ScrollForMore from "../../components/scrollForMore";
@@ -62,6 +63,18 @@ const AboutMe = ({ imageDetails }) => {
       exit="exit"
       className="single"
     >
+      <motion.div
+        className="headerClass"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{
+          opacity: 1,
+          y: 0,
+          transition: { delay: 1.5, ...transition },
+        }}
+      >
+        <Header />
+      </motion.div>
+
       <div className="container fluid">
         <div className="row center top-row">
           <div className="top">
