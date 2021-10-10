@@ -79,13 +79,21 @@ const Hamburger = ({ btnState }) => {
                 <ul>
                   <li>
                     {/* <Link ref={(el) => (line1 = el)} to="/opportunities"> */}
-                    <a href="https://zellan.art/" target="_blank">
+                    <a
+                      href="https://zellan.art/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       Zellan Creative and Cultural Center
                     </a>
                   </li>
                   <li>
                     {/* <Link ref={(el) => (line2 = el)} to="/solutions"> */}
-                    <a href="https://woyanedefi.netlify.app/" target="_blank">
+                    <a
+                      href="https://woyanedefi.netlify.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       Woyane DeFi
                     </a>
                   </li>
