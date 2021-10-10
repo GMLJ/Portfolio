@@ -18,11 +18,11 @@ body {
 body:before {
   -webkit-animation: grain 8s steps(10) infinite;
           animation: grain 8s steps(10) infinite;
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/paper-pattern.png");
+  background-image: url("https://images.unsplash.com/photo-1541415534056-fad380cd68a5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=706&q=80");
   content: "";
   height: 300%;
   left: -50%;
-  opacity: 0.3;
+  opacity: 0.04;
   position: fixed;
   top: -100%;
   width: 300%;
@@ -67,8 +67,8 @@ body.no-scroll {
             transform: translate(0%, 15%);
   }
   80% {
-    -webkit-transform: translate(3%, 35%);
-            transform: translate(3%, 35%);
+    -webkit-transform: translate(3%, 25%);
+            transform: translate(3%, 25%);
   }
   90% {
     -webkit-transform: translate(-10%, 10%);
@@ -111,8 +111,8 @@ body.no-scroll {
             transform: translate(0%, 15%);
   }
   80% {
-    -webkit-transform: translate(3%, 35%);
-            transform: translate(3%, 35%);
+    -webkit-transform: translate(3%, 25%);
+            transform: translate(3%, 25%);
   }
   90% {
     -webkit-transform: translate(-10%, 10%);
@@ -192,6 +192,15 @@ header .container {
 
 header .container .row {
   height: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 header .container .row .logo a {

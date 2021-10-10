@@ -24,11 +24,11 @@ body {
   overflow-x: hidden;
   &:before {
     animation: grain 8s steps(10) infinite;
-    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/paper-pattern.png");
+    background-image: url("https://images.unsplash.com/photo-1541415534056-fad380cd68a5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=706&q=80");
     content: "";
     height: 300%;
     left: -50%;
-    opacity: 0.3;
+    opacity: 0.04;
     position: fixed;
     top: -100%;
     width: 300%;
@@ -65,7 +65,7 @@ body {
     transform: translate(0%, 15%);
   }
   80% {
-    transform: translate(3%, 35%);
+    transform: translate(3%, 25%);
   }
   90% {
     transform: translate(-10%, 10%);

@@ -55,10 +55,7 @@ const Header = ({ history }) => {
   return (
     <header>
       <div className="container">
-        <div className="row space-between">
-          <div className="logo">
-            <Link to="/">HOME</Link>
-          </div>
+        <div className="row">
           <button className="menu" disabled={disabled} onClick={handleMenu}>
             WORK
           </button>

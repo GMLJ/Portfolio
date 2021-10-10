@@ -10,6 +10,9 @@ header {
     height: 0;
     .row {
       height: 8rem;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
       .logo {
         a {
           color: $black;
