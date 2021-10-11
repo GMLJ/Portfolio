@@ -26,19 +26,16 @@ const Header = ({ history }) => {
       setBtnState({
         initial: null,
         clicked: true,
-        menuName: "Close",
       });
       console.log(btnState);
     } else if (btnState.clicked === true) {
       setBtnState({
         clicked: !btnState.clicked,
-        menuName: "Menu",
       });
       console.log(btnState);
     } else if (btnState.clicked === false) {
       setBtnState({
         clicked: !btnState.clicked,
-        menuName: "Menu",
       });
       console.log(btnState);
     }

@@ -96,8 +96,23 @@ const Hamburger = ({ btnState }) => {
                     </a>
                   </li>
                   <li>
-                    <Link to="/">Contact</Link>
+                    <a
+                      href="mailto:guilbertmatthias32@gmail.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Email
+                    </a>
                   </li>
+                  {/* <li>
+                    <a
+                      href="https://github.com/GMLJ"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Github
+                    </a>
+                  </li> */}
                 </ul>
               </nav>
             </div>

@@ -22,20 +22,6 @@ body {
   background-color: $white;
   color: $black;
   overflow-x: hidden;
-  &:before {
-    animation: grain 8s steps(10) infinite;
-    background-image: url("https://images.unsplash.com/photo-1433740944490-b669cb8b1c44?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1176&q=80");
-    content: "";
-    height: 300%;
-    left: -50%;
-    opacity: 0.05;
-    position: fixed;
-    top: -100%;
-    width: 300%;
-  }
-  &.no-scroll {
-    overflow-y: hidden;
-  }
 }
 
 @keyframes grain {
