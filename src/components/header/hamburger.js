@@ -78,28 +78,25 @@ const Hamburger = ({ btnState }) => {
               <nav>
                 <ul>
                   <li>
+                    {/* <Link ref={(el) => (line2 = el)} to="/solutions"> */}
+                    <Link to="/aboutMe/matthias-guilbert">About Me</Link>
+                  </li>
+                  <li>
+                    {/* <Link ref={(el) => (line3 = el)} to="/contact-us"> */}
+                    <Link to="/">Work and Projects</Link>
+                  </li>
+                  <li>
                     {/* <Link ref={(el) => (line1 = el)} to="/opportunities"> */}
                     <a
                       href="https://zellan.art/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Zellan Creative and Cultural Center
+                      Life Blockchain
                     </a>
                   </li>
                   <li>
-                    {/* <Link ref={(el) => (line2 = el)} to="/solutions"> */}
-                    <a
-                      href="https://woyanedefi.netlify.app/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Woyane DeFi
-                    </a>
-                  </li>
-                  <li>
-                    {/* <Link ref={(el) => (line3 = el)} to="/contact-us"> */}
-                    <Link to="/">Mimi's Day</Link>
+                    <Link to="/">Contact</Link>
                   </li>
                 </ul>
               </nav>
