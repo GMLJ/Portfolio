@@ -324,11 +324,6 @@ header .container .row .menu:hover {
   color: #1e1f13;
 }
 
-.hamburger-menu .menu-layer .social-icons svg {
-  width: 5rem;
-  height: auto;
-}
-
 @-webkit-keyframes cameraPan {
   0% {
     background-position: 0% 0%;
@@ -370,7 +365,7 @@ main .container {
   border: black;
 }
 
-main .container:before {
+main .container .backgr:before {
   -webkit-animation: grain 8s steps(10) infinite;
           animation: grain 8s steps(10) infinite;
   background-image: url("https://images.unsplash.com/photo-1433740944490-b669cb8b1c44?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1176&q=80");

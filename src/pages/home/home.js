@@ -9,6 +9,11 @@ const Home = ({ imageDetails, image }) => (
   <>
     <main>
       <div className="container">
+        <motion.div
+          className="backgr"
+          exit={{ opacity: 0 }}
+          transition={transition}
+        ></motion.div>
         <div className="row center">
           <div className="image-container">
             <div
