@@ -9,6 +9,11 @@ const Home = ({ imageDetails, image }) => (
   <>
     <main>
       <div className="container">
+        <motion.div
+          className="backgr"
+          exit={{ opacity: 0 }}
+          transition={transition}
+        ></motion.div>
         <div className="row center">
           <div className="image-container">
             <div
@@ -20,10 +25,10 @@ const Home = ({ imageDetails, image }) => (
               }}
             >
               <div className="frame">
-                <Link to={`/model/matthias-guilbert`}>
+                <Link to={`/aboutMe/matthias-guilbert`}>
                   <ProgressiveImage
-                    src={require("../images/MatthiasGuilbert.webp")}
-                    placeholder={require("../images/izzat.jpg")}
+                    src={require("../../images/MatthiasGuilbert.webp")}
+                    placeholder={require("../../images/izzat.jpg")}
                   >
                     {(src) => (
                       <motion.img
