@@ -3,6 +3,8 @@
 ## ℹ️ &nbsp; Info
 
 Just a public repo with my porfolio website. A pretty active repo since one always want to showcase what one learns 🦚
+</br>
+Build with React with some Gsap and Framer-motion.
 
 ## 🔗 &nbsp; Links
 <img align="left" alt="matthiasGuilbert.com" width="36px" src="https://cdn-icons-png.flaticon.com/512/1150/1150626.png" />
@@ -25,6 +27,9 @@ Just a public repo with my porfolio website. A pretty active repo since one alwa
 </br>
 
 ## 📚 &nbsp; Librairies / Frameworks
-[<img align="left" alt="Visual Studio Code" width="36px" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/logo-man.svg" />][greensock]
+[<img align="left" alt="GSAP" width="36px" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/logo-man.svg" />][greensock]
+[<img align="left" alt="Framer Motion" height="42px" src="https://th.bing.com/th/id/R.120f1c7c3394ea962e915d815c66dc45?rik=kugXnksgj%2foQiA&pid=ImgRaw&r=0" />][framermotion]
+
 
 [greensock]: https://greensock.com/
+[framermotion]: https://www.framer.com/motion/
