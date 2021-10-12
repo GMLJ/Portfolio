@@ -6,8 +6,6 @@ Just a public repo with my porfolio website. A pretty active repo since one alwa
 
 ## 🔗 &nbsp; Links
 <img align="left" alt="matthiasGuilbert.com" width="36px" src="https://cdn-icons-png.flaticon.com/512/1150/1150626.png" />
-[<img src='https://cdn-icons-png.flaticon.com/512/174/174857.png' alt='linkedin' width='36px'>][linkedin] 
-[<img src='https://cdn-icons-png.flaticon.com/512/2111/2111262.png' alt='codepen' width='36px'>][codepen]
 </br>
 </br>
 
@@ -29,6 +27,4 @@ Just a public repo with my porfolio website. A pretty active repo since one alwa
 ## 📚 &nbsp; Librairies / Frameworks
 [<img align="left" alt="Visual Studio Code" width="36px" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/logo-man.svg" />][greensock]
 
-[linkedin]: https://www.linkedin.com/in/matthias-guilbert
-[codepen]: https://codepen.io/GMLJ
 [greensock]: https://greensock.com/
