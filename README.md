@@ -2,7 +2,7 @@
 
 ## ℹ️ &nbsp; Info
 
-Just a public repo with my porfolio website. A pretty active repo since one always want to showcase what one learns 🦚
+Just a public repo with my portfolio website. A pretty active repo since one always want to showcase what one learns 🦚
 </br>
 Build with React with some Gsap and Framer-motion.
 
