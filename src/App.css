@@ -549,4 +549,16 @@ main .container .row .image-container .information .devWeb span:nth-child(2) {
   font-weight: 400;
   width: 800px;
 }
+
+.detailed-information .container .row p .stackLogos .mongoDBLogo {
+  position: relative;
+  width: 70px;
+  top: 10px;
+}
+
+.detailed-information .container .row p .stackLogos img {
+  margin-right: 2rem;
+  width: 40px;
+  height: auto;
+}
 /*# sourceMappingURL=App.css.map */
