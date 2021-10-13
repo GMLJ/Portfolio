@@ -4,7 +4,8 @@ import Header from "../../components/header/header";
 import TypeWriterEffect from "react-typewriter-effect";
 
 //Components
-import ScrollForMore from "../../components/scrollForMore";
+import ScrollForMore from "../../components/ScrollForMore.jsx";
+import BouncingBalls from "../../components/BouncingLogos";
 
 //Ease
 const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
@@ -158,10 +159,8 @@ const AboutMe = ({ imageDetails }) => {
       <div className="detailed-information">
         <div className="container">
           <div className="row">
-            <h2 className="title">
-              A LITTLE BIT <br />
-              ABOUT ME
-            </h2>
+            <h2 className="title">ABOUT ME</h2>
+            <img src={require("../../images/profile.png")} />
             <p>
               I am Matthias Guilbert, a FRONT END Web Dev 👨‍💻 from Paris making
               his way to FULLSTACK.
@@ -190,45 +189,7 @@ const AboutMe = ({ imageDetails }) => {
                 typeSpeed={30}
                 hideCursorAfterText={true}
               />
-              <div className="stackLogos">
-                <img
-                  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"
-                  alt="HTML logo"
-                />
-                <img
-                  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png"
-                  alt="CSS logo"
-                />
-                <img
-                  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sass/sass.png"
-                  alt="SASS logo"
-                />
-                <img
-                  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"
-                  alt="JS logo"
-                />
-                <img
-                  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"
-                  alt="REACT logo"
-                />
-                <img
-                  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png"
-                  alt="Node JS logo"
-                />
-                <img
-                  className="mongoDBLogo"
-                  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png"
-                  alt="Mongo DB logo"
-                />
-                <img
-                  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png"
-                  alt="VSCode logo"
-                />
-                <img
-                  src="https://camo.githubusercontent.com/926050f1c795978fee869e0b07f678b4a2a4dc6360fd85ca2ea882a5c6394e18/68747470733a2f2f63646e2d69636f6e732d706e672e666c617469636f6e2e636f6d2f3531322f3237302f3237303739382e706e67"
-                  alt="Github logo"
-                />
-              </div>
+              <BouncingBalls />
               <br />
               It has not always been as such though... <br />
               Before I fell in love with programming, I was 10+ years a LEADER

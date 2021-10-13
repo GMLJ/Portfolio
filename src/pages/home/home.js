@@ -12,7 +12,7 @@ const Home = ({ imageDetails, image }) => (
         <motion.div
           className="backgr"
           exit={{ opacity: 0 }}
-          transition={transition}
+          transition={{ duration: 1, ease: [1, 1, 1, 1] }}
         ></motion.div>
         <div className="row center">
           <div className="image-container">

@@ -82,6 +82,7 @@
   height: 600px;
   .container {
     .row {
+      margin: 0 5% 0 5%;
       justify-content: space-between;
       align-items: flex-start;
       h2 {
@@ -93,41 +94,6 @@
         line-height: 28px;
         font-weight: 400;
         width: 800px;
-        .stackLogos {
-          .mongoDBLogo {
-            position: relative;
-            width: 70px;
-            top: 10px;
-          }
-          & img {
-            margin-right: 2rem;
-            width: 40px;
-            height: auto;
-            // animation: pop 0.5s ease-in-out;
-            // animation-delay: 1s;
-            // @keyframes pop {
-            //   0% {
-            //     opacity: 0;
-            //   }
-            //   50% {
-            //     opacity: 1;
-            //     transform: scale(1.35);
-            //   }
-            //   65% {
-            //     opacity: 1;
-            //     transform: scale(1);
-            //   }
-            //   80% {
-            //     opacity: 1;
-            //     transform: scale(1.2);
-            //   }
-            //   100% {
-            //     opacity: 1;
-            //     scale: (1);
-            //   }
-            // }
-          }
-        }
       }
     }
   }
