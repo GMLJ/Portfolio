@@ -97,7 +97,7 @@ const AboutMe = ({ imageDetails }) => {
                   fontWeight: 500,
                   fontSize: "1.5em",
                 }}
-                startDelay={3500}
+                startDelay={3200}
                 className="devWeb"
                 text="Développeur Web"
                 typeSpeed={60}
@@ -186,27 +186,6 @@ const AboutMe = ({ imageDetails }) => {
               I love to work with HTML, CSS, SASS, JAVASCRIPT, REACT, NODE JS,
               MONGO DB...
               <br />
-              {/* <TypeWriterEffect
-                className="typewriter"
-                textStyle={{
-                  fontFamily: "Helvetica Neue",
-                  color: "#1e1f13",
-                  fontWeight: 500,
-                  fontSize: "1rem",
-                }}
-                startDelay={2000}
-                multiText={[
-                  "HTML",
-                  "CSS",
-                  "SASS",
-                  "JAVASCRIPT",
-                  "REACT",
-                  "HTML, CSS, SASS, JAVASCRIPT, REACT, NODE JS, MONGO DB, VISUAL STUDIO CODE, GITHUB... ",
-                ]}
-                multiTextDelay={500}
-                typeSpeed={30}
-                hideCursorAfterText={true}
-              /> */}
               <BouncingBalls />
               <br />
               It has not always been as such though... <br />
