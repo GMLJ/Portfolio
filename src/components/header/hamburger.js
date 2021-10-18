@@ -1,7 +1,6 @@
 import gsap from "gsap";
 import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import Cursor from "../cursor/Cursor";
 
 const Hamburger = ({ btnState }) => {
   let menu = useRef(null);
@@ -71,7 +70,6 @@ const Hamburger = ({ btnState }) => {
         className="menu-secondary-background-color"
       ></div>
       <div ref={(el) => (revealMenu = el)} className="menu-layer">
-        <Cursor />
         {/* <div ref={(el) => (hoverBack = el)} className="hover-background"></div> */}
         <div className="hover-background"></div>
         <div className="container">
