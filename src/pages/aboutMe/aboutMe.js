@@ -159,8 +159,14 @@ const AboutMe = ({ imageDetails }) => {
       <div className="detailed-information">
         <div className="container">
           <div className="row">
-            <h2 className="title">ABOUT ME</h2>
-            <img src={require("../../images/profile.png")} />
+            <div className="profileBox">
+              <div className="ProfileCircle"></div>
+              <img
+                src={require("../../images/profile.png")}
+                alt="profile"
+                className="profilePicture"
+              />
+            </div>
             <p>
               I am Matthias Guilbert, a FRONT END Web Dev 👨‍💻 from Paris making
               his way to FULLSTACK.
