@@ -59,7 +59,7 @@ body {
 }
 
 .container {
-  border: 5px solid green;
+  // border: 5px solid green;
 
   flex-grow: 1;
   margin: 0 auto;
@@ -82,7 +82,7 @@ body {
     max-width: 1560px;
   }
   .row {
-    border: 2px solid black;
+    // border: 2px solid blue;
     display: flex;
     align-items: center;
     &.space-between {

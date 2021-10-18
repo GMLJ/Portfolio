@@ -150,38 +150,3 @@ header {
     background-position: 2.5% 0%;
   }
 }
-
-.profileBox {
-  border: 6px solid #ed3833;
-  align-self: flex-end;
-  position: relative;
-  width: 300px;
-  height: 200px;
-  margin: 40px;
-  background: transparent;
-  .profileCircle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    transition: 0.5s;
-    background: #000;
-    transform-style: preserve-3d;
-    z-index: 10;
-    opacity: 1;
-    transform: translate3d(-50%, -50%, 50px);
-  }
-  .profilePicture {
-    position: absolute;
-    top: -5%;
-    left: 52%;
-    max-width: 300px;
-    transition: 0.5s;
-    z-index: 11;
-    transform-style: preserve-3d;
-    transform: translate3d(-50%, -50%, 0px);
-    border-bottom-right-radius: 20px;
-  }
-}

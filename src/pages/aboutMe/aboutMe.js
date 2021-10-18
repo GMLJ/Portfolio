@@ -90,7 +90,19 @@ const AboutMe = ({ imageDetails }) => {
               }}
               className="details"
             >
-              <div className="devWeb">Développeur Web</div>
+              <TypeWriterEffect
+                textStyle={{
+                  fontFamily: "HelveticaNeue-CondensedBold",
+                  color: "#1e1f13",
+                  fontWeight: 500,
+                  fontSize: "1.5em",
+                }}
+                startDelay={3500}
+                className="devWeb"
+                text="Développeur Web"
+                typeSpeed={60}
+                hideCursorAfterText="true"
+              />
             </motion.div>
             <motion.div style={{ opacity: opacity }} className="aboutMe">
               <motion.span variants={firstName} className="first">
@@ -160,7 +172,6 @@ const AboutMe = ({ imageDetails }) => {
         <div className="container">
           <div className="row">
             <div className="profileBox">
-              <div className="ProfileCircle"></div>
               <img
                 src={require("../../images/profile.png")}
                 alt="profile"
@@ -172,9 +183,10 @@ const AboutMe = ({ imageDetails }) => {
               his way to FULLSTACK.
               <br />
               <br />
-              I love to work with :
+              I love to work with HTML, CSS, SASS, JAVASCRIPT, REACT, NODE JS,
+              MONGO DB...
               <br />
-              <TypeWriterEffect
+              {/* <TypeWriterEffect
                 className="typewriter"
                 textStyle={{
                   fontFamily: "Helvetica Neue",
@@ -194,7 +206,7 @@ const AboutMe = ({ imageDetails }) => {
                 multiTextDelay={500}
                 typeSpeed={30}
                 hideCursorAfterText={true}
-              />
+              /> */}
               <BouncingBalls />
               <br />
               It has not always been as such though... <br />

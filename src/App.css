@@ -104,7 +104,6 @@ body {
 }
 
 .container {
-  border: 5px solid green;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -140,7 +139,6 @@ body {
 }
 
 .container .row {
-  border: 2px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -362,50 +360,6 @@ header .container .row .menu:hover {
   }
 }
 
-.profileBox {
-  border: 6px solid #ed3833;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  position: relative;
-  width: 300px;
-  height: 200px;
-  margin: 40px;
-  background: transparent;
-}
-
-.profileBox .profileCircle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  background: #000;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  z-index: 10;
-  opacity: 1;
-  -webkit-transform: translate3d(-50%, -50%, 50px);
-          transform: translate3d(-50%, -50%, 50px);
-}
-
-.profileBox .profilePicture {
-  position: absolute;
-  top: -5%;
-  left: 52%;
-  max-width: 300px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  z-index: 11;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-transform: translate3d(-50%, -50%, 0px);
-          transform: translate3d(-50%, -50%, 0px);
-  border-bottom-right-radius: 20px;
-}
-
 main .container {
   position: relative;
   border: black;
@@ -414,7 +368,7 @@ main .container {
 main .container .backgr:before {
   -webkit-animation: grain 8s steps(10) infinite;
           animation: grain 8s steps(10) infinite;
-  background-image: url("https://images.unsplash.com/photo-1433740944490-b669cb8b1c44?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1176&q=80");
+  background-image: url("https://images.unsplash.com/photo-1568274179323-00ae07c3e653?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80");
   content: "";
   height: 300%;
   left: -50%;
@@ -501,10 +455,6 @@ main .container .row .image-container .information .devWeb span:nth-child(2) {
           justify-content: space-between;
 }
 
-.single .container .top-row .top .details .devWeb span:nth-child(2) {
-  margin-left: 16px;
-}
-
 .single .container .top-row .top .aboutMe {
   overflow: hidden;
 }
@@ -571,7 +521,7 @@ main .container .row .image-container .information .devWeb span:nth-child(2) {
 }
 
 .detailed-information {
-  margin-top: 200px;
+  margin-top: 300px;
   height: 600px;
 }
 
@@ -595,5 +545,21 @@ main .container .row .image-container .information .devWeb span:nth-child(2) {
   line-height: 28px;
   font-weight: 400;
   width: 800px;
+}
+
+.profileBox {
+  position: relative;
+  height: 100%;
+  width: 50%;
+}
+
+.profileBox .profilePicture {
+  position: absolute;
+  top: -25vh;
+  width: 90%;
+  height: auto;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 11;
 }
 /*# sourceMappingURL=App.css.map */
