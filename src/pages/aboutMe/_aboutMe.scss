@@ -73,9 +73,29 @@
 }
 
 .detailed-information {
-  margin-top: 300px;
-  height: 600px;
+  margin-top: 18.75rem;
+  height: 37.5rem;
   .container {
+    .rotateWebDev {
+      position: absolute;
+      top: -20%;
+      display: grid;
+      justify-content: center;
+      align-content: center;
+      grid-template-columns: max-content max-content;
+      h2 {
+        font-size: 6.25rem;
+        margin: 0;
+        writing-mode: vertical-lr;
+        text-align: center;
+        line-height: 0.8;
+        color: $zRed;
+      }
+      .rotateWeb {
+        transform: rotate(180deg);
+        color: $black;
+      }
+    }
     .row {
       margin: 0 5% 0 5%;
       justify-content: space-between;

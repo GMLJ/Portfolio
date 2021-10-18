@@ -1,6 +1,7 @@
 import gsap from "gsap";
 import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
+import Cursor from "../cursor/Cursor";
 
 const Hamburger = ({ btnState }) => {
   let menu = useRef(null);
@@ -70,6 +71,7 @@ const Hamburger = ({ btnState }) => {
         className="menu-secondary-background-color"
       ></div>
       <div ref={(el) => (revealMenu = el)} className="menu-layer">
+        <Cursor />
         {/* <div ref={(el) => (hoverBack = el)} className="hover-background"></div> */}
         <div className="hover-background"></div>
         <div className="container">
@@ -79,11 +81,11 @@ const Hamburger = ({ btnState }) => {
                 <ul>
                   <li>
                     {/* <Link ref={(el) => (line2 = el)} to="/solutions"> */}
-                    <Link to="/aboutMe/matthias-guilbert">About Me</Link>
+                    <Link to="/aboutMe/matthias-guilbert">LINKEDIN</Link>
                   </li>
                   <li>
                     {/* <Link ref={(el) => (line3 = el)} to="/contact-us"> */}
-                    <Link to="/">Work and Projects</Link>
+                    <Link to="/">GITHUB</Link>
                   </li>
                   <li>
                     {/* <Link ref={(el) => (line1 = el)} to="/opportunities"> */}
@@ -92,7 +94,7 @@ const Hamburger = ({ btnState }) => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Life Blockchain
+                      CODEPEN
                     </a>
                   </li>
                   <li>
@@ -101,7 +103,7 @@ const Hamburger = ({ btnState }) => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Email
+                      EMAIL
                     </a>
                   </li>
                   {/* <li>

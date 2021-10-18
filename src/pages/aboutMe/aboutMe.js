@@ -170,6 +170,10 @@ const AboutMe = ({ imageDetails }) => {
       </div>
       <div className="detailed-information">
         <div className="container">
+          <div className="rotateWebDev">
+            <h2 class="rotateWeb">WEB</h2>
+            <h2>DEV</h2>
+          </div>
           <div className="row">
             <div className="profileBox">
               <img
