@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { motion, useTransform, useViewportScroll } from "framer-motion";
 import Header from "../../components/header/header";
+import TypeWriterEffect from "react-typewriter-effect";
 
 //Components
-import ScrollForMore from "../../components/scrollForMore";
+import ScrollForMore from "../../components/ScrollForMore.jsx";
+import BouncingBalls from "../../components/BouncingLogos";
 
 //Ease
 const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
@@ -47,6 +49,7 @@ const AboutMe = ({ imageDetails }) => {
   const opacity = useTransform(scrollYProgress, [0, 0.5], ["1", "0"]);
 
   const [canScroll, setCanScroll] = useState(false);
+
   useEffect(() => {
     if (canScroll === false) {
       document.querySelector("body").classList.add("no-scroll");
@@ -87,7 +90,19 @@ const AboutMe = ({ imageDetails }) => {
               }}
               className="details"
             >
-              <div className="devWeb">Développeur Web</div>
+              <TypeWriterEffect
+                textStyle={{
+                  fontFamily: "HelveticaNeue-CondensedBold",
+                  color: "#1e1f13",
+                  fontWeight: 500,
+                  fontSize: "1.5em",
+                }}
+                startDelay={3200}
+                className="devWeb"
+                text="Développeur Web"
+                typeSpeed={60}
+                hideCursorAfterText="true"
+              />
             </motion.div>
             <motion.div style={{ opacity: opacity }} className="aboutMe">
               <motion.span variants={firstName} className="first">
@@ -155,22 +170,39 @@ const AboutMe = ({ imageDetails }) => {
       </div>
       <div className="detailed-information">
         <div className="container">
+          <div className="rotateWebDev">
+            <h2 class="rotateWeb">WEB</h2>
+            <h2>DEV</h2>
+          </div>
           <div className="row">
-            <h2 className="title">
-              A LITTLE BIT <br />
-              ABOUT ME
-            </h2>
+            <div className="profileBox">
+              <img
+                src={require("../../images/profile.png")}
+                alt="profile"
+                className="profilePicture"
+              />
+            </div>
             <p>
-              I am Matthias Guilbert, a WEB DEV from Paris. It has not always
-              been as such though... Before I fell in love with programming, I
-              was 10+ years a LEADER in various fields of work such as the
-              FRENCH NAVY COMMANDOS AND RIFLEMEN ARCHAEOLOGY SPORTS COACHING VIP
-              SECURITY TEXTILE INDUSTRY ARTS AND CULTURE... A happy/bumpy road !
-              However, I always felt inspired by people with the specific
-              technical skills to build from the ground up. I always knew a day
-              will come when I'll have the opportunity to be one of them. I now
-              dedicate 100% of my time to help DREAMS COME TO LIFE through
-              CODING.
+              I am Matthias Guilbert, a FRONT END DEV 👨‍💻 from Paris making his
+              way to FULLSTACK.
+              <br />
+              <br />
+              I love to work with HTML, CSS, SASS, JAVASCRIPT, REACT, NODE JS,
+              MONGO DB...
+              <br />
+              <BouncingBalls />
+              <br />
+              It has not always been as such though... <br />
+              Before I fell in love with programming, I was 10+ years a LEADER
+              in various fields of work such as : the French Navy Commandos and
+              Riflemen 🎖️, Archaeology ⛏️ , Sports Coaching 🏋️ Textile Industry
+              👕, Arts and Culture 🎨 ...
+              <br />
+              <br />A happy/bumpy road ! However, I always felt inspired by
+              people with the specific technical skills to build from the ground
+              up. I always knew a day will come when I'll have the opportunity
+              to be one of them. I now dedicate 100% of my time to help DREAMS
+              COME TO LIFE through CODING.
             </p>
           </div>
         </div>

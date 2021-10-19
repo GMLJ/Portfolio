@@ -79,20 +79,32 @@ const Hamburger = ({ btnState }) => {
                 <ul>
                   <li>
                     {/* <Link ref={(el) => (line2 = el)} to="/solutions"> */}
-                    <Link to="/aboutMe/matthias-guilbert">About Me</Link>
+                    <a
+                      href="https://www.linkedin.com/in/matthias-guilbert/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      LINKEDIN
+                    </a>
                   </li>
                   <li>
                     {/* <Link ref={(el) => (line3 = el)} to="/contact-us"> */}
-                    <Link to="/">Work and Projects</Link>
+                    <a
+                      href="https://github.com/GMLJ"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      GITHUB
+                    </a>
                   </li>
                   <li>
                     {/* <Link ref={(el) => (line1 = el)} to="/opportunities"> */}
                     <a
-                      href="https://zellan.art/"
+                      href="https://codepen.io/GMLJ"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Life Blockchain
+                      CODEPEN
                     </a>
                   </li>
                   <li>
@@ -101,7 +113,7 @@ const Hamburger = ({ btnState }) => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Email
+                      EMAIL
                     </a>
                   </li>
                   {/* <li>

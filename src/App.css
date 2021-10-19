@@ -1,7 +1,9 @@
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: "HelveticaNeue-CondensedBold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+  font-family: "HelveticaNeue-CondensedBold", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
   font-weight: 900;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -19,43 +21,43 @@ body {
   0%,
   100% {
     -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
+    transform: translate(0, 0);
   }
   10% {
     -webkit-transform: translate(-5%, -10%);
-            transform: translate(-5%, -10%);
+    transform: translate(-5%, -10%);
   }
   20% {
     -webkit-transform: translate(-15%, 5%);
-            transform: translate(-15%, 5%);
+    transform: translate(-15%, 5%);
   }
   30% {
     -webkit-transform: translate(7%, -25%);
-            transform: translate(7%, -25%);
+    transform: translate(7%, -25%);
   }
   40% {
     -webkit-transform: translate(-5%, 25%);
-            transform: translate(-5%, 25%);
+    transform: translate(-5%, 25%);
   }
   50% {
     -webkit-transform: translate(-15%, 10%);
-            transform: translate(-15%, 10%);
+    transform: translate(-15%, 10%);
   }
   60% {
     -webkit-transform: translate(15%, 0%);
-            transform: translate(15%, 0%);
+    transform: translate(15%, 0%);
   }
   70% {
     -webkit-transform: translate(0%, 15%);
-            transform: translate(0%, 15%);
+    transform: translate(0%, 15%);
   }
   80% {
     -webkit-transform: translate(3%, 25%);
-            transform: translate(3%, 25%);
+    transform: translate(3%, 25%);
   }
   90% {
     -webkit-transform: translate(-10%, 10%);
-            transform: translate(-10%, 10%);
+    transform: translate(-10%, 10%);
   }
 }
 
@@ -63,50 +65,50 @@ body {
   0%,
   100% {
     -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
+    transform: translate(0, 0);
   }
   10% {
     -webkit-transform: translate(-5%, -10%);
-            transform: translate(-5%, -10%);
+    transform: translate(-5%, -10%);
   }
   20% {
     -webkit-transform: translate(-15%, 5%);
-            transform: translate(-15%, 5%);
+    transform: translate(-15%, 5%);
   }
   30% {
     -webkit-transform: translate(7%, -25%);
-            transform: translate(7%, -25%);
+    transform: translate(7%, -25%);
   }
   40% {
     -webkit-transform: translate(-5%, 25%);
-            transform: translate(-5%, 25%);
+    transform: translate(-5%, 25%);
   }
   50% {
     -webkit-transform: translate(-15%, 10%);
-            transform: translate(-15%, 10%);
+    transform: translate(-15%, 10%);
   }
   60% {
     -webkit-transform: translate(15%, 0%);
-            transform: translate(15%, 0%);
+    transform: translate(15%, 0%);
   }
   70% {
     -webkit-transform: translate(0%, 15%);
-            transform: translate(0%, 15%);
+    transform: translate(0%, 15%);
   }
   80% {
     -webkit-transform: translate(3%, 25%);
-            transform: translate(3%, 25%);
+    transform: translate(3%, 25%);
   }
   90% {
     -webkit-transform: translate(-10%, 10%);
-            transform: translate(-10%, 10%);
+    transform: translate(-10%, 10%);
   }
 }
 
 .container {
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   margin: 0 auto;
   padding: 0 32px;
   position: relative;
@@ -143,20 +145,20 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .container .row.space-between {
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .container .row.center {
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 header {
@@ -179,11 +181,11 @@ header .container .row {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 header .container .row .logo a {
@@ -203,11 +205,11 @@ header .container .row .menu {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   font-size: 1rem;
@@ -242,18 +244,6 @@ header .container .row .menu:hover {
   z-index: -1;
 }
 
-.hamburger-menu .menu-secondary-background-color-two {
-  background-color: #ed3833;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  z-index: -2;
-}
-
 .hamburger-menu .menu-layer {
   position: relative;
   background-color: #ed3833;
@@ -273,7 +263,7 @@ header .container .row .menu:hover {
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-animation: cameraPan 30s infinite;
-          animation: cameraPan 30s infinite;
+  animation: cameraPan 30s infinite;
 }
 
 .hamburger-menu .menu-layer .wrapper {
@@ -285,11 +275,11 @@ header .container .row .menu:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: relative;
   top: 12.5rem;
 }
@@ -316,7 +306,7 @@ header .container .row .menu:hover {
 
 .hamburger-menu .menu-layer .wrapper .menu-links nav ul li a {
   position: absolute;
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -360,6 +350,18 @@ header .container .row .menu:hover {
   }
 }
 
+.cursor {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 60rem;
+  height: 60rem;
+  border-radius: 50%;
+  mix-blend-mode: difference;
+  background-color: white;
+  z-index: -10;
+}
+
 main .container {
   position: relative;
   border: black;
@@ -367,12 +369,12 @@ main .container {
 
 main .container .backgr:before {
   -webkit-animation: grain 8s steps(10) infinite;
-          animation: grain 8s steps(10) infinite;
-  background-image: url("https://images.unsplash.com/photo-1433740944490-b669cb8b1c44?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1176&q=80");
+  animation: grain 8s steps(10) infinite;
+  background-image: url("https://images.unsplash.com/photo-1568274179323-00ae07c3e653?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80");
   content: "";
   height: 300%;
   left: -50%;
-  opacity: 0.05;
+  opacity: 0.1;
   position: fixed;
   top: -100%;
   width: 300%;
@@ -385,8 +387,8 @@ main .container.no-scroll {
 main .container .row {
   height: 100vh;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 main .container .row .image-container {
@@ -400,8 +402,8 @@ main .container .row .image-container .thumbnail {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   position: relative;
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
@@ -418,11 +420,11 @@ main .container .row .image-container .information {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin-top: 20px;
   text-transform: uppercase;
 }
@@ -435,8 +437,8 @@ main .container .row .image-container .information .devWeb span:nth-child(2) {
   height: 50vh;
   width: 100%;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
 }
 
 .single .container .top-row .top {
@@ -448,15 +450,11 @@ main .container .row .image-container .information .devWeb span:nth-child(2) {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.single .container .top-row .top .details .devWeb span:nth-child(2) {
-  margin-left: 16px;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .single .container .top-row .top .aboutMe {
@@ -525,17 +523,50 @@ main .container .row .image-container .information .devWeb span:nth-child(2) {
 }
 
 .detailed-information {
-  margin-top: 200px;
-  height: 600px;
+  margin-top: 18.75rem;
+  height: 37.5rem;
+}
+
+.detailed-information .container .rotateWebDev {
+  position: absolute;
+  top: -20%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -ms-grid-columns: max-content max-content;
+  grid-template-columns: -webkit-max-content -webkit-max-content;
+  grid-template-columns: max-content max-content;
+}
+
+.detailed-information .container .rotateWebDev h2 {
+  font-size: 6.25rem;
+  margin: 0;
+  -webkit-writing-mode: vertical-lr;
+  -ms-writing-mode: tb-lr;
+  writing-mode: vertical-lr;
+  text-align: center;
+  line-height: 0.8;
+  color: #ed3833;
+}
+
+.detailed-information .container .rotateWebDev .rotateWeb {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  color: #1e1f13;
 }
 
 .detailed-information .container .row {
+  margin: 0 5% 0 5%;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 .detailed-information .container .row h2 {
@@ -548,5 +579,21 @@ main .container .row .image-container .information .devWeb span:nth-child(2) {
   line-height: 28px;
   font-weight: 400;
   width: 800px;
+}
+
+.profileBox {
+  position: relative;
+  height: 100%;
+  width: 50%;
+}
+
+.profileBox .profilePicture {
+  position: absolute;
+  top: -25vh;
+  width: 90%;
+  height: auto;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 11;
 }
 /*# sourceMappingURL=App.css.map */
