@@ -79,16 +79,28 @@ const Hamburger = ({ btnState }) => {
                 <ul>
                   <li>
                     {/* <Link ref={(el) => (line2 = el)} to="/solutions"> */}
-                    <Link to="/aboutMe/matthias-guilbert">LINKEDIN</Link>
+                    <a
+                      href="https://www.linkedin.com/in/matthias-guilbert/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      LINKEDIN
+                    </a>
                   </li>
                   <li>
                     {/* <Link ref={(el) => (line3 = el)} to="/contact-us"> */}
-                    <Link to="/">GITHUB</Link>
+                    <a
+                      href="https://github.com/GMLJ"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      GITHUB
+                    </a>
                   </li>
                   <li>
                     {/* <Link ref={(el) => (line1 = el)} to="/opportunities"> */}
                     <a
-                      href="https://zellan.art/"
+                      href="https://codepen.io/GMLJ"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
