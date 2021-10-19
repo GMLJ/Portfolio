@@ -183,8 +183,8 @@ const AboutMe = ({ imageDetails }) => {
               />
             </div>
             <p>
-              I am Matthias Guilbert, a FRONT END Web Dev 👨‍💻 from Paris making
-              his way to FULLSTACK.
+              I am Matthias Guilbert, a FRONT END DEV 👨‍💻 from Paris making his
+              way to FULLSTACK.
               <br />
               <br />
               I love to work with HTML, CSS, SASS, JAVASCRIPT, REACT, NODE JS,
