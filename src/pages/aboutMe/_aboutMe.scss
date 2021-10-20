@@ -112,18 +112,23 @@
       }
     }
   }
-}
-.profileBox {
-  position: relative;
-  height: 100%;
-  width: 50%;
-  .profilePicture {
-    // border: 2px solid black;
-    position: absolute;
-    top: -25vh;
-    width: 90%;
-    height: auto;
-    transition: 0.5s;
-    z-index: 11;
+  .profileBox {
+    position: relative;
+    height: 100%;
+    width: 50%;
+    .profilePicture {
+      // border: 2px solid black;
+      position: absolute;
+      top: -25vh;
+      width: 90%;
+      height: auto;
+      transition: 0.5s;
+      z-index: 11;
+    }
+  }
+
+  .particles {
+    height: 110vh;
+    color: $white;
   }
 }

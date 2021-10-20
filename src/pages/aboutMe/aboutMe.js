@@ -6,6 +6,7 @@ import TypeWriterEffect from "react-typewriter-effect";
 //Components
 import ScrollForMore from "../../components/ScrollForMore.jsx";
 import BouncingBalls from "../../components/BouncingLogos";
+import Particle from "../../components/Particle";
 
 //Ease
 const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
@@ -47,6 +48,11 @@ const AboutMe = ({ imageDetails }) => {
   const scale = useTransform(scrollYProgress, [0, 1], [1, 1.5]);
   const x = useTransform(scrollYProgress, [0, 0.4], ["0", "15%"]);
   const opacity = useTransform(scrollYProgress, [0, 0.5], ["1", "0"]);
+  const colorFade = useTransform(
+    scrollYProgress,
+    [1.2, 2],
+    ["#fff", "#1b18bc"]
+  );
 
   const [canScroll, setCanScroll] = useState(false);
 
@@ -60,11 +66,11 @@ const AboutMe = ({ imageDetails }) => {
 
   return (
     <motion.div
+      className="single"
       onAnimationComplete={() => setCanScroll(true)}
       initial="initial"
       animate="animate"
       exit="exit"
-      className="single"
     >
       <motion.div
         className="headerClass"
@@ -97,7 +103,7 @@ const AboutMe = ({ imageDetails }) => {
                   fontWeight: 500,
                   fontSize: "1.5em",
                 }}
-                startDelay={3200}
+                startDelay={2500}
                 className="devWeb"
                 text="Développeur Web"
                 typeSpeed={60}
@@ -168,7 +174,10 @@ const AboutMe = ({ imageDetails }) => {
           <ScrollForMore />
         </div>
       </div>
-      <div className="detailed-information">
+      <motion.div
+        className="detailed-information"
+        style={{ backgroundColor: colorFade }}
+      >
         <div className="container">
           <div className="rotateWebDev">
             <h2 class="rotateWeb">WEB</h2>
@@ -206,7 +215,14 @@ const AboutMe = ({ imageDetails }) => {
             </p>
           </div>
         </div>
-      </div>
+        <motion.div
+          className="particles"
+          style={{ backgroundColor: colorFade }}
+        >
+          <Particle />
+          <h2>WORK</h2>
+        </motion.div>
+      </motion.div>
     </motion.div>
   );
 };
