@@ -609,7 +609,7 @@ main .container .row .image-container .information .devWeb span:nth-child(2) {
   position: absolute;
   color: transparent;
   background-image: repeating-linear-gradient(45deg, transparent 0, transparent 2px, #ffffff 2px, #ffffff 4px);
-  -webkit-background-clip: text;
+  background-clip: text;
   top: 0px;
   left: 0;
   z-index: -1;
@@ -623,7 +623,7 @@ main .container .row .image-container .information .devWeb span:nth-child(2) {
   position: absolute;
   color: transparent;
   background-image: repeating-linear-gradient(135deg, transparent 0, transparent 2px, #010020 2px, #010020 4px);
-  -webkit-background-clip: text;
+  background-clip: text;
   top: 0px;
   left: 0px;
   -webkit-transition: 0.5s;

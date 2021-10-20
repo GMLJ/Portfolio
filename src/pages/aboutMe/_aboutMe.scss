@@ -160,7 +160,7 @@
           $white 2px,
           $white 4px
         );
-        -webkit-background-clip: text;
+        background-clip: text;
         top: 0px;
         left: 0;
         z-index: -1;
@@ -179,7 +179,7 @@
           $zVeryDarkBlue 2px,
           $zVeryDarkBlue 4px
         );
-        -webkit-background-clip: text;
+        background-clip: text;
         top: 0px;
         left: 0px;
         transition: 0.5s;
