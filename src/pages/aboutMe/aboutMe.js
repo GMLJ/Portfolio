@@ -51,7 +51,7 @@ const AboutMe = ({ imageDetails }) => {
   const colorFade = useTransform(
     scrollYProgress,
     [1.2, 2],
-    ["#fff", "#1b18bc"]
+    ["#fff", "#010020"]
   );
 
   const [canScroll, setCanScroll] = useState(false);
@@ -219,8 +219,9 @@ const AboutMe = ({ imageDetails }) => {
           className="particles"
           style={{ backgroundColor: colorFade }}
         >
-          <Particle />
           <h2>WORK</h2>
+
+          <Particle />
         </motion.div>
       </motion.div>
     </motion.div>

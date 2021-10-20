@@ -16,10 +16,13 @@ const Particle = () => {
       params={{
         particles: {
           number: {
-            value: 150,
+            value: 50,
           },
           size: {
             value: 6,
+          },
+          color: {
+            value: ["#e1185d", "#ed3833", "#ffffff", "#1b75bc"],
           },
         },
         interactivity: {
@@ -27,6 +30,10 @@ const Particle = () => {
             onhover: {
               enable: true,
               mode: "repulse",
+            },
+            onclick: {
+              enable: true,
+              mode: "push",
             },
           },
         },

@@ -128,7 +128,16 @@
   }
 
   .particles {
-    height: 110vh;
-    color: $white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    h2 {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      height: 110vh;
+      color: $white;
+      font-size: 10rem;
+    }
   }
 }

@@ -189,7 +189,7 @@ header .container .row {
 
 header .container .row .menu {
   border: none;
-  background: none;
+  background: #ffffff;
   outline: none;
   cursor: pointer;
   border-radius: 100%;
@@ -569,7 +569,26 @@ main .container .row .image-container .information .devWeb span:nth-child(2) {
 }
 
 .detailed-information .particles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.detailed-information .particles h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
   height: 110vh;
   color: #ffffff;
+  font-size: 10rem;
 }
 /*# sourceMappingURL=App.css.map */
