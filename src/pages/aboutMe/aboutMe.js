@@ -186,9 +186,9 @@ const AboutMe = ({ imageDetails }) => {
           <div className="row">
             <div className="profileBox">
               <img
+                className="profilePicture"
                 src={require("../../images/profile.png")}
                 alt="profile"
-                className="profilePicture"
               />
             </div>
             <p>
@@ -219,7 +219,9 @@ const AboutMe = ({ imageDetails }) => {
           className="particles"
           style={{ backgroundColor: colorFade }}
         >
-          <h2>WORK</h2>
+          <h2>
+            <span>WORK</span>
+          </h2>
 
           <Particle />
         </motion.div>

@@ -16,14 +16,14 @@ const Particle = () => {
       params={{
         particles: {
           number: {
-            value: 50,
+            value: 200,
           },
           size: {
             value: 6,
           },
-          color: {
-            value: ["#e1185d", "#ed3833", "#ffffff", "#1b75bc"],
-          },
+          // color: {
+          //   value: ["#ed3833", "#ffffff", "#1b75bc"],
+          // },
         },
         interactivity: {
           events: {
