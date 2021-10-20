@@ -1,8 +1,10 @@
 import gsap from "gsap";
-import React, { useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useRef, useState } from "react";
 
 const Hamburger = ({ btnState }) => {
+  const [cursorX, setCursorX] = useState();
+  const [cursorY, setCursorY] = useState();
+
   let menu = useRef(null);
   let revealMenu = useRef(null);
   let revealMenuBackground = useRef(null);
@@ -62,6 +64,11 @@ const Hamburger = ({ btnState }) => {
       },
     });
   };
+
+  window.addEventListener("mousemove", (e) => {
+    setCursorX(e.pageX);
+    setCursorY(e.pageY);
+  });
 
   return (
     <div ref={(el) => (menu = el)} className="hamburger-menu">
@@ -125,6 +132,10 @@ const Hamburger = ({ btnState }) => {
                       Github
                     </a>
                   </li> */}
+                  <div
+                    className="cursor"
+                    style={{ left: cursorX + "px", top: cursorY + "px" }}
+                  ></div>
                 </ul>
               </nav>
             </div>

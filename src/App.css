@@ -278,86 +278,48 @@ header .container .row .menu:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
-  top: 12.5rem;
-}
-
-.hamburger-menu .menu-layer .wrapper .menu-links nav {
-  display: block;
 }
 
 .hamburger-menu .menu-layer .wrapper .menu-links nav ul {
-  padding: 0;
-  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .hamburger-menu .menu-layer .wrapper .menu-links nav ul li {
   list-style: none;
-  font-size: 6rem;
-  font-weight: 700;
-  cursor: pointer;
-  height: 8.4375rem;
-  overflow: hidden;
-  position: relative;
-  width: 43.75rem;
 }
 
 .hamburger-menu .menu-layer .wrapper .menu-links nav ul li a {
-  position: absolute;
-  color: #ffffff;
+  display: inline-block;
   text-decoration: none;
+  color: #ffffff;
+  font-size: 5rem;
+  margin: 1rem 0;
+  padding: 0 2rem;
 }
 
-.hamburger-menu .menu-layer .wrapper .menu-links nav ul li a:hover {
-  color: #1e1f13;
+.hamburger-menu .menu-layer .wrapper .menu-links nav ul li:hover ~ .cursor {
+  -webkit-transform: scale(5);
+          transform: scale(5);
 }
 
-@-webkit-keyframes cameraPan {
-  0% {
-    background-position: 0% 0%;
-  }
-  25% {
-    background-position: 10% 2.5%;
-  }
-  50% {
-    background-position: 0% 2.5%;
-  }
-  75% {
-    background-position: 2.5% 10%;
-  }
-  100% {
-    background-position: 2.5% 0%;
-  }
-}
-
-@keyframes cameraPan {
-  0% {
-    background-position: 0% 0%;
-  }
-  25% {
-    background-position: 10% 2.5%;
-  }
-  50% {
-    background-position: 0% 2.5%;
-  }
-  75% {
-    background-position: 2.5% 10%;
-  }
-  100% {
-    background-position: 2.5% 0%;
-  }
-}
-
-.cursor {
+.hamburger-menu .menu-layer .wrapper .menu-links nav ul .cursor {
+  width: 2rem;
+  height: 2rem;
+  background-color: #ffffff;
   position: fixed;
-  left: 0;
-  top: 0;
-  width: 60rem;
-  height: 60rem;
   border-radius: 50%;
+  pointer-events: none;
   mix-blend-mode: difference;
-  background-color: white;
-  z-index: -10;
 }
 
 main .container {
