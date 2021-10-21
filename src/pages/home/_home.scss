@@ -20,14 +20,12 @@ main {
       align-items: center;
       .image-container {
         position: relative;
-        .thumbnail {
+        .frame {
           overflow: hidden;
           border-top-left-radius: 50%;
           border-top-right-radius: 50%;
-          .frame {
-            img {
-              width: 100%;
-            }
+          img {
+            width: 100%;
           }
         }
         .information {
@@ -36,13 +34,8 @@ main {
           display: flex;
           align-items: center;
           justify-content: space-between;
-          margin-top: 20px;
+          margin-top: 1rem;
           text-transform: uppercase;
-          .devWeb {
-            span:nth-child(2) {
-              margin-left: 8px;
-            }
-          }
         }
       }
     }

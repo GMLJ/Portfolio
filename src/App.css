@@ -285,13 +285,13 @@ main .container .row .image-container {
   position: relative;
 }
 
-main .container .row .image-container .thumbnail {
+main .container .row .image-container .frame {
   overflow: hidden;
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
 }
 
-main .container .row .image-container .thumbnail .frame img {
+main .container .row .image-container .frame img {
   width: 100%;
 }
 
@@ -307,12 +307,8 @@ main .container .row .image-container .information {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 1rem;
   text-transform: uppercase;
-}
-
-main .container .row .image-container .information .devWeb span:nth-child(2) {
-  margin-left: 8px;
 }
 
 @-webkit-keyframes grain {

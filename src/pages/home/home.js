@@ -5,7 +5,7 @@ import ProgressiveImage from "react-progressive-image";
 
 const transition = { duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] };
 
-const Home = ({ imageDetails, image }) => (
+const Home = ({ imageDetails }) => (
   <>
     <main>
       <div className="container">
@@ -14,44 +14,40 @@ const Home = ({ imageDetails, image }) => (
           exit={{ opacity: 0 }}
           transition={{ duration: 1, ease: [1, 1, 1, 1] }}
         ></motion.div>
+
         <div className="row center">
           <div className="image-container">
             <div
-              className="thumbnail"
-              ref={image}
+              className="frame"
               style={{
                 width: imageDetails.width,
                 height: imageDetails.height,
               }}
             >
-              <div className="frame">
-                <Link to={`/aboutMe/matthias-guilbert`}>
-                  <ProgressiveImage
-                    src={require("../../images/MatthiasGuilbert.webp")}
-                    placeholder={require("../../images/izzat.jpg")}
-                  >
-                    {(src) => (
-                      <motion.img
-                        whileHover={{ scale: 1.1, y: "5%" }}
-                        transition={transition}
-                        src={src}
-                        alt="Artwork by Izzat Emmanuel"
-                      />
-                    )}
-                  </ProgressiveImage>
-                </Link>
-              </div>
+              <Link to={`/aboutMe/matthias-guilbert`}>
+                <ProgressiveImage
+                  src={require("../../images/MatthiasGuilbert.webp")}
+                  placeholder={require("../../images/izzat.jpg")}
+                >
+                  {(src) => (
+                    <motion.img
+                      whileHover={{ scale: 1.1, y: "5%" }}
+                      transition={transition}
+                      src={src}
+                      alt="Artwork by Izzat Emmanuel"
+                    />
+                  )}
+                </ProgressiveImage>
+              </Link>
             </div>
+
             <motion.div
               exit={{ opacity: 0 }}
               transition={transition}
               className="information"
             >
-              <div className="title">Matthias Guilbert</div>
-              <div className="devWeb">
-                <span>Développeur</span>
-                <span>Web</span>
-              </div>
+              <p>Matthias Guilbert</p>
+              <p>Développeur Web</p>
             </motion.div>
           </div>
         </div>
