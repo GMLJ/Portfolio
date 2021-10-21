@@ -67,7 +67,7 @@ const Hamburger = ({ btnState }) => {
   });
 
   return (
-    <div ref={(el) => (menu = el)} className="hamburger-menu">
+    <div ref={(el) => (menu = el)} className="contact-menu">
       <div
         ref={(el) => (revealMenuBackground = el)}
         className="menu-secondary-background-color"
