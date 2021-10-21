@@ -24,7 +24,7 @@ const Home = ({ imageDetails }) => (
                 height: imageDetails.height,
               }}
             >
-              <Link to={`/aboutMe/matthias-guilbert`}>
+              <Link to={`/portfolio/matthias-guilbert`}>
                 <ProgressiveImage
                   src={require("../../images/MatthiasGuilbert.webp")}
                   placeholder={require("../../images/izzat.jpg")}

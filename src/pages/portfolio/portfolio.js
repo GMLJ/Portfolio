@@ -110,7 +110,7 @@ const AboutMe = ({ imageDetails }) => {
                 hideCursorAfterText="true"
               />
             </motion.div>
-            <motion.div style={{ opacity: opacity }} className="aboutMe">
+            <motion.div style={{ opacity: opacity }} className="portfolio">
               <motion.span variants={firstName} className="first">
                 <motion.span variants={letter}>M</motion.span>
                 <motion.span variants={letter}>a</motion.span>

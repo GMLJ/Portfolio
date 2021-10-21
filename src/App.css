@@ -81,13 +81,10 @@ header {
   z-index: 30;
   width: 100%;
   font-weight: "700";
-  cursor: none;
 }
 
 header .container {
-  position: relative;
   z-index: 40;
-  height: 0;
 }
 
 header .container .row {
@@ -95,9 +92,6 @@ header .container .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -423,15 +417,15 @@ main .container .row .image-container .information {
           justify-content: space-between;
 }
 
-.single .container .top-row .top .aboutMe {
+.single .container .top-row .top .portfolio {
   overflow: hidden;
 }
 
-.single .container .top-row .top .aboutMe .first {
+.single .container .top-row .top .portfolio .first {
   margin-right: 72px;
 }
 
-.single .container .top-row .top .aboutMe span {
+.single .container .top-row .top .portfolio span {
   display: inline-block;
   position: relative;
   font-weight: 400;
@@ -440,7 +434,7 @@ main .container .row .image-container .information {
 }
 
 @media (max-width: 1440px) {
-  .single .container .top-row .top .aboutMe span {
+  .single .container .top-row .top .portfolio span {
     font-size: 128px;
   }
 }

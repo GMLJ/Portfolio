@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { withRouter, Link } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 import Hamburger from "./hamburger";
 
 const Header = ({ history }) => {
@@ -7,16 +7,16 @@ const Header = ({ history }) => {
   const [btnState, setBtnState] = useState({
     initial: false,
     clicked: null,
-    menuName: "Menu",
   });
-  //State for disabled button
+
+  //State for disabled button (triggers during opening and closing animations)
   const [disabled, setDisabled] = useState(false);
 
   //Page change on click
   useEffect(() => {
     //Listen for page change
     history.listen(() => {
-      setBtnState({ clicked: false, menuName: "Menu" });
+      setBtnState({ clicked: false });
     });
   });
 
@@ -41,7 +41,7 @@ const Header = ({ history }) => {
     }
   };
 
-  // Menu button disabled or not
+  // Menu button disabled (triggers during opening and closing animations)
   const disableMenu = () => {
     setDisabled(!disabled);
     setTimeout(() => {
@@ -50,7 +50,7 @@ const Header = ({ history }) => {
   };
 
   return (
-    <header>
+    <header style={{ cursor: btnState.clicked === true ? "none" : "default" }}>
       <div className="container">
         <div className="row">
           <button className="menu" disabled={disabled} onClick={handleMenu}>

@@ -5,7 +5,7 @@ import { AnimatePresence } from "framer-motion";
 
 //Pages
 import Home from "./pages/home/home";
-import AboutMe from "./pages/aboutMe/aboutMe";
+import AboutMe from "./pages/portfolio/portfolio";
 import Header from "./components/header/header";
 
 //Styles
@@ -31,7 +31,7 @@ function App() {
               />
               <Route
                 exact
-                path="/aboutMe/matthias-guilbert"
+                path="/portfolio/matthias-guilbert"
                 render={() => <AboutMe imageDetails={imageDetails} />}
               />
             </Switch>
