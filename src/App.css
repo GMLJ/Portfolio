@@ -15,92 +15,8 @@ body {
   overflow-x: hidden;
 }
 
-@-webkit-keyframes grain {
-  0%,
-  100% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-  10% {
-    -webkit-transform: translate(-5%, -10%);
-            transform: translate(-5%, -10%);
-  }
-  20% {
-    -webkit-transform: translate(-15%, 5%);
-            transform: translate(-15%, 5%);
-  }
-  30% {
-    -webkit-transform: translate(7%, -25%);
-            transform: translate(7%, -25%);
-  }
-  40% {
-    -webkit-transform: translate(-5%, 25%);
-            transform: translate(-5%, 25%);
-  }
-  50% {
-    -webkit-transform: translate(-15%, 10%);
-            transform: translate(-15%, 10%);
-  }
-  60% {
-    -webkit-transform: translate(15%, 0%);
-            transform: translate(15%, 0%);
-  }
-  70% {
-    -webkit-transform: translate(0%, 15%);
-            transform: translate(0%, 15%);
-  }
-  80% {
-    -webkit-transform: translate(3%, 25%);
-            transform: translate(3%, 25%);
-  }
-  90% {
-    -webkit-transform: translate(-10%, 10%);
-            transform: translate(-10%, 10%);
-  }
-}
-
-@keyframes grain {
-  0%,
-  100% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-  10% {
-    -webkit-transform: translate(-5%, -10%);
-            transform: translate(-5%, -10%);
-  }
-  20% {
-    -webkit-transform: translate(-15%, 5%);
-            transform: translate(-15%, 5%);
-  }
-  30% {
-    -webkit-transform: translate(7%, -25%);
-            transform: translate(7%, -25%);
-  }
-  40% {
-    -webkit-transform: translate(-5%, 25%);
-            transform: translate(-5%, 25%);
-  }
-  50% {
-    -webkit-transform: translate(-15%, 10%);
-            transform: translate(-15%, 10%);
-  }
-  60% {
-    -webkit-transform: translate(15%, 0%);
-            transform: translate(15%, 0%);
-  }
-  70% {
-    -webkit-transform: translate(0%, 15%);
-            transform: translate(0%, 15%);
-  }
-  80% {
-    -webkit-transform: translate(3%, 25%);
-            transform: translate(3%, 25%);
-  }
-  90% {
-    -webkit-transform: translate(-10%, 10%);
-            transform: translate(-10%, 10%);
-  }
+body.no-scroll {
+  overflow-y: hidden;
 }
 
 .container {
@@ -108,7 +24,7 @@ body {
       -ms-flex-positive: 2;
           flex-grow: 2;
   margin: 0 auto;
-  padding: 0 32px;
+  padding: 0 2rem;
   position: relative;
   width: auto;
   height: 100%;
@@ -335,24 +251,27 @@ header .container .row .menu:hover {
 
 main .container {
   position: relative;
-  border: black;
 }
 
-main .container .backgr:before {
+main .container .homeBackground {
   -webkit-animation: grain 8s steps(10) infinite;
           animation: grain 8s steps(10) infinite;
   background-image: url("https://images.unsplash.com/photo-1568274179323-00ae07c3e653?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80");
-  content: "";
   height: 300%;
   left: -50%;
   opacity: 0.1;
   position: fixed;
   top: -100%;
   width: 300%;
-}
-
-main .container.no-scroll {
-  overflow-y: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 main .container .row {
@@ -368,14 +287,6 @@ main .container .row .image-container {
 
 main .container .row .image-container .thumbnail {
   overflow: hidden;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  position: relative;
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
 }
@@ -402,6 +313,94 @@ main .container .row .image-container .information {
 
 main .container .row .image-container .information .devWeb span:nth-child(2) {
   margin-left: 8px;
+}
+
+@-webkit-keyframes grain {
+  0%,
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  10% {
+    -webkit-transform: translate(-5%, -10%);
+            transform: translate(-5%, -10%);
+  }
+  20% {
+    -webkit-transform: translate(-15%, 5%);
+            transform: translate(-15%, 5%);
+  }
+  30% {
+    -webkit-transform: translate(7%, -25%);
+            transform: translate(7%, -25%);
+  }
+  40% {
+    -webkit-transform: translate(-5%, 25%);
+            transform: translate(-5%, 25%);
+  }
+  50% {
+    -webkit-transform: translate(-15%, 10%);
+            transform: translate(-15%, 10%);
+  }
+  60% {
+    -webkit-transform: translate(15%, 0%);
+            transform: translate(15%, 0%);
+  }
+  70% {
+    -webkit-transform: translate(0%, 15%);
+            transform: translate(0%, 15%);
+  }
+  80% {
+    -webkit-transform: translate(3%, 25%);
+            transform: translate(3%, 25%);
+  }
+  90% {
+    -webkit-transform: translate(-10%, 10%);
+            transform: translate(-10%, 10%);
+  }
+}
+
+@keyframes grain {
+  0%,
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  10% {
+    -webkit-transform: translate(-5%, -10%);
+            transform: translate(-5%, -10%);
+  }
+  20% {
+    -webkit-transform: translate(-15%, 5%);
+            transform: translate(-15%, 5%);
+  }
+  30% {
+    -webkit-transform: translate(7%, -25%);
+            transform: translate(7%, -25%);
+  }
+  40% {
+    -webkit-transform: translate(-5%, 25%);
+            transform: translate(-5%, 25%);
+  }
+  50% {
+    -webkit-transform: translate(-15%, 10%);
+            transform: translate(-15%, 10%);
+  }
+  60% {
+    -webkit-transform: translate(15%, 0%);
+            transform: translate(15%, 0%);
+  }
+  70% {
+    -webkit-transform: translate(0%, 15%);
+            transform: translate(0%, 15%);
+  }
+  80% {
+    -webkit-transform: translate(3%, 25%);
+            transform: translate(3%, 25%);
+  }
+  90% {
+    -webkit-transform: translate(-10%, 10%);
+            transform: translate(-10%, 10%);
+  }
 }
 
 .single .container .top-row {
