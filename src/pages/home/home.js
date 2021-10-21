@@ -10,7 +10,7 @@ const Home = ({ imageDetails, image }) => (
     <main>
       <div className="container">
         <motion.div
-          className="backgr"
+          className="homeBackground"
           exit={{ opacity: 0 }}
           transition={{ duration: 1, ease: [1, 1, 1, 1] }}
         ></motion.div>

@@ -5,6 +5,7 @@ $zRed: #ed3833;
 $zLightBlue: #1b75bc;
 $zMidBlue: #2e46f5;
 $zDarkBlue: #1b18bc;
+$zVeryDarkBlue: #010020;
 
 * {
   box-sizing: border-box;
@@ -22,48 +23,16 @@ body {
   background-color: $white;
   color: $black;
   overflow-x: hidden;
-}
 
-@keyframes grain {
-  0%,
-  100% {
-    transform: translate(0, 0);
-  }
-  10% {
-    transform: translate(-5%, -10%);
-  }
-  20% {
-    transform: translate(-15%, 5%);
-  }
-  30% {
-    transform: translate(7%, -25%);
-  }
-  40% {
-    transform: translate(-5%, 25%);
-  }
-  50% {
-    transform: translate(-15%, 10%);
-  }
-  60% {
-    transform: translate(15%, 0%);
-  }
-  70% {
-    transform: translate(0%, 15%);
-  }
-  80% {
-    transform: translate(3%, 25%);
-  }
-  90% {
-    transform: translate(-10%, 10%);
+  &.no-scroll {
+    overflow-y: hidden;
   }
 }
 
 .container {
-  // border: 5px solid green;
-
-  flex-grow: 1;
+  flex-grow: 2;
   margin: 0 auto;
-  padding: 0 32px;
+  padding: 0 2rem;
   position: relative;
   width: auto;
   height: 100%;
@@ -82,7 +51,6 @@ body {
     max-width: 1560px;
   }
   .row {
-    // border: 2px solid blue;
     display: flex;
     align-items: center;
     &.space-between {

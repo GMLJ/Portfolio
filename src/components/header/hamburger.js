@@ -1,15 +1,13 @@
 import gsap from "gsap";
-import React, { useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useRef, useState } from "react";
 
 const Hamburger = ({ btnState }) => {
+  const [cursorX, setCursorX] = useState();
+  const [cursorY, setCursorY] = useState();
+
   let menu = useRef(null);
   let revealMenu = useRef(null);
   let revealMenuBackground = useRef(null);
-  // let hoverBack = useRef(null);
-  // let line1 = useRef(null);
-  // let line2 = useRef(null);
-  // let line3 = useRef(null);
 
   useEffect(() => {
     if (btnState.clicked === false) {
@@ -63,6 +61,11 @@ const Hamburger = ({ btnState }) => {
     });
   };
 
+  window.addEventListener("mousemove", (e) => {
+    setCursorX(e.clientX);
+    setCursorY(e.clientY);
+  });
+
   return (
     <div ref={(el) => (menu = el)} className="hamburger-menu">
       <div
@@ -70,64 +73,52 @@ const Hamburger = ({ btnState }) => {
         className="menu-secondary-background-color"
       ></div>
       <div ref={(el) => (revealMenu = el)} className="menu-layer">
-        {/* <div ref={(el) => (hoverBack = el)} className="hover-background"></div> */}
-        <div className="hover-background"></div>
         <div className="container">
-          <div className="wrapper">
-            <div className="menu-links">
-              <nav>
-                <ul>
-                  <li>
-                    {/* <Link ref={(el) => (line2 = el)} to="/solutions"> */}
-                    <a
-                      href="https://www.linkedin.com/in/matthias-guilbert/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      LINKEDIN
-                    </a>
-                  </li>
-                  <li>
-                    {/* <Link ref={(el) => (line3 = el)} to="/contact-us"> */}
-                    <a
-                      href="https://github.com/GMLJ"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      GITHUB
-                    </a>
-                  </li>
-                  <li>
-                    {/* <Link ref={(el) => (line1 = el)} to="/opportunities"> */}
-                    <a
-                      href="https://codepen.io/GMLJ"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      CODEPEN
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="mailto:guilbertmatthias32@gmail.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      EMAIL
-                    </a>
-                  </li>
-                  {/* <li>
-                    <a
-                      href="https://github.com/GMLJ"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Github
-                    </a>
-                  </li> */}
-                </ul>
-              </nav>
-            </div>
+          <div className="menu-links">
+            <nav>
+              <ul>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/matthias-guilbert/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    LINKEDIN
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/GMLJ"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GITHUB
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://codepen.io/GMLJ"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    CODEPEN
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="mailto:guilbertmatthias32@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    EMAIL
+                  </a>
+                </li>
+                <div
+                  className="cursor"
+                  style={{ left: cursorX + "px", top: cursorY + "px" }}
+                ></div>
+              </ul>
+            </nav>
           </div>
         </div>
       </div>
