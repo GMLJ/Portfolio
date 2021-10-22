@@ -9,7 +9,7 @@
         "components/header/_header.scss",
         "components/header/elements/_contact.scss",
         "components/hero/_hero.scss",
-        "components/aboutMe/_aboutMe.scss"
+        "components/work/_work.scss"
     ],
     "names": [],
     "file": "App.css"

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { motion, useTransform, useViewportScroll } from "framer-motion";
 import Header from "../../components/header/header";
 import Hero from "../../components/hero/hero";
-import AboutMe from "../../components/aboutMe/aboutMe";
+import Work from "../../components/work/work";
 
 //Components
 import BouncingBalls from "../../components/BouncingLogos";
@@ -81,7 +81,7 @@ const Portfolio = ({ imageDetails }) => {
           </div>
         </div>
 
-        <AboutMe />
+        <Work />
       </motion.div>
     </motion.div>
   );

@@ -4,7 +4,7 @@ import { motion, useTransform, useViewportScroll } from "framer-motion";
 //Components
 import Particle from "./elements/Particle";
 
-const AboutMe = () => {
+const Work = () => {
   const { scrollYProgress } = useViewportScroll();
   const backgroundFade = useTransform(
     scrollYProgress,
@@ -25,4 +25,4 @@ const AboutMe = () => {
   );
 };
 
-export default AboutMe;
+export default Work;
