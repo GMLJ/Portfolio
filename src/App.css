@@ -225,12 +225,12 @@ main .container .row .image-container .information {
   }
 }
 
-.detailed-information {
+.background-fade {
   margin-top: 18.75rem;
   height: 37.5rem;
 }
 
-.detailed-information .container .rotateWebDev {
+.background-fade .container .rotateWebDev {
   position: absolute;
   top: -20%;
   display: -ms-grid;
@@ -245,7 +245,7 @@ main .container .row .image-container .information {
       grid-template-columns: max-content max-content;
 }
 
-.detailed-information .container .rotateWebDev h2 {
+.background-fade .container .rotateWebDev h2 {
   font-size: 6.25rem;
   margin: 0;
   -webkit-writing-mode: vertical-lr;
@@ -256,13 +256,13 @@ main .container .row .image-container .information {
   color: #ed3833;
 }
 
-.detailed-information .container .rotateWebDev .rotateWeb {
+.background-fade .container .rotateWebDev .rotateWeb {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   color: #1e1f13;
 }
 
-.detailed-information .container .row {
+.background-fade .container .row {
   margin: 0 5% 0 5%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -272,11 +272,11 @@ main .container .row .image-container .information {
           align-items: flex-start;
 }
 
-.detailed-information .container .row h2 {
+.background-fade .container .row h2 {
   font-size: 28px;
 }
 
-.detailed-information .container .row p {
+.background-fade .container .row p {
   font-family: "Helvetica Neue";
   font-size: 16;
   line-height: 28px;
@@ -284,13 +284,13 @@ main .container .row .image-container .information {
   width: 800px;
 }
 
-.detailed-information .profileBox {
+.background-fade .profileBox {
   position: relative;
   height: 100%;
   width: 50%;
 }
 
-.detailed-information .profileBox .profilePicture {
+.background-fade .profileBox .profilePicture {
   position: absolute;
   top: -25vh;
   width: 90%;
@@ -300,78 +300,6 @@ main .container .row .image-container .information {
   z-index: 11;
   -webkit-filter: drop-shadow(8px -5px 10px #585858);
           filter: drop-shadow(8px -5px 10px #585858);
-}
-
-.detailed-information .particles {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 110vh;
-  color: #ffffff;
-  font-size: 8rem;
-}
-
-.detailed-information .particles h2 {
-  position: absolute;
-}
-
-.detailed-information .particles h2 span {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  display: block;
-  color: #ffffff;
-  letter-spacing: 8px;
-  cursor: pointer;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.detailed-information .particles h2 span::before {
-  content: "WORK";
-  opacity: 0;
-  position: absolute;
-  color: transparent;
-  background-image: repeating-linear-gradient(45deg, transparent 0, transparent 2px, #ffffff 2px, #ffffff 4px);
-  background-clip: text;
-  top: 0px;
-  left: 0;
-  z-index: -1;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.detailed-information .particles h2 span::after {
-  content: "WORK";
-  opacity: 0;
-  position: absolute;
-  color: transparent;
-  background-image: repeating-linear-gradient(135deg, transparent 0, transparent 2px, #010020 2px, #010020 4px);
-  background-clip: text;
-  top: 0px;
-  left: 0px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.detailed-information .particles h2 span:hover:before {
-  opacity: 1;
-  top: 10px;
-  left: 10px;
-}
-
-.detailed-information .particles h2 span:hover:after {
-  opacity: 1;
-  top: -10px;
-  left: -10px;
 }
 
 header {
@@ -605,5 +533,77 @@ header .container .row .menu:hover {
   margin-top: 8px;
   color: #ffffff;
   text-transform: uppercase;
+}
+
+.particles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 110vh;
+  color: #ffffff;
+  font-size: 8rem;
+}
+
+.particles h2 {
+  position: absolute;
+}
+
+.particles h2 span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: block;
+  color: #ffffff;
+  letter-spacing: 8px;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.particles h2 span::before {
+  content: "WORK";
+  opacity: 0;
+  position: absolute;
+  color: transparent;
+  background-image: repeating-linear-gradient(45deg, transparent 0, transparent 2px, #ffffff 2px, #ffffff 4px);
+  background-clip: text;
+  top: 0px;
+  left: 0;
+  z-index: -1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.particles h2 span::after {
+  content: "WORK";
+  opacity: 0;
+  position: absolute;
+  color: transparent;
+  background-image: repeating-linear-gradient(135deg, transparent 0, transparent 2px, #010020 2px, #010020 4px);
+  background-clip: text;
+  top: 0px;
+  left: 0px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.particles h2 span:hover:before {
+  opacity: 1;
+  top: 10px;
+  left: 10px;
+}
+
+.particles h2 span:hover:after {
+  opacity: 1;
+  top: -10px;
+  left: -10px;
 }
 /*# sourceMappingURL=App.css.map */

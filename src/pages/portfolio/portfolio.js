@@ -2,15 +2,15 @@ import React, { useEffect, useState } from "react";
 import { motion, useTransform, useViewportScroll } from "framer-motion";
 import Header from "../../components/header/header";
 import Hero from "../../components/hero/hero";
+import AboutMe from "../../components/aboutMe/aboutMe";
 
 //Components
 import BouncingBalls from "../../components/BouncingLogos";
-import Particle from "../../components/Particle";
 
 //Ease
 const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
 
-const AboutMe = ({ imageDetails }) => {
+const Portfolio = ({ imageDetails }) => {
   const { scrollYProgress } = useViewportScroll();
   const colorFade = useTransform(
     scrollYProgress,
@@ -40,7 +40,7 @@ const AboutMe = ({ imageDetails }) => {
       <Hero imageDetails={imageDetails} />
 
       <motion.div
-        className="detailed-information"
+        className="background-fade"
         style={{ backgroundColor: colorFade }}
       >
         <div className="container">
@@ -80,19 +80,11 @@ const AboutMe = ({ imageDetails }) => {
             </p>
           </div>
         </div>
-        <motion.div
-          className="particles"
-          style={{ backgroundColor: colorFade }}
-        >
-          <h2>
-            <span>WORK</span>
-          </h2>
 
-          <Particle />
-        </motion.div>
+        <AboutMe />
       </motion.div>
     </motion.div>
   );
 };
 
-export default AboutMe;
+export default Portfolio;

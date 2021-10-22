@@ -1,4 +1,4 @@
-.detailed-information {
+.background-fade {
   margin-top: 18.75rem;
   height: 37.5rem;
   .container {
@@ -50,78 +50,6 @@
       transition: 0.5s;
       z-index: 11;
       filter: drop-shadow(8px -5px 10px #585858);
-    }
-  }
-
-  .particles {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 110vh;
-    color: $white;
-    font-size: 8rem;
-    h2 {
-      position: absolute;
-      span {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        display: block;
-        color: $white;
-        letter-spacing: 8px;
-        cursor: pointer;
-        transition: 0.5s;
-      }
-
-      span::before {
-        content: "WORK";
-        opacity: 0;
-        position: absolute;
-        color: transparent;
-        background-image: repeating-linear-gradient(
-          45deg,
-          transparent 0,
-          transparent 2px,
-          $white 2px,
-          $white 4px
-        );
-        background-clip: text;
-        top: 0px;
-        left: 0;
-        z-index: -1;
-        transition: 0.5s;
-      }
-
-      span::after {
-        content: "WORK";
-        opacity: 0;
-        position: absolute;
-        color: transparent;
-        background-image: repeating-linear-gradient(
-          135deg,
-          transparent 0,
-          transparent 2px,
-          $zVeryDarkBlue 2px,
-          $zVeryDarkBlue 4px
-        );
-        background-clip: text;
-        top: 0px;
-        left: 0px;
-        transition: 0.5s;
-      }
-
-      span:hover:before {
-        opacity: 1;
-        top: 10px;
-        left: 10px;
-      }
-
-      span:hover:after {
-        opacity: 1;
-        top: -10px;
-        left: -10px;
-      }
     }
   }
 }
