@@ -9,30 +9,47 @@ const WorkCards = () => {
           {works.map(
             ({ title, description, image, tags, source, visit, id }) => (
               <div className="workCard" key={id}>
-                <img src={image} />
-                <div className="titleContent">
-                  <div className="headerCard">{title}</div>
+                <video
+                  loop
+                  onMouseOver={(e) => e.target.play()}
+                  onMouseOut={(e) => e.target.pause()}
+                  src={image}
+                />
+                <div className="halfContainer">
+                  <div className="titleContent">
+                    <div className="headerCard">{title}</div>
+                    <div className="hr" />
+                  </div>
+                  <div className="cardInfo">{description}</div>
                   <div className="hr" />
-                </div>
-                <div className="cardInfo">{description}</div>
-                <div className="hr" />
 
-                <div className="bottomCard">
-                  <div className="stack">Stack</div>
-                  <div className="tagList">
-                    {tags.map((tag, i) => (
-                      <div className="tag" key={i}>
-                        {tag}
-                      </div>
-                    ))}
+                  <div className="bottomCard">
+                    <div className="stack">Stack</div>
+                    <div className="tagList">
+                      {tags.map((tag, i) => (
+                        <div className="tag" key={i}>
+                          {tag}
+                        </div>
+                      ))}
+                    </div>
                   </div>
-                </div>
-                <div className="utilityList">
-                  <div className="externalLinks" href={visit}>
-                    Code
-                  </div>
-                  <div className="externalLinks" href={source}>
-                    Website
+                  <div className="utilityList">
+                    <a
+                      className="externalLinks"
+                      href={visit}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      code
+                    </a>
+                    <a
+                      className="externalLinks"
+                      href={source}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      website
+                    </a>
                   </div>
                 </div>
               </div>

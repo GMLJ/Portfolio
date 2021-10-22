@@ -2,36 +2,21 @@ export const works = [
   {
     title: "Zellan Creative Center",
     description:
-      "Using React, Node.js, Express & MongoDB you'll learn how to build a Full Stack MERN Application - from start to finish. The App is called Memories and it is a simple social media app that allows users to post interesting events that happened in their lives.",
-    image: "/images/ZellanWebsite.png",
-    tags: ["Mongo", "Express", "React", "Node"],
-    source: "https://google.com",
-    visit: "https://google.com",
+      'Construction de site web 🚧  de A à Z. Rédaction, production, editing des vidéos "Zellan interviews" 🎥 Editing des podcasts de Hanna Tadesse Haile 🎙️  Rédaction d\'articles ✍🏽  Editing and publication des ebooks de Alexander A. Hizikias 📚',
+    image: "/images/ZellanWebsite.mov",
+    tags: ["html", "css", "sass", "js", "gsap"],
+    source: "https://github.com/GMLJ/Zellan",
+    visit: "https://zellan.art/",
     id: 0,
   },
   {
     title: "Woyane Defi",
     description:
-      "This is a code repository for the corresponding YouTube video. In this tutorial, we're going to build and deploy a React Video Chat Application using WebRTC.",
-    image: "/images/WoyaneDeFi.png",
-    tags: ["React", "WebRTC"],
-    source: "https://google.com",
-    visit: "https://google.com",
+      "EN COURS - Site Web de Woyane DeFi - Construction de site web 🚧  de A à Z. Services de consulting sur les sujets relevant des technologies Blockchain et NFTs.",
+    image: "/images/WoyaneDeFi.mov",
+    tags: ["html", "css", "sass", "js"],
+    source: "https://github.com/GMLJ/Woyane-DeFi",
+    visit: "https://woyanedefi.netlify.app/#",
     id: 2,
   },
-];
-
-export const TimeLineData = [
-  { year: 2017, text: "Started my journey" },
-  { year: 2018, text: "Worked as a freelance developer" },
-  { year: 2019, text: "Founded JavaScript Mastery" },
-  { year: 2020, text: "Shared my projects with the world" },
-  { year: 2021, text: "Started my own platform" },
-];
-
-export const data = [
-  { number: 20, text: "Open Source Projects" },
-  { number: 1000, text: "Students" },
-  { number: 1900, text: "Github Followers" },
-  { number: 5000, text: "Github Stars" },
 ];

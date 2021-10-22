@@ -10,7 +10,7 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: #ffffff;
+  background-color: #dfdede;
   color: #0f1624;
   overflow-x: hidden;
 }
@@ -249,7 +249,7 @@ header .container .row {
 
 header .container .row .menu {
   border: none;
-  background: #ffffff;
+  background: #dfdede;
   outline: none;
   cursor: pointer;
   border-radius: 100%;
@@ -271,7 +271,7 @@ header .container .row .menu {
 
 header .container .row .menu:hover {
   background: #0f1624;
-  color: #ffffff;
+  color: #dfdede;
 }
 
 .contact-menu {
@@ -340,7 +340,7 @@ header .container .row .menu:hover {
 .contact-menu .menu-layer .menu-links nav ul li a {
   display: inline-block;
   text-decoration: none;
-  color: #ffffff;
+  color: #dfdede;
   font-size: 5rem;
   margin: 1rem 0;
   padding: 0 2rem;
@@ -357,7 +357,7 @@ header .container .row .menu:hover {
 .contact-menu .menu-layer .menu-links nav ul .cursor {
   width: 2rem;
   height: 2rem;
-  background-color: #ffffff;
+  background-color: #dfdede;
   position: fixed;
   border-radius: 50%;
   pointer-events: none;
@@ -464,13 +464,19 @@ header .container .row .menu:hover {
 
 .bottom-row .scroll-for-more .text {
   margin-top: 8px;
-  color: #ffffff;
+  color: #dfdede;
   text-transform: uppercase;
 }
 
 .background-fade {
+  background-color: #dfdede;
   margin-top: 18.75rem;
   height: 37.5rem;
+  z-index: 10;
+}
+
+.background-fade .container {
+  z-index: 9;
 }
 
 .background-fade .container .rotateWebDev {
@@ -565,7 +571,7 @@ header .container .row .menu:hover {
       -ms-flex-align: center;
           align-items: center;
   height: 110vh;
-  color: #ffffff;
+  color: #dfdede;
   font-size: 8rem;
 }
 
@@ -580,7 +586,7 @@ header .container .row .menu:hover {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   display: block;
-  color: #ffffff;
+  color: #dfdede;
   letter-spacing: 8px;
   cursor: pointer;
   -webkit-transition: 0.5s;
@@ -592,7 +598,7 @@ header .container .row .menu:hover {
   opacity: 0;
   position: absolute;
   color: transparent;
-  background-image: repeating-linear-gradient(45deg, transparent 0, transparent 2px, #ffffff 2px, #ffffff 4px);
+  background-image: repeating-linear-gradient(45deg, transparent 0, transparent 2px, #dfdede 2px, #dfdede 4px);
   background-clip: text;
   top: 0px;
   left: 0;
@@ -674,7 +680,7 @@ header .container .row .menu:hover {
           transform: scale(1.1);
 }
 
-.workCardsContainer .cardContainer .workCard img {
+.workCardsContainer .cardContainer .workCard video {
   border-radius: 10px 10px 0 0;
   width: 100%;
   height: 100%;
@@ -684,7 +690,8 @@ header .container .row .menu:hover {
   margin-bottom: 1rem;
 }
 
-.workCardsContainer .cardContainer .workCard .titleContent {
+.workCardsContainer .cardContainer .workCard .halfContainer {
+  height: 35rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -698,14 +705,30 @@ header .container .row .menu:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #ffffff;
+}
+
+.workCardsContainer .cardContainer .workCard .halfContainer .titleContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #dfdede;
   text-align: center;
   z-index: 20;
   width: 100%;
 }
 
-.workCardsContainer .headerCard {
-  color: #ffffff;
+.workCardsContainer .cardContainer .headerCard {
+  color: #dfdede;
   font-weight: 500;
   letter-spacing: 2px;
   font-size: 2rem;
@@ -717,10 +740,10 @@ header .container .row .menu:hover {
   position: relative;
 }
 
-.workCardsContainer .headerCard::before {
+.workCardsContainer .cardContainer .headerCard::before {
   content: "";
   position: absolute;
-  background: #ffffff;
+  background: #dfdede;
   width: 100%;
   height: 1px;
   bottom: 0;
@@ -734,14 +757,14 @@ header .container .row .menu:hover {
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
 
-.workCardsContainer .headerCard:hover::before {
+.workCardsContainer .cardContainer .headerCard:hover::before {
   -webkit-transform-origin: 0 0;
           transform-origin: 0 0;
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
 
-.workCardsContainer .hr {
+.workCardsContainer .cardContainer .hr {
   width: 50px;
   height: 3px;
   margin: 20px auto;
@@ -749,26 +772,26 @@ header .container .row .menu:hover {
   background: #ed3833;
 }
 
-.workCardsContainer .intro {
+.workCardsContainer .cardContainer .intro {
   width: 170px;
   margin: 0 auto;
-  color: #ffffff;
+  color: #dfdede;
   font-family: "Droid Serif", serif;
   font-size: 1rem;
   font-style: italic;
   line-height: 18px;
 }
 
-.workCardsContainer .cardInfo {
+.workCardsContainer .cardContainer .cardInfo {
   width: 100%;
   padding: 0 50px;
-  color: #ffffff;
+  color: #dfdede;
   font-style: 1rem;
   line-height: 24px;
   text-align: justify;
 }
 
-.workCardsContainer .bottomCard {
+.workCardsContainer .cardContainer .bottomCard {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -784,8 +807,8 @@ header .container .row .menu:hover {
           align-items: center;
 }
 
-.workCardsContainer .bottomCard .stack {
-  color: #ffffff;
+.workCardsContainer .cardContainer .bottomCard .stack {
+  color: #dfdede;
   text-align: center;
   font-size: 1.5rem;
   width: -webkit-fit-content;
@@ -795,10 +818,10 @@ header .container .row .menu:hover {
   position: relative;
 }
 
-.workCardsContainer .bottomCard .stack::before {
+.workCardsContainer .cardContainer .bottomCard .stack::before {
   content: "";
   position: absolute;
-  background: #ffffff;
+  background: #dfdede;
   width: 100%;
   height: 1px;
   bottom: 0;
@@ -812,14 +835,14 @@ header .container .row .menu:hover {
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
 
-.workCardsContainer .bottomCard .stack:hover::before {
+.workCardsContainer .cardContainer .bottomCard .stack:hover::before {
   -webkit-transform-origin: 0 0;
           transform-origin: 0 0;
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
 
-.workCardsContainer .bottomCard .tagList {
+.workCardsContainer .cardContainer .bottomCard .tagList {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -828,17 +851,17 @@ header .container .row .menu:hover {
   margin: 1.5rem 0 1rem 0;
 }
 
-.workCardsContainer .bottomCard .tag {
-  color: #ffffff;
+.workCardsContainer .cardContainer .bottomCard .tag {
+  color: #dfdede;
   font-size: 1rem;
   position: relative;
   margin: 0 1rem;
 }
 
-.workCardsContainer .bottomCard .tag::before {
+.workCardsContainer .cardContainer .bottomCard .tag::before {
   content: "";
   position: absolute;
-  background: #ffffff;
+  background: #dfdede;
   width: 100%;
   height: 1px;
   bottom: 0;
@@ -852,36 +875,39 @@ header .container .row .menu:hover {
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
 
-.workCardsContainer .bottomCard .tag:hover::before {
+.workCardsContainer .cardContainer .bottomCard .tag:hover::before {
   -webkit-transform-origin: 0 0;
           transform-origin: 0 0;
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
 
-.workCardsContainer .utilityList {
+.workCardsContainer .cardContainer .utilityList {
+  width: 100%;
   list-style-type: none;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   margin: 2.5rem 0;
 }
 
-.workCardsContainer .externalLinks {
+.workCardsContainer .cardContainer .externalLinks {
+  text-decoration: none;
   color: #0f1624;
   font-size: 1.6rem;
   padding: 1rem 1.5rem;
-  background: #ffffff;
+  background: #dfdede;
   border-radius: 15px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   cursor: pointer;
 }
 
-.workCardsContainer .externalLinks:hover {
+.workCardsContainer .cardContainer .externalLinks:hover {
   color: #0f1624;
   font-size: 2rem;
   -webkit-box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8);
