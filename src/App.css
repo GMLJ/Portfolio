@@ -659,8 +659,8 @@ header .container .row .menu:hover {
           flex-direction: column;
   background-color: #0f1624;
   border-radius: 10px;
-  -webkit-box-shadow: 3px 3px 20px rgba(255, 255, 255, 0.5);
-          box-shadow: 3px 3px 20px rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0px 0px 20px rgba(46, 70, 245, 0.5);
+          box-shadow: 0px 0px 20px rgba(46, 70, 245, 0.5);
   text-align: center;
   margin: 4rem;
   width: 30rem;
@@ -670,8 +670,8 @@ header .container .row .menu:hover {
 }
 
 .workCardsContainer .cardContainer .workCard:hover {
-  -webkit-box-shadow: 0px 0px 300px rgba(255, 255, 255, 0.5);
-          box-shadow: 0px 0px 300px rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0px 0px 300px #2e46f5;
+          box-shadow: 0px 0px 300px #2e46f5;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
