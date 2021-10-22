@@ -18,7 +18,6 @@ function App() {
 
   return (
     <Router>
-      {/* <Header /> */}
       <Route
         render={({ location }) => (
           <AnimatePresence initial={true} exitBeforeEnter>
