@@ -1,11 +1,10 @@
 $white: #ffffff;
-$black: #1e1f13;
 $zPink: #e1185d;
 $zRed: #ed3833;
 $zLightBlue: #1b75bc;
 $zMidBlue: #2e46f5;
 $zDarkBlue: #1b18bc;
-$zVeryDarkBlue: #010020;
+$zVeryDarkBlue: #0f1624;
 
 * {
   box-sizing: border-box;
@@ -21,7 +20,7 @@ body {
   padding: 0;
   margin: 0;
   background-color: $white;
-  color: $black;
+  color: $zVeryDarkBlue;
   overflow-x: hidden;
 
   &.no-scroll {
