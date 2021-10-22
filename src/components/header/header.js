@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { withRouter } from "react-router-dom";
+import { motion } from "framer-motion";
+
 import Hamburger from "./elements/contact";
 
-const Header = ({ history }) => {
+const Header = ({ history, transition }) => {
   //State of the menu button
   const [btnState, setBtnState] = useState({
     initial: false,
@@ -50,16 +52,28 @@ const Header = ({ history }) => {
   };
 
   return (
-    <header style={{ cursor: btnState.clicked === true ? "none" : "default" }}>
-      <div className="container">
-        <div className="row">
-          <button className="menu" disabled={disabled} onClick={handleMenu}>
-            Contact
-          </button>
+    <motion.div
+      className="headerClass"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{
+        opacity: 1,
+        y: 0,
+        transition: { delay: 1.5, ...transition },
+      }}
+    >
+      <header
+        style={{ cursor: btnState.clicked === true ? "none" : "default" }}
+      >
+        <div className="container">
+          <div className="row">
+            <button className="menu" disabled={disabled} onClick={handleMenu}>
+              Contact
+            </button>
+          </div>
         </div>
-      </div>
-      <Hamburger btnState={btnState} />
-    </header>
+        <Hamburger btnState={btnState} />
+      </header>
+    </motion.div>
   );
 };
 

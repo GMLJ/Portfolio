@@ -72,17 +72,7 @@ const AboutMe = ({ imageDetails }) => {
       animate="animate"
       exit="exit"
     >
-      <motion.div
-        className="headerClass"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{
-          opacity: 1,
-          y: 0,
-          transition: { delay: 1.5, ...transition },
-        }}
-      >
-        <Header />
-      </motion.div>
+      <Header transition={transition} />
 
       <div className="container fluid">
         <div className="row center top-row">
