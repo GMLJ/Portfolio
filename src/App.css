@@ -225,83 +225,6 @@ main .container .row .image-container .information {
   }
 }
 
-.background-fade {
-  margin-top: 18.75rem;
-  height: 37.5rem;
-}
-
-.background-fade .container .rotateWebDev {
-  position: absolute;
-  top: -20%;
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -ms-grid-columns: max-content max-content;
-      grid-template-columns: -webkit-max-content -webkit-max-content;
-      grid-template-columns: max-content max-content;
-}
-
-.background-fade .container .rotateWebDev h2 {
-  font-size: 6.25rem;
-  margin: 0;
-  -webkit-writing-mode: vertical-lr;
-      -ms-writing-mode: tb-lr;
-          writing-mode: vertical-lr;
-  text-align: center;
-  line-height: 0.8;
-  color: #ed3833;
-}
-
-.background-fade .container .rotateWebDev .rotateWeb {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  color: #1e1f13;
-}
-
-.background-fade .container .row {
-  margin: 0 5% 0 5%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-.background-fade .container .row h2 {
-  font-size: 28px;
-}
-
-.background-fade .container .row p {
-  font-family: "Helvetica Neue";
-  font-size: 16;
-  line-height: 28px;
-  font-weight: 400;
-  width: 800px;
-}
-
-.background-fade .profileBox {
-  position: relative;
-  height: 100%;
-  width: 50%;
-}
-
-.background-fade .profileBox .profilePicture {
-  position: absolute;
-  top: -25vh;
-  width: 90%;
-  height: auto;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  z-index: 11;
-  -webkit-filter: drop-shadow(8px -5px 10px #585858);
-          filter: drop-shadow(8px -5px 10px #585858);
-}
-
 header {
   font-size: 1rem;
   position: fixed;
@@ -446,7 +369,7 @@ header .container .row .menu:hover {
           transform: scale(5);
 }
 
-.single .container .top-row {
+.top-row {
   height: 50vh;
   width: 100%;
   -webkit-box-align: end;
@@ -454,11 +377,11 @@ header .container .row .menu:hover {
           align-items: flex-end;
 }
 
-.single .container .top-row .top {
+.top-row .top {
   padding-bottom: 40px;
 }
 
-.single .container .top-row .top .details {
+.top-row .top .details {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -470,15 +393,15 @@ header .container .row .menu:hover {
           justify-content: space-between;
 }
 
-.single .container .top-row .top .portfolio {
+.top-row .top .portfolio {
   overflow: hidden;
 }
 
-.single .container .top-row .top .portfolio .first {
+.top-row .top .portfolio .first {
   margin-right: 72px;
 }
 
-.single .container .top-row .top .portfolio span {
+.top-row .top .portfolio span {
   display: inline-block;
   position: relative;
   font-weight: 400;
@@ -487,22 +410,22 @@ header .container .row .menu:hover {
 }
 
 @media (max-width: 1440px) {
-  .single .container .top-row .top .portfolio span {
+  .top-row .top .portfolio span {
     font-size: 128px;
   }
 }
 
-.single .container .bottom-row {
+.bottom-row {
   height: 50vh;
   position: relative;
 }
 
-.single .container .bottom-row .bottom {
+.bottom-row .bottom {
   height: 100%;
   width: 100%;
 }
 
-.single .container .bottom-row .bottom .thumbnail-single {
+.bottom-row .bottom .thumbnail-single {
   width: 100%;
   height: 800px;
   margin: 0 auto;
@@ -512,27 +435,104 @@ header .container .row .menu:hover {
   right: 0;
 }
 
-.single .container .bottom-row .bottom .thumbnail-single .frame-single img {
+.bottom-row .bottom .thumbnail-single .frame-single img {
   position: absolute;
   width: 100%;
 }
 
-.single .container .bottom-row .scroll-for-more {
+.bottom-row .scroll-for-more {
   position: absolute;
   bottom: 250px;
   left: 150px;
   z-index: 20;
 }
 
-.single .container .bottom-row .scroll-for-more .icon svg {
+.bottom-row .scroll-for-more .icon svg {
   height: auto;
   width: 28px;
 }
 
-.single .container .bottom-row .scroll-for-more .text {
+.bottom-row .scroll-for-more .text {
   margin-top: 8px;
   color: #ffffff;
   text-transform: uppercase;
+}
+
+.background-fade {
+  margin-top: 18.75rem;
+  height: 37.5rem;
+}
+
+.background-fade .container .rotateWebDev {
+  position: absolute;
+  top: -20%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-grid-columns: max-content max-content;
+      grid-template-columns: -webkit-max-content -webkit-max-content;
+      grid-template-columns: max-content max-content;
+}
+
+.background-fade .container .rotateWebDev h2 {
+  font-size: 6.25rem;
+  margin: 0;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  text-align: center;
+  line-height: 0.8;
+  color: #ed3833;
+}
+
+.background-fade .container .rotateWebDev .rotateWeb {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  color: #1e1f13;
+}
+
+.background-fade .container .row {
+  margin: 0 5% 0 5%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.background-fade .container .row h2 {
+  font-size: 28px;
+}
+
+.background-fade .container .row p {
+  font-family: "Helvetica Neue";
+  font-size: 16;
+  line-height: 28px;
+  font-weight: 400;
+  width: 800px;
+}
+
+.background-fade .profileBox {
+  position: relative;
+  height: 100%;
+  width: 50%;
+}
+
+.background-fade .profileBox .profilePicture {
+  position: absolute;
+  top: -25vh;
+  width: 90%;
+  height: auto;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 11;
+  -webkit-filter: drop-shadow(8px -5px 10px #585858);
+          filter: drop-shadow(8px -5px 10px #585858);
 }
 
 .particles {

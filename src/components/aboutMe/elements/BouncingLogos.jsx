@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { findByLabelText } from "@testing-library/dom";
 
 const BouncingBalls = () => {
   return (
