@@ -3,7 +3,7 @@ import { motion, useTransform, useViewportScroll } from "framer-motion";
 import TypeWriterEffect from "react-typewriter-effect";
 
 //Component
-import ScrollForMore from "../../components/ScrollForMore.jsx";
+import ScrollForMore from "./elements/ScrollForMore.jsx";
 
 //Ease
 const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
