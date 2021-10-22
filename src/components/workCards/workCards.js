@@ -17,7 +17,11 @@ const WorkCards = () => {
                 />
                 <div className="halfContainer">
                   <div className="titleContent">
-                    <div className="headerCard">{title}</div>
+                    <div className="headerCard">
+                      <a href={visit} target="_blank" rel="noopener noreferrer">
+                        {title}
+                      </a>
+                    </div>
                     <div className="hr" />
                   </div>
                   <div className="cardInfo">{description}</div>
@@ -36,7 +40,7 @@ const WorkCards = () => {
                   <div className="utilityList">
                     <a
                       className="externalLinks"
-                      href={visit}
+                      href={source}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -44,7 +48,7 @@ const WorkCards = () => {
                     </a>
                     <a
                       className="externalLinks"
-                      href={source}
+                      href={visit}
                       target="_blank"
                       rel="noopener noreferrer"
                     >

@@ -23,6 +23,7 @@
       height: auto;
       transition: 0.2s ease-in-out;
       &:hover {
+        box-shadow: 0px 0px 300px rgba(255, 255, 255, 0.5);
         transform: scale(1.1);
       }
       & video {
@@ -61,6 +62,10 @@
       width: fit-content;
       z-index: 20;
       position: relative;
+      a {
+        color: $white;
+        text-decoration: none;
+      }
     }
     .headerCard::before {
       content: "";
@@ -114,21 +119,6 @@
         z-index: 20;
         position: relative;
       }
-      .stack::before {
-        content: "";
-        position: absolute;
-        background: $white;
-        width: 100%;
-        height: 1px;
-        bottom: 0;
-        transform-origin: 150% 0;
-        transform: scaleX(0);
-        transition: transform 0.4s;
-      }
-      .stack:hover::before {
-        transform-origin: 0 0;
-        transform: scaleX(1);
-      }
 
       .tagList {
         display: flex;
@@ -138,23 +128,7 @@
       .tag {
         color: $white;
         font-size: 1rem;
-        position: relative;
         margin: 0 1rem;
-      }
-      .tag::before {
-        content: "";
-        position: absolute;
-        background: $white;
-        width: 100%;
-        height: 1px;
-        bottom: 0;
-        transform-origin: 150% 0;
-        transform: scaleX(0);
-        transition: transform 0.4s;
-      }
-      .tag:hover::before {
-        transform-origin: 0 0;
-        transform: scaleX(1);
       }
     }
     .utilityList {

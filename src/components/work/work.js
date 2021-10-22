@@ -10,7 +10,7 @@ const Work = () => {
   const backgroundFade = useTransform(
     scrollYProgress,
     [1.2, 2],
-    ["#fff", "#0F1624"]
+    ["#f1f1f1", "#0F1624"]
   );
   return (
     <>
