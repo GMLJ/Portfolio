@@ -60,3 +60,36 @@ body {
     }
   }
 }
+
+//max width mobile: 600px - 37.5 rem
+//max width tablet: 768px - 48 rem
+//max width laptop: 992px - 62 rem
+//max width large screen: 1200px - 75 rem
+
+//@include breakpoint-down(small) {
+//}
+
+$breakpoints-up: (
+  "small": "37.5rem",
+  "smallMedium": "48rem",
+  "medium": "62rem",
+  "large": "75rem",
+);
+
+$breakpoints-down: (
+  "small": "37.4rem",
+  "smallMedium": "47.9rem",
+  "medium": "61.9rem",
+  "large": "74.9rem",
+);
+
+@mixin breakpoint-up($size) {
+  @media (min-width: map-get($breakpoints-up, $size)) {
+    @content;
+  }
+}
+@mixin breakpoint-down($size) {
+  @media (max-width: map-get($breakpoints-down, $size)) {
+    @content;
+  }
+}
