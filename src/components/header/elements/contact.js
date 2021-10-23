@@ -73,54 +73,50 @@ const Hamburger = ({ btnState }) => {
         className="menu-secondary-background-color"
       ></div>
       <div ref={(el) => (revealMenu = el)} className="menu-layer">
-        <div className="container">
-          <div className="menu-links">
-            <nav>
-              <ul>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/in/matthias-guilbert/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    LINKEDIN
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://github.com/GMLJ"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    GITHUB
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://codepen.io/GMLJ"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    CODEPEN
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="mailto:guilbertmatthias32@gmail.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    EMAIL
-                  </a>
-                </li>
-                <div
-                  className="cursor"
-                  style={{ left: cursorX + "px", top: cursorY + "px" }}
-                ></div>
-              </ul>
-            </nav>
-          </div>
-        </div>
+        <nav>
+          <ul>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/matthias-guilbert/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LINKEDIN
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/GMLJ"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GITHUB
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://codepen.io/GMLJ"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                CODEPEN
+              </a>
+            </li>
+            <li>
+              <a
+                href="mailto:guilbertmatthias32@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                EMAIL
+              </a>
+            </li>
+            <div
+              className="cursor"
+              style={{ left: cursorX + "px", top: cursorY + "px" }}
+            ></div>
+          </ul>
+        </nav>
       </div>
     </div>
   );

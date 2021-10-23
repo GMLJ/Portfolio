@@ -53,7 +53,6 @@ const Header = ({ history, transition }) => {
 
   return (
     <motion.div
-      className="headerClass"
       initial={{ opacity: 0, y: 20 }}
       animate={{
         opacity: 1,
@@ -64,13 +63,9 @@ const Header = ({ history, transition }) => {
       <header
         style={{ cursor: btnState.clicked === true ? "none" : "default" }}
       >
-        <div className="container">
-          <div className="row">
-            <button className="menu" disabled={disabled} onClick={handleMenu}>
-              Contact
-            </button>
-          </div>
-        </div>
+        <button className="menu" disabled={disabled} onClick={handleMenu}>
+          Contact
+        </button>
         <Hamburger btnState={btnState} />
       </header>
     </motion.div>
