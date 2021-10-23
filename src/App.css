@@ -96,6 +96,12 @@ body.no-scroll {
   text-transform: uppercase;
 }
 
+@media (max-width: 320px) {
+  .pageWrapper .info .information {
+    font-size: 0.8rem;
+  }
+}
+
 @-webkit-keyframes grain {
   0%,
   100% {

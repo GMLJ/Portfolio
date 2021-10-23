@@ -28,26 +28,29 @@ body {
   }
 }
 
-//max width mobile: 600px - 37.5 rem
-//max width tablet: 768px - 48 rem
-//max width laptop: 992px - 62 rem
-//max width large screen: 1200px - 75 rem
+//max width small: 280px
+//max width mobile: 320px
+//max width tablet: 768px
+//max width laptop: 992px
+//max width large: 1200px
 
 //@include breakpoint-down(small) {
 //}
 
 $breakpoints-up: (
-  "small": "37.5rem",
-  "smallMedium": "48rem",
-  "medium": "62rem",
-  "large": "75rem",
+  "small": "281px",
+  "mobile": "321px",
+  "tablet": "769px",
+  "laptop": "993px",
+  "large": "1201px",
 );
 
 $breakpoints-down: (
-  "small": "37.4rem",
-  "smallMedium": "47.9rem",
-  "medium": "61.9rem",
-  "large": "74.9rem",
+  "small": "280px",
+  "mobile": "320px",
+  "tablet": "768px",
+  "laptop": "992px",
+  "large": "1200px",
 );
 
 @mixin breakpoint-up($size) {

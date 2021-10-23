@@ -11,10 +11,26 @@ import Portfolio from "./pages/portfolio/portfolio";
 import "./App.scss";
 
 function App() {
-  const imageDetails = {
-    width: 524,
-    height: "75vh",
+  const imageSize = () => {
+    if (window.innerWidth > 600) {
+      return {
+        width: 524,
+        height: "75vh",
+      };
+    } else if (window.innerWidth > 350) {
+      return {
+        width: 320,
+        height: "60vh",
+      };
+    } else {
+      return {
+        width: 260,
+        height: "60vh",
+      };
+    }
   };
+
+  const imageDetails = imageSize();
 
   return (
     <Router>
