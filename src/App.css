@@ -75,11 +75,19 @@ body.no-scroll {
           justify-content: center;
 }
 
-main .container {
-  position: relative;
+.pageWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-main .container .homeBackground {
+.pageWrapper .homeBackground {
   -webkit-animation: grain 8s steps(10) infinite;
           animation: grain 8s steps(10) infinite;
   background-image: url("https://images.unsplash.com/photo-1568274179323-00ae07c3e653?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80");
@@ -100,30 +108,38 @@ main .container .homeBackground {
           justify-content: center;
 }
 
-main .container .row {
-  height: 100vh;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-main .container .row .image-container {
-  position: relative;
-}
-
-main .container .row .image-container .frame {
+.pageWrapper .frame {
+  position: absolute;
   overflow: hidden;
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
 }
 
-main .container .row .image-container .frame img {
+.pageWrapper .frame img {
   width: 100%;
 }
 
-main .container .row .image-container .information {
-  position: absolute;
+.pageWrapper .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.pageWrapper .info .information {
+  position: relative;
   width: 100%;
+  bottom: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -133,7 +149,6 @@ main .container .row .image-container .information {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 1rem;
   text-transform: uppercase;
 }
 
@@ -379,19 +394,25 @@ header .container .row .menu:hover {
           flex-direction: column;
 }
 
-.top-row {
+.heroContainer .top-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
   height: 50vh;
   width: 100%;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
 }
 
-.top-row .top {
-  padding-bottom: 40px;
-}
-
-.top-row .top .details {
+.heroContainer .top-row .jobAndName .details {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -403,39 +424,27 @@ header .container .row .menu:hover {
           justify-content: space-between;
 }
 
-.top-row .top .portfolio {
+.heroContainer .top-row .jobAndName .portfolio {
   overflow: hidden;
 }
 
-.top-row .top .portfolio .first {
-  margin-right: 72px;
+.heroContainer .top-row .jobAndName .portfolio .first {
+  margin-right: 4.5rem;
 }
 
-.top-row .top .portfolio span {
+.heroContainer .top-row .jobAndName .portfolio span {
   display: inline-block;
   position: relative;
   font-weight: 400;
-  font-size: 224px;
+  font-size: 8rem;
   font-family: "Maragsa";
 }
 
-@media (max-width: 1440px) {
-  .top-row .top .portfolio span {
-    font-size: 128px;
-  }
-}
-
-.bottom-row {
+.heroContainer .bottom-row {
   height: 50vh;
-  position: relative;
 }
 
-.bottom-row .bottom {
-  height: 100%;
-  width: 100%;
-}
-
-.bottom-row .bottom .thumbnail-single {
+.heroContainer .bottom-row .thumbnail-single {
   width: 100%;
   height: 800px;
   margin: 0 auto;
@@ -445,24 +454,24 @@ header .container .row .menu:hover {
   right: 0;
 }
 
-.bottom-row .bottom .thumbnail-single .frame-single img {
+.heroContainer .bottom-row .thumbnail-single img {
   position: absolute;
   width: 100%;
 }
 
-.bottom-row .scroll-for-more {
+.heroContainer .scroll-for-more {
   position: absolute;
   bottom: 250px;
   left: 150px;
   z-index: 20;
 }
 
-.bottom-row .scroll-for-more .icon svg {
+.heroContainer .scroll-for-more .icon svg {
   height: auto;
   width: 28px;
 }
 
-.bottom-row .scroll-for-more .text {
+.heroContainer .scroll-for-more .text {
   margin-top: 8px;
   color: #f1f1f1;
   text-transform: uppercase;

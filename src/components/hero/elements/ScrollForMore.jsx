@@ -8,13 +8,18 @@ const ScrollForMore = () => {
   const opacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
   return (
     <motion.div
+      className="scroll-for-more"
       style={{ opacity: opacity }}
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0, transition: { delay: 1.5, ...transition } }}
-      className="scroll-for-more"
     >
       <div className="icon">
-        <svg xmlns="http://www.w3.org/2000/svg" width="23.539" height="29.985" viewBox="0 0 23.539 29.985">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="23.539"
+          height="29.985"
+          viewBox="0 0 23.539 29.985"
+        >
           <g id="down-arrow" transform="translate(-67.666 0.6)">
             <g id="Group_1" data-name="Group 1" transform="translate(68.266)">
               <path

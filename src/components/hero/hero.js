@@ -47,9 +47,9 @@ const Hero = ({ imageDetails }) => {
   const opacity = useTransform(scrollYProgress, [0, 0.5], ["1", "0"]);
 
   return (
-    <div className="container fluid">
-      <div className="row center top-row">
-        <div className="top">
+    <div className="heroContainer">
+      <div className="top-row">
+        <div className="jobAndName">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{
@@ -97,46 +97,42 @@ const Hero = ({ imageDetails }) => {
           </motion.div>
         </div>
       </div>
-      <div className="row bottom-row">
-        <div className="bottom">
-          <div className="image-container-single">
-            <motion.div
-              style={{ x: x }}
-              initial={{
-                y: "-50%",
-                width: imageDetails.width,
-                height: imageDetails.height,
-                borderTopLeftRadius: "50%",
-                borderTopRightRadius: "50%",
-              }}
-              animate={{
-                y: 0,
-                width: "100%",
-                height: window.innerWidth > 1440 ? 800 : 400,
-                borderTopLeftRadius: "0%",
-                borderTopRightRadius: "0%",
-                transition: { delay: 0.2, ...transition },
-              }}
-              className="thumbnail-single"
-            >
-              <div className="frame-single">
-                <motion.img
-                  style={{ scale: scale }}
-                  initial={{ scale: 1.1, y: "5%" }}
-                  animate={{
-                    transition: { delay: 0.2, ...transition },
-                    y: window.innerWidth > 1440 ? -200 : 0,
-                  }}
-                  src={require("../../images/MatthiasGuilbert.webp")}
-                  alt="Artwork by Izzat Emmanuel"
-                />
-              </div>
-            </motion.div>
-          </div>
-        </div>
+
+      <div className="bottom-row">
+        <motion.div
+          className="thumbnail-single"
+          style={{ x: x }}
+          initial={{
+            y: "-50%",
+            width: imageDetails.width,
+            height: imageDetails.height,
+            borderTopLeftRadius: "50%",
+            borderTopRightRadius: "50%",
+          }}
+          animate={{
+            y: 0,
+            width: "100%",
+            height: window.innerWidth > 1440 ? 800 : 400,
+            borderTopLeftRadius: "0%",
+            borderTopRightRadius: "0%",
+            transition: { delay: 0.2, ...transition },
+          }}
+        >
+          <motion.img
+            style={{ scale: scale }}
+            initial={{ scale: 1.1, y: "5%" }}
+            animate={{
+              transition: { delay: 0.2, ...transition },
+              y: window.innerWidth > 1440 ? -200 : 0,
+            }}
+            src={require("../../images/MatthiasGuilbert.webp")}
+            alt="Artwork by Izzat Emmanuel"
+          />
+        </motion.div>
         <ScrollForMore />
       </div>
     </div>
+    // </div>
   );
 };
 

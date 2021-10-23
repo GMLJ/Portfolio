@@ -13,7 +13,7 @@ import "./App.scss";
 function App() {
   const imageDetails = {
     width: 524,
-    height: 650,
+    height: "75vh",
   };
 
   return (
