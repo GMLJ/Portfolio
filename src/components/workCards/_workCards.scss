@@ -1,31 +1,30 @@
-.workCardsContainer {
+.cardContainer {
   display: flex;
+  place-items: center;
+  justify-content: center;
+  align-items: start;
   position: relative;
+  width: 100vw;
   background-color: $zVeryDarkBlue;
+  padding: 4rem;
 
-  .cardContainer {
-    width: 100vw;
+  .workCard {
     display: flex;
-    padding: 4rem;
-    place-items: center;
-    justify-content: center;
-    align-items: start;
-
-    .workCard {
-      display: flex;
-      flex-direction: column;
-      background-color: $zVeryDarkBlue;
-      border-radius: 10px;
-      box-shadow: 0px 0px 50px rgba(46, 70, 245, 0.5);
-      text-align: center;
-      margin: 4rem;
-      width: 30rem;
-      height: auto;
-      transition: 0.2s ease-in-out;
-      &:hover {
-        box-shadow: 0px 0px 300px rgba(46, 70, 245, 1);
-        transform: scale(1.1);
-      }
+    flex-direction: column;
+    background-color: $zVeryDarkBlue;
+    border-radius: 10px;
+    box-shadow: 0px 0px 50px rgba(46, 70, 245, 0.5);
+    text-align: center;
+    margin: 4rem;
+    width: 30rem;
+    height: 50rem;
+    transition: 0.2s ease-in-out;
+    &:hover {
+      box-shadow: 0px 0px 300px rgba(46, 70, 245, 1);
+      transform: scale(1.1);
+    }
+    .videoContainer {
+      height: 35%;
       & video {
         border-radius: 10px 10px 0 0;
         width: 100%;
@@ -34,126 +33,107 @@
         overflow: hidden;
         margin-bottom: 1rem;
       }
-      .halfContainer {
-        height: 35rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        .titleContent {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          color: $white;
-          text-align: center;
-          z-index: 20;
-          width: 100%;
-        }
-      }
     }
+    .halfContainer {
+      height: 65%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 
-    .headerCard {
-      color: $white;
+  .headerCard {
+    color: $white;
+    position: relative;
+    a {
       font-weight: 500;
       letter-spacing: 2px;
       font-size: 2rem;
       padding: 0.5rem 0;
       width: fit-content;
       z-index: 20;
-      position: relative;
-      a {
-        color: $white;
-        text-decoration: none;
-      }
-    }
-    .headerCard::before {
-      content: "";
-      position: absolute;
-      background: $white;
-      width: 100%;
-      height: 1px;
-      bottom: 0;
-      transform-origin: 150% 0;
-      transform: scaleX(0);
-      transition: transform 0.4s;
-    }
-    .headerCard:hover::before {
-      transform-origin: 0 0;
-      transform: scaleX(1);
-    }
-    .hr {
-      width: 50px;
-      height: 3px;
-      margin: 20px auto;
-      border: 0;
-      background: $zRed;
-    }
-    .intro {
-      width: 170px;
-      margin: 0 auto;
       color: $white;
-      font-family: "Droid Serif", serif;
-      font-size: 1rem;
-      font-style: italic;
-      line-height: 18px;
-    }
-    .cardInfo {
-      width: 100%;
-      padding: 0 50px;
-      color: $white;
-      font-style: 1rem;
-      line-height: 24px;
-      text-align: justify;
-    }
-    .bottomCard {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      .stack {
-        color: $white;
-        text-align: center;
-        font-size: 1.5rem;
-        width: fit-content;
-        z-index: 20;
-        position: relative;
-      }
-
-      .tagList {
-        display: flex;
-        justify-content: space-around;
-        margin: 1.5rem 0 1rem 0;
-      }
-      .tag {
-        color: $white;
-        font-size: 1rem;
-        margin: 0 1rem;
-      }
-    }
-    .utilityList {
-      width: 100%;
-      list-style-type: none;
-      padding: 0;
-      display: flex;
-      justify-content: space-evenly;
-      margin: 2.5rem 0;
-    }
-    .externalLinks {
       text-decoration: none;
-      color: $zVeryDarkBlue;
-      font-size: 1.6rem;
-      padding: 1rem 1.5rem;
-      background: $white;
-      border-radius: 15px;
-      transition: 0.5s;
-      cursor: pointer;
+    }
+  }
+  .headerCard::before {
+    content: "";
+    position: absolute;
+    background: $white;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    transform-origin: 150% 0;
+    transform: scaleX(0);
+    transition: transform 0.4s;
+  }
+  .headerCard:hover::before {
+    transform-origin: 0 0;
+    transform: scaleX(1);
+  }
+  .hr {
+    width: 50px;
+    height: 3px;
+    margin: 20px auto;
+    border: 0;
+    background: $zRed;
+  }
+  .cardInfo {
+    width: 100%;
+    padding: 0 50px;
+    color: $white;
+    font-style: 1rem;
+    line-height: 24px;
+    text-align: justify;
+  }
+  .bottomCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .stack {
+      color: $white;
+      text-align: center;
+      font-size: 1.5rem;
+      width: fit-content;
+      z-index: 20;
+      position: relative;
+    }
 
-      &:hover {
-        color: $zVeryDarkBlue;
-        font-size: 2rem;
-        box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8);
-      }
+    .tagList {
+      display: flex;
+      justify-content: space-around;
+      margin: 1.5rem 0 1rem 0;
+    }
+    .tag {
+      color: $white;
+      font-size: 1rem;
+      margin: 0 1rem;
+    }
+  }
+  .utilityList {
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2.5rem 0;
+  }
+  .externalLinks {
+    text-decoration: none;
+    color: $zVeryDarkBlue;
+    font-size: 1.6rem;
+    padding: 1rem 1.5rem;
+    background: $white;
+    border-radius: 15px;
+    transition: 0.5s;
+    cursor: pointer;
+
+    &:hover {
+      color: $zVeryDarkBlue;
+      font-size: 2rem;
+      box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8);
     }
   }
 }

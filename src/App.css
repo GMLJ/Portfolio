@@ -19,53 +19,6 @@ body.no-scroll {
   overflow-y: hidden;
 }
 
-.container {
-  margin: 0 auto;
-  padding: 0 2rem;
-  position: relative;
-  width: auto;
-  height: 100%;
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 960px;
-  }
-}
-
-@media (min-width: 1216px) {
-  .container {
-    max-width: 1152px;
-  }
-}
-
-@media (min-width: 1408px) {
-  .container {
-    max-width: 1560px;
-  }
-}
-
-.container .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.container .row.space-between {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.container .row.center {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .pageWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -377,6 +330,11 @@ header .menu:hover {
           flex-direction: column;
 }
 
+.background-fade {
+  margin-top: 10rem;
+  height: 37.5rem;
+}
+
 .heroContainer .top-row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -460,27 +418,27 @@ header .menu:hover {
   text-transform: uppercase;
 }
 
-.background-fade {
-  margin-top: 18.75rem;
-  height: 37.5rem;
+.containerAboutMe {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin-bottom: 1rem;
 }
 
-.background-fade .container .rotateWebDev {
+.containerAboutMe .rotateWebDev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: absolute;
-  top: -20%;
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -ms-grid-columns: max-content max-content;
-      grid-template-columns: -webkit-max-content -webkit-max-content;
-      grid-template-columns: max-content max-content;
+  margin-left: 7rem;
+  top: -5rem;
 }
 
-.background-fade .container .rotateWebDev h2 {
+.containerAboutMe .rotateWebDev h2 {
   font-size: 6.25rem;
   margin: 0;
   -webkit-writing-mode: vertical-lr;
@@ -491,62 +449,66 @@ header .menu:hover {
   color: #ed3833;
 }
 
-.background-fade .container .rotateWebDev .rotateWeb {
+.containerAboutMe .rotateWebDev .rotateWeb {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   color: #0f1624;
 }
 
-.background-fade .container .row {
-  margin: 0 5% 0 5%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-.background-fade .container .row h2 {
-  font-size: 28px;
-}
-
-.background-fade .container .row p {
-  font-family: "Helvetica Neue";
-  font-size: 16;
-  line-height: 28px;
-  font-weight: 400;
-  width: 800px;
-}
-
-.background-fade .container .row p .bouncingLogos {
+.containerAboutMe .profileBox {
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 5rem;
-  width: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-left: 4rem;
 }
 
-.background-fade .profileBox {
-  position: relative;
-  height: 100%;
-  width: 50%;
-}
-
-.background-fade .profileBox .profilePicture {
-  position: absolute;
-  top: -25vh;
-  width: 90%;
-  height: auto;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  z-index: 11;
+.containerAboutMe .profileBox .profilePicture {
+  height: 130%;
   -webkit-filter: drop-shadow(8px -5px 10px #585858);
           filter: drop-shadow(8px -5px 10px #585858);
 }
 
+.containerAboutMe .descriptionBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 50%;
+}
+
+.containerAboutMe .descriptionBox p {
+  width: 90%;
+  font-family: "Helvetica Neue";
+  font-size: 1rem;
+  line-height: 1.75rem;
+  font-weight: 400;
+  text-justify: auto;
+}
+
+.containerAboutMe .descriptionBox p .bouncingLogos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 5rem;
+  width: auto;
+}
+
 .particles {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -574,7 +536,6 @@ header .menu:hover {
   display: block;
   color: #f1f1f1;
   letter-spacing: 8px;
-  cursor: pointer;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -618,20 +579,10 @@ header .menu:hover {
   left: -10px;
 }
 
-.workCardsContainer {
+.cardContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
-  background-color: #0f1624;
-}
-
-.workCardsContainer .cardContainer {
-  width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 4rem;
   place-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -639,9 +590,13 @@ header .menu:hover {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
+  position: relative;
+  width: 100vw;
+  background-color: #0f1624;
+  padding: 4rem;
 }
 
-.workCardsContainer .cardContainer .workCard {
+.cardContainer .workCard {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -656,19 +611,23 @@ header .menu:hover {
   text-align: center;
   margin: 4rem;
   width: 30rem;
-  height: auto;
+  height: 50rem;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
 
-.workCardsContainer .cardContainer .workCard:hover {
+.cardContainer .workCard:hover {
   -webkit-box-shadow: 0px 0px 300px #2e46f5;
           box-shadow: 0px 0px 300px #2e46f5;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.workCardsContainer .cardContainer .workCard video {
+.cardContainer .workCard .videoContainer {
+  height: 35%;
+}
+
+.cardContainer .workCard .videoContainer video {
   border-radius: 10px 10px 0 0;
   width: 100%;
   height: 100%;
@@ -678,8 +637,8 @@ header .menu:hover {
   margin-bottom: 1rem;
 }
 
-.workCardsContainer .cardContainer .workCard .halfContainer {
-  height: 35rem;
+.cardContainer .workCard .halfContainer {
+  height: 65%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -695,28 +654,12 @@ header .menu:hover {
           align-items: center;
 }
 
-.workCardsContainer .cardContainer .workCard .halfContainer .titleContent {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.cardContainer .headerCard {
   color: #f1f1f1;
-  text-align: center;
-  z-index: 20;
-  width: 100%;
+  position: relative;
 }
 
-.workCardsContainer .cardContainer .headerCard {
-  color: #f1f1f1;
+.cardContainer .headerCard a {
   font-weight: 500;
   letter-spacing: 2px;
   font-size: 2rem;
@@ -725,15 +668,11 @@ header .menu:hover {
   width: -moz-fit-content;
   width: fit-content;
   z-index: 20;
-  position: relative;
-}
-
-.workCardsContainer .cardContainer .headerCard a {
   color: #f1f1f1;
   text-decoration: none;
 }
 
-.workCardsContainer .cardContainer .headerCard::before {
+.cardContainer .headerCard::before {
   content: "";
   position: absolute;
   background: #f1f1f1;
@@ -750,14 +689,14 @@ header .menu:hover {
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
 
-.workCardsContainer .cardContainer .headerCard:hover::before {
+.cardContainer .headerCard:hover::before {
   -webkit-transform-origin: 0 0;
           transform-origin: 0 0;
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
 
-.workCardsContainer .cardContainer .hr {
+.cardContainer .hr {
   width: 50px;
   height: 3px;
   margin: 20px auto;
@@ -765,17 +704,7 @@ header .menu:hover {
   background: #ed3833;
 }
 
-.workCardsContainer .cardContainer .intro {
-  width: 170px;
-  margin: 0 auto;
-  color: #f1f1f1;
-  font-family: "Droid Serif", serif;
-  font-size: 1rem;
-  font-style: italic;
-  line-height: 18px;
-}
-
-.workCardsContainer .cardContainer .cardInfo {
+.cardContainer .cardInfo {
   width: 100%;
   padding: 0 50px;
   color: #f1f1f1;
@@ -784,7 +713,7 @@ header .menu:hover {
   text-align: justify;
 }
 
-.workCardsContainer .cardContainer .bottomCard {
+.cardContainer .bottomCard {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -800,7 +729,7 @@ header .menu:hover {
           align-items: center;
 }
 
-.workCardsContainer .cardContainer .bottomCard .stack {
+.cardContainer .bottomCard .stack {
   color: #f1f1f1;
   text-align: center;
   font-size: 1.5rem;
@@ -811,7 +740,7 @@ header .menu:hover {
   position: relative;
 }
 
-.workCardsContainer .cardContainer .bottomCard .tagList {
+.cardContainer .bottomCard .tagList {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -820,13 +749,13 @@ header .menu:hover {
   margin: 1.5rem 0 1rem 0;
 }
 
-.workCardsContainer .cardContainer .bottomCard .tag {
+.cardContainer .bottomCard .tag {
   color: #f1f1f1;
   font-size: 1rem;
   margin: 0 1rem;
 }
 
-.workCardsContainer .cardContainer .utilityList {
+.cardContainer .utilityList {
   width: 100%;
   list-style-type: none;
   padding: 0;
@@ -839,7 +768,7 @@ header .menu:hover {
   margin: 2.5rem 0;
 }
 
-.workCardsContainer .cardContainer .externalLinks {
+.cardContainer .externalLinks {
   text-decoration: none;
   color: #0f1624;
   font-size: 1.6rem;
@@ -851,7 +780,7 @@ header .menu:hover {
   cursor: pointer;
 }
 
-.workCardsContainer .cardContainer .externalLinks:hover {
+.cardContainer .externalLinks:hover {
   color: #0f1624;
   font-size: 2rem;
   -webkit-box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8);

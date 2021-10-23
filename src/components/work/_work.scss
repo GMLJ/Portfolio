@@ -1,5 +1,4 @@
 .particles {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,7 +15,6 @@
       display: block;
       color: $white;
       letter-spacing: 8px;
-      cursor: pointer;
       transition: 0.5s;
     }
 

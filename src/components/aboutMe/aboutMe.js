@@ -5,19 +5,19 @@ import BouncingBalls from "./elements/BouncingLogos";
 
 const AboutMe = () => {
   return (
-    <div className="container">
+    <div className="containerAboutMe">
       <div className="rotateWebDev">
         <h2 class="rotateWeb">WEB</h2>
         <h2>DEV</h2>
       </div>
-      <div className="row">
-        <div className="profileBox">
-          <img
-            className="profilePicture"
-            src={require("../../images/profile.png")}
-            alt="profile"
-          />
-        </div>
+      <div className="profileBox">
+        <img
+          className="profilePicture"
+          src={require("../../images/profile.png")}
+          alt="profile"
+        />
+      </div>
+      <div className="descriptionBox">
         <p>
           I am Matthias Guilbert, a FRONT END DEV 👨‍💻 from Paris making his way
           to FULLSTACK.

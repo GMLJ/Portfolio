@@ -28,33 +28,6 @@ body {
   }
 }
 
-.container {
-  margin: 0 auto;
-  padding: 0 2rem;
-  position: relative;
-  width: auto;
-  height: 100%;
-  @media (min-width: 1024px) {
-    max-width: 960px;
-  }
-  @media (min-width: 1216px) {
-    max-width: 1152px;
-  }
-  @media (min-width: 1408px) {
-    max-width: 1560px;
-  }
-  .row {
-    display: flex;
-    align-items: center;
-    &.space-between {
-      justify-content: space-between;
-    }
-    &.center {
-      justify-content: center;
-    }
-  }
-}
-
 //max width mobile: 600px - 37.5 rem
 //max width tablet: 768px - 48 rem
 //max width laptop: 992px - 62 rem

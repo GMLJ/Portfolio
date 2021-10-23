@@ -15,7 +15,7 @@ const Portfolio = ({ imageDetails }) => {
   const colorFade = useTransform(
     scrollYProgress,
     [1.2, 2],
-    ["#f1f1f1", "#010020"]
+    ["#f1f1f1", "#0f1624"]
   );
 
   //Block scroll on enter page animation

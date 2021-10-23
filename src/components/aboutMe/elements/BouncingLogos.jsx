@@ -1,5 +1,5 @@
 import React from "react";
-import { SiBlueprint, SiMongodb } from "react-icons/si";
+import { SiMongodb } from "react-icons/si";
 import { motion } from "framer-motion";
 
 const BouncingBalls = () => {
