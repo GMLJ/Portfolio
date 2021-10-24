@@ -96,7 +96,7 @@ body.no-scroll {
   text-transform: uppercase;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 600px) {
   .pageWrapper .info .information {
     font-size: 0.8rem;
   }
@@ -236,7 +236,7 @@ header .menu {
   z-index: 40;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 600px) {
   header .menu {
     height: 3rem;
     width: 3rem;
@@ -321,7 +321,7 @@ header .menu:hover {
   transition: 0.2s ease-in-out;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 600px) {
   .contact-menu .menu-layer nav ul li a {
     font-size: 3rem;
     padding: 0;
@@ -381,6 +381,14 @@ header .menu:hover {
   width: 100%;
 }
 
+@media (max-width: 600px) {
+  .heroContainer .top-row {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .heroContainer .top-row .jobAndName .details {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -393,12 +401,48 @@ header .menu:hover {
           justify-content: space-between;
 }
 
+@media (max-width: 600px) {
+  .heroContainer .top-row .jobAndName .details {
+    font-size: 0.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 2rem;
+  }
+}
+
 .heroContainer .top-row .jobAndName .portfolio {
   overflow: hidden;
 }
 
+@media (max-width: 600px) {
+  .heroContainer .top-row .jobAndName .portfolio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .heroContainer .top-row .jobAndName .portfolio .first {
   margin-right: 4.5rem;
+}
+
+@media (max-width: 600px) {
+  .heroContainer .top-row .jobAndName .portfolio .first {
+    margin-right: 1.5rem;
+  }
 }
 
 .heroContainer .top-row .jobAndName .portfolio span {
@@ -407,6 +451,12 @@ header .menu:hover {
   font-weight: 400;
   font-size: 8rem;
   font-family: "Maragsa";
+}
+
+@media (max-width: 600px) {
+  .heroContainer .top-row .jobAndName .portfolio span {
+    font-size: 1.5rem;
+  }
 }
 
 .heroContainer .bottom-row {
@@ -430,20 +480,35 @@ header .menu:hover {
 
 .heroContainer .scroll-for-more {
   position: absolute;
-  bottom: 250px;
-  left: 150px;
+  bottom: 15.625rem;
+  left: 9.375rem;
   z-index: 20;
 }
 
 .heroContainer .scroll-for-more .icon svg {
   height: auto;
-  width: 28px;
+  width: 1.75rem;
 }
 
 .heroContainer .scroll-for-more .text {
-  margin-top: 8px;
+  margin-top: 0.5rem;
   color: #f1f1f1;
   text-transform: uppercase;
+}
+
+@media (max-width: 600px) {
+  .heroContainer .scroll-for-more {
+    bottom: 17rem;
+    left: 0.625rem;
+  }
+  .heroContainer .scroll-for-more .icon svg {
+    height: auto;
+    width: 1rem;
+  }
+  .heroContainer .scroll-for-more .text {
+    margin-top: 0.2rem;
+    font-size: 0.6rem;
+  }
 }
 
 .containerAboutMe {

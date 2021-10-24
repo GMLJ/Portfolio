@@ -6,16 +6,35 @@
     justify-content: end;
     height: 50vh;
     width: 100%;
+    @include breakpoint-down(mobile) {
+      justify-content: center;
+    }
     .jobAndName {
       .details {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        @include breakpoint-down(mobile) {
+          font-size: 0.5rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 2rem;
+        }
       }
       .portfolio {
         overflow: hidden;
+        @include breakpoint-down(mobile) {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
         .first {
           margin-right: 4.5rem;
+          @include breakpoint-down(mobile) {
+            margin-right: 1.5rem;
+          }
         }
         .last {
         }
@@ -25,16 +44,17 @@
           font-weight: 400;
           font-size: 8rem;
           font-family: "Maragsa";
+          @include breakpoint-down(mobile) {
+            font-size: 1.5rem;
+          }
         }
       }
     }
   }
 
   .bottom-row {
-    // border: 5px solid red;
     height: 50vh;
     .thumbnail-single {
-      // border: 5px solid blueviolet;
       width: 100%;
       height: 800px;
       margin: 0 auto;
@@ -43,7 +63,6 @@
       left: 0;
       right: 0;
       img {
-        // border: 5px solid white;
         position: absolute;
         width: 100%;
       }
@@ -51,19 +70,33 @@
   }
   .scroll-for-more {
     position: absolute;
-    bottom: 250px;
-    left: 150px;
+    bottom: 15.625rem;
+    left: 9.375rem;
     z-index: 20;
     .icon {
       svg {
         height: auto;
-        width: 28px;
+        width: 1.75rem;
       }
     }
     .text {
-      margin-top: 8px;
+      margin-top: 0.5rem;
       color: $white;
       text-transform: uppercase;
+    }
+    @include breakpoint-down(mobile) {
+      bottom: 17rem;
+      left: 0.625rem;
+      .icon {
+        svg {
+          height: auto;
+          width: 1rem;
+        }
+      }
+      .text {
+        margin-top: 0.2rem;
+        font-size: 0.6rem;
+      }
     }
   }
 }

@@ -46,6 +46,25 @@ const Hero = ({ imageDetails }) => {
   const x = useTransform(scrollYProgress, [0, 0.4], ["0", "15%"]);
   const opacity = useTransform(scrollYProgress, [0, 0.5], ["1", "0"]);
 
+  const typeWritterStyle = () => {
+    if (window.innerWidth > 600) {
+      return {
+        fontFamily: "HelveticaNeue-CondensedBold",
+        color: "#0f1624",
+        fontWeight: 500,
+        fontSize: "1.5rem",
+      };
+    } else {
+      return {
+        fontFamily: "HelveticaNeue-CondensedBold",
+        color: "#0f1624",
+        fontWeight: 100,
+        fontSize: "0.5rem",
+      };
+    }
+  };
+  const typeWritterStyles = typeWritterStyle();
+
   return (
     <div className="heroContainer">
       <div className="top-row">
@@ -60,12 +79,7 @@ const Hero = ({ imageDetails }) => {
             className="details"
           >
             <TypeWriterEffect
-              textStyle={{
-                fontFamily: "HelveticaNeue-CondensedBold",
-                color: "#1e1f13",
-                fontWeight: 500,
-                fontSize: "1.5em",
-              }}
+              textStyle={{ typeWritterStyles }}
               startDelay={2500}
               className="devWeb"
               text="Développeur Web"
