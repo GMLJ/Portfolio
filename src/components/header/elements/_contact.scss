@@ -1,5 +1,4 @@
 .contact-menu {
-  // border: 5px solid black;
   display: none;
   z-index: 29;
   top: 0;
@@ -23,7 +22,6 @@
   }
 
   .menu-layer {
-    // border: 5px solid blue;
     position: relative;
     background-color: $zRed;
     height: 100%;
@@ -33,9 +31,7 @@
     align-items: center;
     cursor: none;
     nav {
-      // border: 5px solid green;
       ul {
-        // border: 5px solid yellow;
         display: flex;
         height: 100vh;
         flex-direction: column;
@@ -43,11 +39,9 @@
         cursor: none;
 
         li {
-          // border: 5px solid violet;
           list-style: none;
 
           a {
-            // border: 5px solid orange;
             display: inline-block;
             text-decoration: none;
             color: $white;
@@ -56,6 +50,10 @@
             padding: 0 2rem;
             cursor: none;
             transition: 0.2s ease-in-out;
+            @include breakpoint-down(mobile) {
+              font-size: 3rem;
+              padding: 0;
+            }
           }
           a:hover {
             transform: scale(1.3);

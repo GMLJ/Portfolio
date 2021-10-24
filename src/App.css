@@ -96,7 +96,7 @@ body.no-scroll {
   text-transform: uppercase;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 360px) {
   .pageWrapper .info .information {
     font-size: 0.8rem;
   }
@@ -206,6 +206,13 @@ header {
   z-index: 30;
 }
 
+@media (max-width: 768px) {
+  header {
+    width: 100vw;
+    padding: 0.5rem;
+  }
+}
+
 header .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -227,6 +234,14 @@ header .menu {
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   z-index: 40;
+}
+
+@media (max-width: 360px) {
+  header .menu {
+    height: 3rem;
+    width: 3rem;
+    font-size: 0.8rem;
+  }
 }
 
 header .menu:hover {
@@ -304,6 +319,13 @@ header .menu:hover {
   cursor: none;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+}
+
+@media (max-width: 360px) {
+  .contact-menu .menu-layer nav ul li a {
+    font-size: 3rem;
+    padding: 0;
+  }
 }
 
 .contact-menu .menu-layer nav ul li a:hover {

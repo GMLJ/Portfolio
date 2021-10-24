@@ -8,6 +8,10 @@ header {
   padding: 1rem 1.5rem;
   font-weight: "700";
   z-index: 30;
+  @include breakpoint-down(tablet) {
+    width: 100vw;
+    padding: 0.5rem;
+  }
   .menu {
     display: flex;
     align-items: center;
@@ -22,6 +26,11 @@ header {
     border-radius: 100%;
     transition: 0.3s ease-in-out;
     z-index: 40;
+    @include breakpoint-down(mobile) {
+      height: 3rem;
+      width: 3rem;
+      font-size: 0.8rem;
+    }
     &:hover {
       background: $zVeryDarkBlue;
       color: $white;
