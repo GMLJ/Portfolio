@@ -10,6 +10,12 @@
       justify-content: center;
     }
     .jobAndName {
+      @include breakpoint-down(tablet) {
+        padding-left: 1rem;
+      }
+      @include breakpoint-down(mobile) {
+        padding-left: 0;
+      }
       .details {
         display: flex;
         align-items: center;
@@ -84,9 +90,14 @@
       color: $white;
       text-transform: uppercase;
     }
-    @include breakpoint-down(mobile) {
+    @include breakpoint-down(tablet) {
       bottom: 17rem;
       left: 0.625rem;
+      .text {
+        margin-top: 0.2rem;
+      }
+    }
+    @include breakpoint-down(mobile) {
       .icon {
         svg {
           height: auto;
@@ -94,7 +105,6 @@
         }
       }
       .text {
-        margin-top: 0.2rem;
         font-size: 0.6rem;
       }
     }

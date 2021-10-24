@@ -359,8 +359,10 @@ header .menu:hover {
 }
 
 .background-fade {
-  margin-top: 10rem;
-  height: 37.5rem;
+  border: 5px solid red;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .heroContainer .top-row {
@@ -386,6 +388,18 @@ header .menu:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroContainer .top-row .jobAndName {
+    padding-left: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .heroContainer .top-row .jobAndName {
+    padding-left: 0;
   }
 }
 
@@ -496,17 +510,22 @@ header .menu:hover {
   text-transform: uppercase;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .heroContainer .scroll-for-more {
     bottom: 17rem;
     left: 0.625rem;
   }
+  .heroContainer .scroll-for-more .text {
+    margin-top: 0.2rem;
+  }
+}
+
+@media (max-width: 600px) {
   .heroContainer .scroll-for-more .icon svg {
     height: auto;
     width: 1rem;
   }
   .heroContainer .scroll-for-more .text {
-    margin-top: 0.2rem;
     font-size: 0.6rem;
   }
 }
@@ -520,6 +539,19 @@ header .menu:hover {
       -ms-flex-pack: start;
           justify-content: start;
   margin-bottom: 1rem;
+}
+
+@media (max-width: 600px) {
+  .containerAboutMe {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: -5rem 0 0 0;
+  }
 }
 
 .containerAboutMe .rotateWebDev {
@@ -548,8 +580,14 @@ header .menu:hover {
   color: #0f1624;
 }
 
+@media (max-width: 600px) {
+  .containerAboutMe .rotateWebDev {
+    display: none;
+  }
+}
+
 .containerAboutMe .profileBox {
-  width: 50%;
+  width: 50vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -562,10 +600,28 @@ header .menu:hover {
   padding-left: 4rem;
 }
 
+@media (max-width: 600px) {
+  .containerAboutMe .profileBox {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 0;
+    float: left;
+    margin-bottom: 2rem;
+  }
+}
+
 .containerAboutMe .profileBox .profilePicture {
-  height: 130%;
+  height: 100vh;
+  width: auto;
   -webkit-filter: drop-shadow(8px -5px 10px #585858);
           filter: drop-shadow(8px -5px 10px #585858);
+}
+
+@media (max-width: 600px) {
+  .containerAboutMe .profileBox .profilePicture {
+    height: 25vh;
+  }
 }
 
 .containerAboutMe .descriptionBox {
@@ -578,7 +634,13 @@ header .menu:hover {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  width: 50%;
+  width: 50vw;
+}
+
+@media (max-width: 600px) {
+  .containerAboutMe .descriptionBox {
+    width: 85%;
+  }
 }
 
 .containerAboutMe .descriptionBox p {
@@ -590,6 +652,14 @@ header .menu:hover {
   text-justify: auto;
 }
 
+@media (max-width: 600px) {
+  .containerAboutMe .descriptionBox p {
+    width: 100%;
+    font-size: 0.8rem;
+    line-height: 0.75rem;
+  }
+}
+
 .containerAboutMe .descriptionBox p .bouncingLogos {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -599,6 +669,12 @@ header .menu:hover {
           justify-content: center;
   height: 5rem;
   width: auto;
+}
+
+@media (max-width: 600px) {
+  .containerAboutMe .descriptionBox p .bouncingLogos {
+    height: 1.5rem;
+  }
 }
 
 .particles {

@@ -1,9 +1,13 @@
 .containerAboutMe {
-  // border: 5px solid red;
   position: relative;
   display: flex;
   justify-content: start;
   margin-bottom: 1rem;
+  @include breakpoint-down(mobile) {
+    flex-direction: column;
+    align-items: center;
+    margin: -5rem 0 0 0;
+  }
   .rotateWebDev {
     // border: 5px solid blue;
     display: flex;
@@ -22,19 +26,32 @@
       transform: rotate(180deg);
       color: $zVeryDarkBlue;
     }
+    @include breakpoint-down(mobile) {
+      display: none;
+    }
   }
   .profileBox {
     // border: 5px solid yellow;
-    width: 50%;
+    width: 50vw;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     padding-left: 4rem;
+    @include breakpoint-down(mobile) {
+      height: fit-content;
+      padding: 0;
+      float: left;
+      margin-bottom: 2rem;
+    }
 
     .profilePicture {
       // border: 5px solid pink;
-      height: 130%;
+      height: 100vh;
+      width: auto;
       filter: drop-shadow(8px -5px 10px #585858);
+      @include breakpoint-down(mobile) {
+        height: 25vh;
+      }
     }
   }
   .descriptionBox {
@@ -42,20 +59,32 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-    width: 50%;
+    width: 50vw;
+    @include breakpoint-down(mobile) {
+      width: 85%;
+    }
     p {
-      // // border: 5px solid violet;
+      // border: 5px solid violet;
       width: 90%;
       font-family: "Helvetica Neue";
       font-size: 1rem;
       line-height: 1.75rem;
       font-weight: 400;
       text-justify: auto;
+      @include breakpoint-down(mobile) {
+        width: 100%;
+        font-size: 0.8rem;
+        line-height: 0.75rem;
+      }
+
       .bouncingLogos {
         display: flex;
         justify-content: center;
         height: 5rem;
         width: auto;
+        @include breakpoint-down(mobile) {
+          height: 1.5rem;
+        }
       }
     }
   }

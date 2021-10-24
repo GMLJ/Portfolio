@@ -130,7 +130,10 @@ const BouncingBalls = () => {
           y: ["35%", "15%"],
         }}
       >
-        <SiMongodb size="2.5rem" color="#4AA44E" />
+        <SiMongodb
+          size={window.innerWidth > 600 ? "2.5rem" : "1rem"}
+          color="#4AA44E"
+        />
       </motion.div>
 
       <motion.img
