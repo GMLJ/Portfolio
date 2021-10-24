@@ -474,12 +474,12 @@ header .menu:hover {
 }
 
 .heroContainer .bottom-row {
+  border: 2px solid green;
   height: 50vh;
 }
 
 .heroContainer .bottom-row .thumbnail-single {
-  width: 100%;
-  height: 800px;
+  border: 2px solid red;
   margin: 0 auto;
   overflow: hidden;
   position: absolute;

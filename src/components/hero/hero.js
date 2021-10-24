@@ -126,7 +126,7 @@ const Hero = ({ imageDetails }) => {
           animate={{
             y: 0,
             width: "100%",
-            height: window.innerWidth > 1440 ? 800 : 400,
+            height: "50vh",
             borderTopLeftRadius: "0%",
             borderTopRightRadius: "0%",
             transition: { delay: 0.2, ...transition },
