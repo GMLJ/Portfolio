@@ -14,7 +14,7 @@ const Portfolio = ({ imageDetails }) => {
   const { scrollYProgress } = useViewportScroll();
   const colorFade = useTransform(
     scrollYProgress,
-    [0.35, 0.55],
+    [0.3, 0.5],
     ["#f1f1f1", "#0f1624"]
   );
 

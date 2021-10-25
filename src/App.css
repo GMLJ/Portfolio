@@ -360,7 +360,6 @@ header .menu:hover {
 
 .background-fade {
   padding-top: 10rem;
-  border: 5px solid red;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -475,12 +474,10 @@ header .menu:hover {
 }
 
 .heroContainer .bottom-row {
-  border: 2px solid green;
   height: 50vh;
 }
 
 .heroContainer .bottom-row .thumbnail-single {
-  border: 2px solid red;
   margin: 0 auto;
   overflow: hidden;
   position: absolute;
@@ -542,7 +539,7 @@ header .menu:hover {
   margin-bottom: 1rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .containerAboutMe {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -560,8 +557,8 @@ header .menu:hover {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  margin-left: 4rem;
-  top: 5rem;
+  margin-left: 5vw;
+  top: -3rem;
 }
 
 .containerAboutMe .rotateWebDev h2 {
@@ -581,7 +578,7 @@ header .menu:hover {
   color: #0f1624;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .containerAboutMe .rotateWebDev {
     display: none;
   }
@@ -601,13 +598,12 @@ header .menu:hover {
   padding-left: 4rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .containerAboutMe .profileBox {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     padding: 0;
-    float: left;
     margin-bottom: 2rem;
   }
 }
@@ -619,7 +615,7 @@ header .menu:hover {
           filter: drop-shadow(8px -5px 10px #585858);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .containerAboutMe .profileBox .profilePicture {
     height: 25vh;
   }
@@ -638,7 +634,7 @@ header .menu:hover {
   width: 50vw;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .containerAboutMe .descriptionBox {
     width: 85%;
   }
@@ -653,9 +649,14 @@ header .menu:hover {
   text-justify: auto;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .containerAboutMe .descriptionBox p {
     width: 100%;
+  }
+}
+
+@media (max-width: 280px) {
+  .containerAboutMe .descriptionBox p {
     font-size: 0.8rem;
     line-height: 0.75rem;
   }
@@ -665,14 +666,23 @@ header .menu:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   height: 5rem;
-  width: auto;
+  width: 50vw;
+}
+
+@media (max-width: 768px) {
+  .containerAboutMe .descriptionBox p .bouncingLogos {
+    height: 4.5rem;
+  }
 }
 
 @media (max-width: 600px) {
+  .containerAboutMe .descriptionBox p .bouncingLogos {
+    height: 2.5rem;
+  }
+}
+
+@media (max-width: 280px) {
   .containerAboutMe .descriptionBox p .bouncingLogos {
     height: 1.5rem;
   }
@@ -691,6 +701,12 @@ header .menu:hover {
   height: 110vh;
   color: #f1f1f1;
   font-size: 8rem;
+}
+
+@media (max-width: 600px) {
+  .particles {
+    font-size: 3rem;
+  }
 }
 
 .particles h2 {

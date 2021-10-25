@@ -5,6 +5,9 @@
   height: 110vh;
   color: $white;
   font-size: 8rem;
+  @include breakpoint-down(mobile) {
+    font-size: 3rem;
+  }
   h2 {
     position: absolute;
     span {

@@ -3,7 +3,7 @@
   display: flex;
   justify-content: start;
   margin-bottom: 1rem;
-  @include breakpoint-down(mobile) {
+  @include breakpoint-down(tablet) {
     flex-direction: column;
     align-items: center;
     margin: -5rem 0 0 0;
@@ -12,8 +12,8 @@
     // border: 5px solid blue;
     display: flex;
     position: absolute;
-    margin-left: 4rem;
-    top: 5rem;
+    margin-left: 5vw;
+    top: -3rem;
     h2 {
       font-size: 6.25rem;
       margin: 0;
@@ -26,7 +26,8 @@
       transform: rotate(180deg);
       color: $zVeryDarkBlue;
     }
-    @include breakpoint-down(mobile) {
+
+    @include breakpoint-down(tablet) {
       display: none;
     }
   }
@@ -37,10 +38,9 @@
     justify-content: center;
     align-items: flex-end;
     padding-left: 4rem;
-    @include breakpoint-down(mobile) {
+    @include breakpoint-down(tablet) {
       height: fit-content;
       padding: 0;
-      float: left;
       margin-bottom: 2rem;
     }
 
@@ -49,7 +49,7 @@
       height: 100%;
       width: auto;
       filter: drop-shadow(8px -5px 10px #585858);
-      @include breakpoint-down(mobile) {
+      @include breakpoint-down(tablet) {
         height: 25vh;
       }
     }
@@ -60,7 +60,7 @@
     justify-content: flex-start;
     align-items: flex-end;
     width: 50vw;
-    @include breakpoint-down(mobile) {
+    @include breakpoint-down(tablet) {
       width: 85%;
     }
     p {
@@ -71,18 +71,26 @@
       line-height: 1.75rem;
       font-weight: 400;
       text-justify: auto;
-      @include breakpoint-down(mobile) {
+      @include breakpoint-down(tablet) {
         width: 100%;
+      }
+      @include breakpoint-down(small) {
         font-size: 0.8rem;
         line-height: 0.75rem;
       }
 
       .bouncingLogos {
+        // border: 2px solid red;
         display: flex;
-        justify-content: center;
         height: 5rem;
-        width: auto;
+        width: 50vw;
+        @include breakpoint-down(tablet) {
+          height: 4.5rem;
+        }
         @include breakpoint-down(mobile) {
+          height: 2.5rem;
+        }
+        @include breakpoint-down(small) {
           height: 1.5rem;
         }
       }
