@@ -1,10 +1,10 @@
 import React from "react";
-import { works } from "../../constants/constants";
+import { work } from "../../constants/constants";
 
 const WorkCards = () => {
   return (
     <div className="cardContainer">
-      {works.map(({ title, description, image, tags, source, visit, id }) => (
+      {work.map(({ title, description, image, tags, source, visit, id }) => (
         <div className="workCard" key={id}>
           <div className="videoContainer">
             <video

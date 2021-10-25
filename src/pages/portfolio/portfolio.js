@@ -3,6 +3,7 @@ import { motion, useTransform, useViewportScroll } from "framer-motion";
 import Header from "../../components/header/header";
 import Hero from "../../components/hero/hero";
 import Work from "../../components/work/work";
+import Projects from "../../components/projects/projects";
 
 //Components
 import AboutMe from "../../components/aboutMe/aboutMe";
@@ -14,7 +15,7 @@ const Portfolio = ({ imageDetails }) => {
   const { scrollYProgress } = useViewportScroll();
   const colorFade = useTransform(
     scrollYProgress,
-    [0.3, 0.5],
+    [0.15, 0.25],
     ["#f1f1f1", "#0f1624"]
   );
 
@@ -45,6 +46,7 @@ const Portfolio = ({ imageDetails }) => {
         <AboutMe />
         <Work />
       </motion.div>
+      <Projects />
     </motion.div>
   );
 };
