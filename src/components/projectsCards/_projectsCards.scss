@@ -13,7 +13,7 @@
   }
 
   .projectsCard {
-    // border: 2px solid red;
+    // border: 2px solid white;
     display: flex;
     flex-direction: column;
     background-color: $zVeryDarkBlue;
@@ -37,12 +37,10 @@
     .projectsImgContainer {
       // border: 2px solid blue;
       height: 10rem;
-      & video {
-        border-radius: 10px 10px 0 0;
+      & img {
         width: 100%;
         height: 80%;
         object-fit: contain;
-        overflow: hidden;
         margin-bottom: 1rem;
       }
     }
