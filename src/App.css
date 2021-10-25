@@ -769,6 +769,8 @@ header .menu:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   place-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -780,6 +782,12 @@ header .menu:hover {
   width: 100vw;
   background-color: #0f1624;
   padding: 4rem;
+}
+
+@media (max-width: 280px) {
+  .cardContainer {
+    padding: 1.5rem;
+  }
 }
 
 .cardContainer .workCard {
@@ -800,6 +808,16 @@ header .menu:hover {
   height: 50rem;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+}
+
+@media (max-width: 600px) {
+  .cardContainer .workCard {
+    margin: 2rem 0;
+    width: 95vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
 }
 
 .cardContainer .workCard:hover {
@@ -858,6 +876,18 @@ header .menu:hover {
   text-decoration: none;
 }
 
+@media (max-width: 600px) {
+  .cardContainer .headerCard a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 280px) {
+  .cardContainer .headerCard a {
+    font-size: 0.8rem;
+  }
+}
+
 .cardContainer .headerCard::before {
   content: "";
   position: absolute;
@@ -895,8 +925,16 @@ header .menu:hover {
   padding: 0 50px;
   color: #f1f1f1;
   font-style: 1rem;
-  line-height: 24px;
+  line-height: 1.5rem;
   text-align: justify;
+}
+
+@media (max-width: 600px) {
+  .cardContainer .cardInfo {
+    padding: 0 20px;
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
 }
 
 .cardContainer .bottomCard {
@@ -926,19 +964,51 @@ header .menu:hover {
   position: relative;
 }
 
+@media (max-width: 600px) {
+  .cardContainer .bottomCard .stack {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 280px) {
+  .cardContainer .bottomCard .stack {
+    font-size: 0.8rem;
+  }
+}
+
 .cardContainer .bottomCard .tagList {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin: 1.5rem 0 1rem 0;
+  margin: 1.5rem 0 3rem 0;
+}
+
+@media (max-width: 600px) {
+  .cardContainer .bottomCard .tagList {
+    margin: 1rem 0 1.5rem 0;
+  }
 }
 
 .cardContainer .bottomCard .tag {
   color: #f1f1f1;
   font-size: 1rem;
   margin: 0 1rem;
+}
+
+@media (max-width: 600px) {
+  .cardContainer .bottomCard .tag {
+    font-size: 0.8rem;
+    margin: 0 0.6rem;
+  }
+}
+
+@media (max-width: 280px) {
+  .cardContainer .bottomCard .tag {
+    font-size: 0.6rem;
+    margin: 0 0.4rem;
+  }
 }
 
 .cardContainer .utilityList {
@@ -951,7 +1021,12 @@ header .menu:hover {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin: 2.5rem 0;
+}
+
+@media (max-width: 600px) {
+  .cardContainer .utilityList {
+    margin-bottom: 1.5rem;
+  }
 }
 
 .cardContainer .externalLinks {
@@ -964,6 +1039,13 @@ header .menu:hover {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .cardContainer .externalLinks {
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+  }
 }
 
 .cardContainer .externalLinks:hover {

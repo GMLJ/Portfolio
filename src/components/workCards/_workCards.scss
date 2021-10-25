@@ -1,5 +1,6 @@
 .cardContainer {
   display: flex;
+  flex-wrap: wrap;
   place-items: center;
   justify-content: center;
   align-items: start;
@@ -7,8 +8,12 @@
   width: 100vw;
   background-color: $zVeryDarkBlue;
   padding: 4rem;
+  @include breakpoint-down(small) {
+    padding: 1.5rem;
+  }
 
   .workCard {
+    // border: 2px solid red;
     display: flex;
     flex-direction: column;
     background-color: $zVeryDarkBlue;
@@ -19,11 +24,18 @@
     width: 30rem;
     height: 50rem;
     transition: 0.2s ease-in-out;
+    @include breakpoint-down(mobile) {
+      margin: 2rem 0;
+      width: 95vw;
+      height: fit-content;
+    }
+
     &:hover {
       box-shadow: 0px 0px 300px rgba(46, 70, 245, 1);
       transform: scale(1.1);
     }
     .videoContainer {
+      // border: 2px solid blue;
       height: 35%;
       & video {
         border-radius: 10px 10px 0 0;
@@ -35,6 +47,7 @@
       }
     }
     .halfContainer {
+      // border: 2px solid green;
       height: 65%;
       display: flex;
       flex-direction: column;
@@ -44,6 +57,7 @@
   }
 
   .headerCard {
+    // border: 2px solid violet;
     color: $white;
     position: relative;
     a {
@@ -55,6 +69,12 @@
       z-index: 20;
       color: $white;
       text-decoration: none;
+      @include breakpoint-down(mobile) {
+        font-size: 1rem;
+      }
+      @include breakpoint-down(small) {
+        font-size: 0.8rem;
+      }
     }
   }
   .headerCard::before {
@@ -80,12 +100,18 @@
     background: $zRed;
   }
   .cardInfo {
+    // border: 2px solid white;
     width: 100%;
     padding: 0 50px;
     color: $white;
     font-style: 1rem;
-    line-height: 24px;
+    line-height: 1.5rem;
     text-align: justify;
+    @include breakpoint-down(mobile) {
+      padding: 0 20px;
+      font-size: 0.8rem;
+      line-height: 1rem;
+    }
   }
   .bottomCard {
     display: flex;
@@ -99,28 +125,49 @@
       width: fit-content;
       z-index: 20;
       position: relative;
+      @include breakpoint-down(mobile) {
+        font-size: 1rem;
+      }
+      @include breakpoint-down(small) {
+        font-size: 0.8rem;
+      }
     }
 
     .tagList {
       display: flex;
       justify-content: space-around;
-      margin: 1.5rem 0 1rem 0;
+      margin: 1.5rem 0 3rem 0;
+      @include breakpoint-down(mobile) {
+        margin: 1rem 0 1.5rem 0;
+      }
     }
     .tag {
       color: $white;
       font-size: 1rem;
       margin: 0 1rem;
+      @include breakpoint-down(mobile) {
+        font-size: 0.8rem;
+        margin: 0 0.6rem;
+      }
+      @include breakpoint-down(small) {
+        font-size: 0.6rem;
+        margin: 0 0.4rem;
+      }
     }
   }
   .utilityList {
+    // border: 2px solid red;
     width: 100%;
     list-style-type: none;
     padding: 0;
     display: flex;
     justify-content: space-evenly;
-    margin: 2.5rem 0;
+    @include breakpoint-down(mobile) {
+      margin-bottom: 1.5rem;
+    }
   }
   .externalLinks {
+    // border: 2px solid blue;
     text-decoration: none;
     color: $zVeryDarkBlue;
     font-size: 1.6rem;
@@ -129,6 +176,10 @@
     border-radius: 15px;
     transition: 0.5s;
     cursor: pointer;
+    @include breakpoint-down(mobile) {
+      font-size: 1rem;
+      padding: 0.5rem 0.75rem;
+    }
 
     &:hover {
       color: $zVeryDarkBlue;
