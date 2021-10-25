@@ -12,8 +12,8 @@
     // border: 5px solid blue;
     display: flex;
     position: absolute;
-    margin-left: 7rem;
-    top: -5rem;
+    margin-left: 4rem;
+    top: 5rem;
     h2 {
       font-size: 6.25rem;
       margin: 0;
@@ -46,7 +46,7 @@
 
     .profilePicture {
       // border: 5px solid pink;
-      height: 100vh;
+      height: 100%;
       width: auto;
       filter: drop-shadow(8px -5px 10px #585858);
       @include breakpoint-down(mobile) {

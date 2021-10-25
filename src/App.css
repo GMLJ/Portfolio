@@ -359,6 +359,7 @@ header .menu:hover {
 }
 
 .background-fade {
+  padding-top: 10rem;
   border: 5px solid red;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -559,8 +560,8 @@ header .menu:hover {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  margin-left: 7rem;
-  top: -5rem;
+  margin-left: 4rem;
+  top: 5rem;
 }
 
 .containerAboutMe .rotateWebDev h2 {
@@ -612,7 +613,7 @@ header .menu:hover {
 }
 
 .containerAboutMe .profileBox .profilePicture {
-  height: 100vh;
+  height: 100%;
   width: auto;
   -webkit-filter: drop-shadow(8px -5px 10px #585858);
           filter: drop-shadow(8px -5px 10px #585858);
