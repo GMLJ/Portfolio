@@ -1,4 +1,11 @@
-@import "./scss/globals";
-@import "./components/header/header";
+@import "./globals";
 @import "./pages/home/home";
-@import "./pages/aboutMe/aboutMe";
+@import "./components/header/header";
+@import "./components/header/elements/contact";
+@import "./pages/portfolio/portfolio";
+@import "./components/hero/hero";
+@import "./components/aboutMe/aboutMe";
+@import "./components/work/work";
+@import "./components/workCards/workCards";
+@import "./components/projects/projects";
+@import "./components/projectsCards/projectsCards";

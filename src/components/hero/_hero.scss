@@ -1,0 +1,113 @@
+.heroContainer {
+  .top-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    height: 50vh;
+    width: 100%;
+    @include breakpoint-down(mobile) {
+      justify-content: center;
+    }
+    .jobAndName {
+      @include breakpoint-down(tablet) {
+        padding-left: 1rem;
+      }
+      @include breakpoint-down(mobile) {
+        padding-left: 0;
+      }
+      .details {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include breakpoint-down(mobile) {
+          font-size: 0.5rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 2rem;
+        }
+      }
+      .portfolio {
+        overflow: hidden;
+        @include breakpoint-down(mobile) {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .first {
+          margin-right: 4.5rem;
+          @include breakpoint-down(mobile) {
+            margin-right: 1.5rem;
+          }
+        }
+        .last {
+        }
+        span {
+          display: inline-block;
+          position: relative;
+          font-weight: 400;
+          font-size: 8rem;
+          font-family: "Maragsa";
+          @include breakpoint-down(mobile) {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  .bottom-row {
+    // border: 2px solid green;
+
+    height: 50vh;
+    .thumbnail-single {
+      // border: 2px solid red;
+      margin: 0 auto;
+      overflow: hidden;
+      position: absolute;
+      left: 0;
+      right: 0;
+      img {
+        position: absolute;
+        width: 100%;
+      }
+    }
+  }
+  .scroll-for-more {
+    position: absolute;
+    bottom: 15.625rem;
+    left: 9.375rem;
+    z-index: 20;
+    .icon {
+      svg {
+        height: auto;
+        width: 1.75rem;
+      }
+    }
+    .text {
+      margin-top: 0.5rem;
+      color: $white;
+      text-transform: uppercase;
+    }
+    @include breakpoint-down(tablet) {
+      bottom: 17rem;
+      left: 0.625rem;
+      .text {
+        margin-top: 0.2rem;
+      }
+    }
+    @include breakpoint-down(mobile) {
+      .icon {
+        svg {
+          height: auto;
+          width: 1rem;
+        }
+      }
+      .text {
+        font-size: 0.6rem;
+      }
+    }
+  }
+}

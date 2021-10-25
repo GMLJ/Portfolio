@@ -1,22 +1,24 @@
 import React, { useState, useEffect } from "react";
-import { withRouter, Link } from "react-router-dom";
-import Hamburger from "./hamburger";
+import { withRouter } from "react-router-dom";
+import { motion } from "framer-motion";
 
-const Header = ({ history }) => {
+import Hamburger from "./elements/contact";
+
+const Header = ({ history, transition }) => {
   //State of the menu button
   const [btnState, setBtnState] = useState({
     initial: false,
     clicked: null,
-    menuName: "Menu",
   });
-  //State for disabled button
+
+  //State for disabled button (triggers during opening and closing animations)
   const [disabled, setDisabled] = useState(false);
 
   //Page change on click
   useEffect(() => {
     //Listen for page change
     history.listen(() => {
-      setBtnState({ clicked: false, menuName: "Menu" });
+      setBtnState({ clicked: false });
     });
   });
 
@@ -41,7 +43,7 @@ const Header = ({ history }) => {
     }
   };
 
-  // Menu button disabled or not
+  // Menu button disabled (triggers during opening and closing animations)
   const disableMenu = () => {
     setDisabled(!disabled);
     setTimeout(() => {
@@ -50,16 +52,23 @@ const Header = ({ history }) => {
   };
 
   return (
-    <header>
-      <div className="container">
-        <div className="row">
-          <button className="menu" disabled={disabled} onClick={handleMenu}>
-            Contact
-          </button>
-        </div>
-      </div>
-      <Hamburger btnState={btnState} />
-    </header>
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{
+        opacity: 1,
+        y: 0,
+        transition: { delay: 1.5, ...transition },
+      }}
+    >
+      <header
+        style={{ cursor: btnState.clicked === true ? "none" : "default" }}
+      >
+        <button className="menu" disabled={disabled} onClick={handleMenu}>
+          Contact
+        </button>
+        <Hamburger btnState={btnState} />
+      </header>
+    </motion.div>
   );
 };
 

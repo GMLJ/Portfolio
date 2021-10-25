@@ -5,21 +5,35 @@ import { AnimatePresence } from "framer-motion";
 
 //Pages
 import Home from "./pages/home/home";
-import AboutMe from "./pages/aboutMe/aboutMe";
-import Header from "./components/header/header";
+import Portfolio from "./pages/portfolio/portfolio";
 
 //Styles
 import "./App.scss";
 
 function App() {
-  const imageDetails = {
-    width: 524,
-    height: 650,
+  const imageSize = () => {
+    if (window.innerWidth > 600) {
+      return {
+        width: 524,
+        height: "75vh",
+      };
+    } else if (window.innerWidth > 350) {
+      return {
+        width: 320,
+        height: "60vh",
+      };
+    } else {
+      return {
+        width: 260,
+        height: "60vh",
+      };
+    }
   };
+
+  const imageDetails = imageSize();
 
   return (
     <Router>
-      {/* <Header /> */}
       <Route
         render={({ location }) => (
           <AnimatePresence initial={true} exitBeforeEnter>
@@ -31,8 +45,8 @@ function App() {
               />
               <Route
                 exact
-                path="/aboutMe/matthias-guilbert"
-                render={() => <AboutMe imageDetails={imageDetails} />}
+                path="/portfolio/matthias-guilbert"
+                render={() => <Portfolio imageDetails={imageDetails} />}
               />
             </Switch>
           </AnimatePresence>

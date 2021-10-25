@@ -1,0 +1,99 @@
+.containerAboutMe {
+  position: relative;
+  display: flex;
+  justify-content: start;
+  margin-bottom: 1rem;
+  @include breakpoint-down(tablet) {
+    flex-direction: column;
+    align-items: center;
+    margin: -5rem 0 0 0;
+  }
+  .rotateWebDev {
+    // border: 5px solid blue;
+    display: flex;
+    position: absolute;
+    margin-left: 5vw;
+    top: -3rem;
+    h2 {
+      font-size: 6.25rem;
+      margin: 0;
+      writing-mode: vertical-lr;
+      text-align: center;
+      line-height: 0.8;
+      color: $zRed;
+    }
+    .rotateWeb {
+      transform: rotate(180deg);
+      color: $zVeryDarkBlue;
+    }
+
+    @include breakpoint-down(tablet) {
+      display: none;
+    }
+  }
+  .profileBox {
+    // border: 5px solid yellow;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-left: 4rem;
+    @include breakpoint-down(tablet) {
+      height: fit-content;
+      padding: 0;
+      margin-bottom: 2rem;
+    }
+
+    .profilePicture {
+      // border: 5px solid pink;
+      height: 100%;
+      width: auto;
+      filter: drop-shadow(8px -5px 10px #585858);
+      @include breakpoint-down(tablet) {
+        height: 25vh;
+      }
+    }
+  }
+  .descriptionBox {
+    // border: 5px solid black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 50vw;
+    @include breakpoint-down(tablet) {
+      width: 85%;
+    }
+    p {
+      // border: 5px solid violet;
+      width: 90%;
+      font-family: "Helvetica Neue";
+      font-size: 1rem;
+      line-height: 1.75rem;
+      font-weight: 400;
+      text-justify: auto;
+      @include breakpoint-down(tablet) {
+        width: 100%;
+      }
+      @include breakpoint-down(small) {
+        font-size: 0.8rem;
+        line-height: 0.75rem;
+      }
+
+      .bouncingLogos {
+        // border: 2px solid red;
+        display: flex;
+        height: 5rem;
+        width: 50vw;
+        @include breakpoint-down(tablet) {
+          height: 4.5rem;
+        }
+        @include breakpoint-down(mobile) {
+          height: 2.5rem;
+        }
+        @include breakpoint-down(small) {
+          height: 1.5rem;
+        }
+      }
+    }
+  }
+}
