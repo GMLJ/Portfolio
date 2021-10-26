@@ -7,15 +7,11 @@
   background-color: $zVeryDarkBlue;
   color: $white;
   font-size: 8rem;
-  @include breakpoint-down(mobile) {
-    font-size: 3rem;
+  @include breakpoint-down(tablet) {
+    font-size: 6rem;
   }
-  .techAnimation {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 50vw;
-    transform: translate(-50%, -50%);
+  @include breakpoint-down(mobile) {
+    font-size: 2rem;
   }
   h2 {
     position: absolute;

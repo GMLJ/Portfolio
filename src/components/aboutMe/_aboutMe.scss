@@ -39,9 +39,7 @@
     align-items: flex-end;
     padding-left: 4rem;
     @include breakpoint-down(tablet) {
-      height: fit-content;
-      padding: 0;
-      margin-bottom: 2rem;
+      display: none;
     }
 
     .profilePicture {
@@ -49,9 +47,6 @@
       height: 100%;
       width: auto;
       filter: drop-shadow(8px -5px 10px #585858);
-      @include breakpoint-down(tablet) {
-        height: 25vh;
-      }
     }
   }
   .descriptionBox {
@@ -61,6 +56,9 @@
     align-items: flex-end;
     width: 50vw;
     @include breakpoint-down(tablet) {
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
       width: 85%;
     }
     p {
@@ -82,16 +80,9 @@
       .bouncingLogos {
         // border: 2px solid red;
         display: flex;
-        height: 5rem;
-        width: 50vw;
+        height: 5.5vw;
         @include breakpoint-down(tablet) {
-          height: 4.5rem;
-        }
-        @include breakpoint-down(mobile) {
-          height: 2.5rem;
-        }
-        @include breakpoint-down(small) {
-          height: 1.5rem;
+          height: 10vw;
         }
       }
     }
