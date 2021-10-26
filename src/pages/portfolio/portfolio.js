@@ -11,15 +11,17 @@ import AboutMe from "../../components/aboutMe/aboutMe";
 //Ease
 const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
 
+const colorFadeResponsive =
+  window.innerWidth > 700 ? [0.19, 0.22] : [0.15, 0.17];
+
 const Portfolio = ({ imageDetails }) => {
   const { scrollYProgress } = useViewportScroll();
-  const colorFade = useTransform(
-    scrollYProgress,
-    [0.15, 0.25],
-    ["#f1f1f1", "#0f1624"]
-  );
+  const colorFade = useTransform(scrollYProgress, colorFadeResponsive, [
+    "#f1f1f1",
+    "#0f1624",
+  ]);
 
-  //Block scroll on enter page animation
+  // Block scroll on enter page animation
   const [canScroll, setCanScroll] = useState(false);
   useEffect(() => {
     if (canScroll === false) {

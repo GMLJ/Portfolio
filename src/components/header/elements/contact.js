@@ -9,16 +9,27 @@ const Hamburger = ({ btnState }) => {
   let revealMenu = useRef(null);
   let revealMenuBackground = useRef(null);
 
+  const [canScroll, setCanScroll] = useState(true);
+  useEffect(() => {
+    if (canScroll === false) {
+      document.querySelector("body").classList.add("no-scroll");
+    } else {
+      document.querySelector("body").classList.remove("no-scroll");
+    }
+  }, [canScroll]);
+
   useEffect(() => {
     if (btnState.clicked === false) {
       //close menu
       staggerClose(revealMenu, revealMenuBackground);
+      setCanScroll(true);
     } else if (
       btnState.clicked === true ||
       (btnState.clicked === true && btnState.initial === null)
     ) {
       //open menu
       staggerReveal(revealMenuBackground, revealMenu);
+      setCanScroll(false);
     }
   }, [btnState]);
 
