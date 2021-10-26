@@ -1,15 +1,15 @@
 import React from "react";
 import ProjectsCards from "../projectsCards/projectsCards";
-import Particle from "../work/elements/Particle";
+import ParticleProjects from "./elements/Particle2";
 
 const Work = () => {
   return (
     <>
       <div className="projects">
         <h2>
-          <span>PROJECTS</span>
+          <span>PROJETS</span>
         </h2>
-        <Particle />
+        <ParticleProjects />
       </div>
       <ProjectsCards />
     </>
