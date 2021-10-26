@@ -19,7 +19,7 @@ const Portfolio = ({ imageDetails }) => {
     ["#f1f1f1", "#0f1624"]
   );
 
-  //Block scroll on enter page animation
+  // Block scroll on enter page animation
   const [canScroll, setCanScroll] = useState(false);
   useEffect(() => {
     if (canScroll === false) {
