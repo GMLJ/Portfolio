@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { motion, useTransform, useViewportScroll } from "framer-motion";
+
+//COMPONENTS
 import Header from "../../components/header/header";
 import Hero from "../../components/hero/hero";
+import AboutMe from "../../components/aboutMe/aboutMe";
 import Work from "../../components/work/work";
 import Projects from "../../components/projects/projects";
-
-//Components
-import AboutMe from "../../components/aboutMe/aboutMe";
+import Footer from "../../components/footer/footer";
 
 //Ease
 const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
@@ -49,6 +50,7 @@ const Portfolio = ({ imageDetails }) => {
         <Work />
       </motion.div>
       <Projects />
+      <Footer />
     </motion.div>
   );
 };
