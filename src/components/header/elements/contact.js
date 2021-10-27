@@ -1,5 +1,6 @@
 import gsap from "gsap";
 import React, { useEffect, useRef, useState } from "react";
+import Cube from "./cube";
 
 const Hamburger = ({ btnState }) => {
   const [cursorX, setCursorX] = useState();
@@ -77,6 +78,12 @@ const Hamburger = ({ btnState }) => {
     setCursorY(e.clientY);
   });
 
+  const [cubeParam, setCubeParam] = useState({
+    color: "#ed3833",
+    speed: 5,
+    // url: "/images/shopping.jpg",
+  });
+
   return (
     <div ref={(el) => (menu = el)} className="contact-menu">
       <div
@@ -91,6 +98,10 @@ const Hamburger = ({ btnState }) => {
                 href="https://www.linkedin.com/in/matthias-guilbert/"
                 target="_blank"
                 rel="noopener noreferrer"
+                onMouseOver={() =>
+                  setCubeParam({ color: "#ed3833", speed: 15 })
+                }
+                onMouseOut={() => setCubeParam({ color: "#ed3833", speed: 5 })}
               >
                 LINKEDIN
               </a>
@@ -100,6 +111,10 @@ const Hamburger = ({ btnState }) => {
                 href="https://github.com/GMLJ"
                 target="_blank"
                 rel="noopener noreferrer"
+                onMouseOver={() =>
+                  setCubeParam({ color: "#ed3833", speed: 15 })
+                }
+                onMouseOut={() => setCubeParam({ color: "#ed3833", speed: 5 })}
               >
                 GITHUB
               </a>
@@ -109,6 +124,10 @@ const Hamburger = ({ btnState }) => {
                 href="https://codepen.io/GMLJ"
                 target="_blank"
                 rel="noopener noreferrer"
+                onMouseOver={() =>
+                  setCubeParam({ color: "#ed3833", speed: 15 })
+                }
+                onMouseOut={() => setCubeParam({ color: "#ed3833", speed: 5 })}
               >
                 CODEPEN
               </a>
@@ -118,6 +137,10 @@ const Hamburger = ({ btnState }) => {
                 href="mailto:guilbertmatthias32@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
+                onMouseOver={() =>
+                  setCubeParam({ color: "#ed3833", speed: 15 })
+                }
+                onMouseOut={() => setCubeParam({ color: "#ed3833", speed: 5 })}
               >
                 EMAIL
               </a>
@@ -128,6 +151,11 @@ const Hamburger = ({ btnState }) => {
             ></div>
           </ul>
         </nav>
+        <Cube
+          cubeColor={cubeParam.color}
+          cubeSpeed={cubeParam.speed}
+          // cubeUrl={cubeParam.url}
+        />
       </div>
     </div>
   );

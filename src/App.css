@@ -348,6 +348,11 @@ header .menu:hover {
           transform: scale(5);
 }
 
+.contact-menu .menu-layer .cube {
+  width: 80vw;
+  height: 100vh;
+}
+
 .portfolioContainer {
   display: -webkit-box;
   display: -ms-flexbox;
