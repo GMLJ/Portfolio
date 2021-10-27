@@ -796,7 +796,7 @@ header .menu:hover {
 @media (max-width: 600px) {
   .cardContainer .workCard {
     margin: 2rem 0;
-    width: 95vw;
+    width: 85vw;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -1172,7 +1172,7 @@ header .menu:hover {
 @media (max-width: 600px) {
   .projectsCardContainer .projectsCard {
     margin: 2rem 0;
-    width: 95vw;
+    width: 85vw;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
