@@ -353,6 +353,12 @@ header .menu:hover {
   height: 100vh;
 }
 
+@media (max-width: 768px) {
+  .contact-menu .menu-layer .cube {
+    display: none;
+  }
+}
+
 .portfolioContainer {
   display: -webkit-box;
   display: -ms-flexbox;

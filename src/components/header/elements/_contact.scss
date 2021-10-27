@@ -76,6 +76,9 @@
     .cube {
       width: 80vw;
       height: 100vh;
+      @include breakpoint-down(tablet) {
+        display: none;
+      }
     }
   }
 }
