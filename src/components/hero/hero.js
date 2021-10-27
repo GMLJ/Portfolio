@@ -12,7 +12,7 @@ const firstName = {
   animate: {
     y: 0,
     transition: {
-      delayChildren: 0.8,
+      delayChildren: 1,
       staggerChildren: 0.06,
       staggerDirection: -1,
     },
@@ -23,7 +23,7 @@ const lastName = {
   animate: {
     y: 0,
     transition: {
-      delayChildren: 0.8,
+      delayChildren: 1,
       staggerChildren: 0.06,
       staggerDirection: 1,
     },
