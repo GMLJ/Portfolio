@@ -43,7 +43,8 @@ const letter = {
 const Hero = ({ imageDetails }) => {
   const { scrollYProgress } = useViewportScroll();
   const scale = useTransform(scrollYProgress, [0, 1], [1, 5]);
-  const x = useTransform(scrollYProgress, [0, 0.1], ["100%", "80%"]);
+  // const x = useTransform(scrollYProgress, [0, 0.1], ["100%", "80%"]);
+  const y = useTransform(scrollYProgress, [0, 0.3], ["0%", "200%"]);
   const opacity = useTransform(scrollYProgress, [0, 0.5], ["1", "0"]);
 
   const typeWritterStyle = () => {
@@ -115,7 +116,7 @@ const Hero = ({ imageDetails }) => {
       <div className="bottom-row">
         <motion.div
           className="thumbnail-single"
-          style={{ width: x }}
+          // style={{ width: x }}
           initial={{
             y: "-50%",
             width: imageDetails.width,
@@ -133,7 +134,7 @@ const Hero = ({ imageDetails }) => {
           }}
         >
           <motion.img
-            style={{ scale: scale }}
+            style={{ scale: scale, x: y }}
             initial={{ scale: 1.1, y: "5%" }}
             animate={{
               transition: { delay: 0.2, ...transition },
