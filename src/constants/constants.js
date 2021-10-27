@@ -96,12 +96,12 @@ export const projects = [
     id: 6,
   },
   {
-    title: "Critiques JV",
+    title: "Shopping List",
     description:
       "Application basique afin de découvrir le développement mobile sur React Native.",
-    image: "/images/reviews.png",
+    image: "/images/shopping.jpg",
     tags: ["react native", "expo"],
-    source: "https://github.com/GMLJ/Reviews-App-React-Native",
+    source: "https://github.com/GMLJ/Shopping-List-Project",
     id: 7,
   },
   {
