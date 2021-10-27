@@ -19,26 +19,26 @@ const AboutMe = () => {
       </div>
       <div className="descriptionBox">
         <p>
-          I am Matthias Guilbert, a FRONT END DEV 👨‍💻 from Paris making his way
-          to FULLSTACK.
+          Salut, je suis un DÉVELOPPEUR FRONT END 👨‍💻 en chemin ver le FULLSTACK.
           <br />
           <br />
-          I love to work with HTML, CSS, SASS, JAVASCRIPT, REACT, NODE JS, MONGO
-          DB...
+          J'aime travailler avec du HTML, CSS, SASS, JAVASCRIPT, REACT, NODE JS,
+          MONGO DB...
           <br />
           <BouncingBalls />
           <br />
-          It has not always been as such though... <br />
-          Before I fell in love with programming, I was 10+ years a LEADER in
-          various fields of work such as : the French Navy Commandos and
-          Riflemen 🎖️, Archaeology ⛏️ , Sports Coaching 🏋️ Textile Industry 👕,
-          Arts and Culture 🎨 ...
+          Les choses n'ont pourtant pas toujours été ainsi... <br />
+          Avant de tomber amoureux de la programmation informatique j'ai été
+          pendant 10+ années un LEADER dans de nombreux secteurs pro: Marine
+          Nationale 🎖️, archéologie ⛏️ , coaching sportif 🏋️ Industrie textile
+          👕, Arts et Culture 🎨 ...
           <br />
-          <br />A happy/bumpy road ! However, I always felt inspired by people
-          with the specific technical skills to build from the ground up. I
-          always knew a day will come when I'll have the opportunity to be one
-          of them. I now dedicate 100% of my time to help DREAMS COME TO LIFE
-          through CODING.
+          <br />
+          Un joyeux sentier, sinueux et peu encombré ! Pourtant, j'ai toujours
+          été inspiré par les personnes possédant les compétences techniques
+          pointues pour construire quelque chose à partir de rien. J'ai toujours
+          su qu'un jour, je grossirais leurs rangs. Je dédie désormais 100% de
+          mon temps à faire de RÊVES des RÉALITÉS grâce au CODE.
         </p>
       </div>
     </div>
