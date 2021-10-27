@@ -3,6 +3,9 @@ import React from "react";
 //Components
 import BouncingBalls from "./elements/BouncingLogos";
 
+//Picture
+import profile from "../../images/profile.png";
+
 const AboutMe = () => {
   return (
     <div className="containerAboutMe">
@@ -11,11 +14,7 @@ const AboutMe = () => {
         <h2>DEV</h2>
       </div>
       <div className="profileBox">
-        <img
-          className="profilePicture"
-          src={require("../../images/profile.png")}
-          alt="profile"
-        />
+        <img className="profilePicture" src={profile} alt="profile" />
       </div>
       <div className="descriptionBox">
         <p>

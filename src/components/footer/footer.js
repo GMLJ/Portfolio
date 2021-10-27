@@ -18,7 +18,7 @@ const Footer = () => {
         >
           <AiFillLinkedin
             size={window.innerWidth > 600 ? "2.5rem" : "1rem"}
-            color="#0f1624"
+            color="#fff"
           />
         </a>
         <a
@@ -28,7 +28,7 @@ const Footer = () => {
         >
           <AiFillGithub
             size={window.innerWidth > 600 ? "2.5rem" : "1rem"}
-            color="#0f1624"
+            color="#fff"
           />
         </a>
         <a
@@ -38,7 +38,7 @@ const Footer = () => {
         >
           <AiFillCodepenCircle
             size={window.innerWidth > 600 ? "2.5rem" : "1rem"}
-            color="#0f1624"
+            color="#fff"
           />
         </a>
         <a
@@ -48,7 +48,7 @@ const Footer = () => {
         >
           <CgMail
             size={window.innerWidth > 600 ? "2.5rem" : "1rem"}
-            color="#0f1624"
+            color="#fff"
           />
         </a>
       </div>

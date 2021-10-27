@@ -73,9 +73,25 @@
         }
       }
     }
-    .cube {
-      width: 80vw;
-      height: 100vh;
+    .cubeContainer {
+      position: relative;
+      .letsTalk {
+        border: 5px solid $white;
+        border-radius: 10px;
+        width: fit-content;
+        padding: 2rem;
+        position: absolute;
+        top: 40%;
+        left: 50vw;
+        transform: translate(-100%, -50%);
+        color: white;
+        font-size: 3rem;
+        z-index: 999999;
+      }
+      .cube {
+        width: 80vw;
+        height: 100vh;
+      }
       @include breakpoint-down(tablet) {
         display: none;
       }

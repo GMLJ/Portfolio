@@ -348,13 +348,34 @@ header .menu:hover {
           transform: scale(5);
 }
 
-.contact-menu .menu-layer .cube {
+.contact-menu .menu-layer .cubeContainer {
+  position: relative;
+}
+
+.contact-menu .menu-layer .cubeContainer .letsTalk {
+  border: 5px solid #f1f1f1;
+  border-radius: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 2rem;
+  position: absolute;
+  top: 40%;
+  left: 50vw;
+  -webkit-transform: translate(-100%, -50%);
+          transform: translate(-100%, -50%);
+  color: white;
+  font-size: 3rem;
+  z-index: 999999;
+}
+
+.contact-menu .menu-layer .cubeContainer .cube {
   width: 80vw;
   height: 100vh;
 }
 
 @media (max-width: 768px) {
-  .contact-menu .menu-layer .cube {
+  .contact-menu .menu-layer .cubeContainer {
     display: none;
   }
 }
@@ -1418,6 +1439,8 @@ header .menu:hover {
       -ms-flex-align: center;
           align-items: center;
   width: 100vw;
+  border-top: 2px solid #ed3833;
+  background-color: #0f1624;
 }
 
 .footer .footer-links {
@@ -1427,7 +1450,7 @@ header .menu:hover {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  padding: 0.5rem 0;
+  padding: 2rem 0;
 }
 
 .footer .footer-links a {
@@ -1450,7 +1473,7 @@ header .menu:hover {
 }
 
 .footer .footer-copyright {
-  color: #0f1624;
+  color: #f1f1f1;
 }
 
 .footer .footer-copyright span {

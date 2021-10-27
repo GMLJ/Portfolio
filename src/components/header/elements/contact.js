@@ -80,7 +80,7 @@ const Hamburger = ({ btnState }) => {
 
   const [cubeParam, setCubeParam] = useState({
     color: "#ed3833",
-    speed: 5,
+    speed: 3,
     // url: "/images/shopping.jpg",
   });
 
@@ -101,7 +101,7 @@ const Hamburger = ({ btnState }) => {
                 onMouseOver={() =>
                   setCubeParam({ color: "#ed3833", speed: 15 })
                 }
-                onMouseOut={() => setCubeParam({ color: "#ed3833", speed: 5 })}
+                onMouseOut={() => setCubeParam({ color: "#ed3833", speed: 3 })}
               >
                 LINKEDIN
               </a>
@@ -114,7 +114,7 @@ const Hamburger = ({ btnState }) => {
                 onMouseOver={() =>
                   setCubeParam({ color: "#ed3833", speed: 15 })
                 }
-                onMouseOut={() => setCubeParam({ color: "#ed3833", speed: 5 })}
+                onMouseOut={() => setCubeParam({ color: "#ed3833", speed: 3 })}
               >
                 GITHUB
               </a>
@@ -127,7 +127,7 @@ const Hamburger = ({ btnState }) => {
                 onMouseOver={() =>
                   setCubeParam({ color: "#ed3833", speed: 15 })
                 }
-                onMouseOut={() => setCubeParam({ color: "#ed3833", speed: 5 })}
+                onMouseOut={() => setCubeParam({ color: "#ed3833", speed: 3 })}
               >
                 CODEPEN
               </a>
@@ -140,7 +140,7 @@ const Hamburger = ({ btnState }) => {
                 onMouseOver={() =>
                   setCubeParam({ color: "#ed3833", speed: 15 })
                 }
-                onMouseOut={() => setCubeParam({ color: "#ed3833", speed: 5 })}
+                onMouseOut={() => setCubeParam({ color: "#ed3833", speed: 3 })}
               >
                 EMAIL
               </a>
@@ -151,11 +151,18 @@ const Hamburger = ({ btnState }) => {
             ></div>
           </ul>
         </nav>
-        <Cube
-          cubeColor={cubeParam.color}
-          cubeSpeed={cubeParam.speed}
-          // cubeUrl={cubeParam.url}
-        />
+        <div className="cubeContainer">
+          <div className="letsTalk">
+            Un projet?
+            <br />
+            Parlons-en !
+          </div>
+          <Cube
+            cubeColor={cubeParam.color}
+            cubeSpeed={cubeParam.speed}
+            // cubeUrl={cubeParam.url}
+          />
+        </div>
       </div>
     </div>
   );

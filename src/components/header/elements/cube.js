@@ -38,14 +38,13 @@ const SpinBox = ({ position, args, color, speed }) => {
   );
 };
 
-function Cube({ cubeColor, cubeSpeed, cubeUrl }) {
-  // const [texture] = useLoader(THREE.ImageLoader, [cubeUrl]);
+function Cube({ cubeColor, cubeSpeed }) {
   return (
     <div className="cube">
       <Canvas
         shadows
         colorManagement
-        camera={{ position: [0, 50, 10], fov: 20 }}
+        camera={{ position: [10, 50, 40], fov: 15 }}
       >
         <ambientLight intensity={0.3} />
         <directionalLight
@@ -72,15 +71,12 @@ function Cube({ cubeColor, cubeSpeed, cubeUrl }) {
             <planeBufferGeometry attach="geometry" args={[100, 100]} />
             <shadowMaterial attach="material" opacity={0.3} />
           </mesh>
-          {/* <mesh> */}
-          {/* <meshBasicMaterial attachArray="material" map={texture} /> */}
           <SpinBox
             position={[0, 4, 0]}
             args={[6, 4, 2]}
             color={cubeColor}
             speed={cubeSpeed}
           />
-          {/* </mesh> */}
         </group>
 
         <OrbitControls />
