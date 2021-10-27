@@ -1417,6 +1417,7 @@ header .menu:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100vw;
 }
 
 .footer .footer-links {
@@ -1454,5 +1455,11 @@ header .menu:hover {
 
 .footer .footer-copyright span {
   font-size: 0.8rem;
+}
+
+@media (max-width: 600px) {
+  .footer .footer-copyright {
+    display: none;
+  }
 }
 /*# sourceMappingURL=App.css.map */
