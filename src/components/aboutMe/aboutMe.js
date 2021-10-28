@@ -38,10 +38,11 @@ const AboutMe = () => {
           <br />
           Pourtant, j'ai toujours été inspiré par les personnes possédant les
           compétences techniques pointues pour construire quelque chose à partir
-          de rien. J'ai toujourssu qu'un jour, je grossirais leurs rangs.
+          de rien. Je savais qu'un jour, indubitablement, je grossirais leurs
+          rangs.
           <br />
           <br />
-          Je dédie désormais 100% demon temps à faire de RÊVES des RÉALITÉS
+          Je dédie désormais 100% de mon temps à faire de RÊVES des RÉALITÉS
           grâce au CODE.
         </p>
       </div>
