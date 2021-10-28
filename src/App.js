@@ -45,7 +45,7 @@ function App() {
               />
               <Route
                 exact
-                path="/portfolio/matthias-guilbert"
+                path="/portfolio"
                 render={() => <Portfolio imageDetails={imageDetails} />}
               />
             </Switch>
