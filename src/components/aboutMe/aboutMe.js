@@ -28,16 +28,21 @@ const AboutMe = () => {
           <br />
           Les choses n'ont pourtant pas toujours été ainsi... <br />
           Avant de tomber amoureux de la programmation informatique j'ai été
-          pendant 10+ années un LEADER dans de nombreux secteurs pro: Marine
-          Nationale 🎖️, archéologie ⛏️ , coaching sportif 🏋️ Industrie textile
-          👕, Arts et Culture 🎨 ...
+          pendant 10+ années un LEADER dans de nombreux secteurs pro:
+          <br />
+          Marine Nationale 🎖️, archéologie ⛏️ , coaching sportif 🏋️ Industrie
+          textile 👕, Arts et Culture 🎨 ...
           <br />
           <br />
-          Un joyeux sentier, sinueux et peu encombré ! Pourtant, j'ai toujours
-          été inspiré par les personnes possédant les compétences techniques
-          pointues pour construire quelque chose à partir de rien. J'ai toujours
-          su qu'un jour, je grossirais leurs rangs. Je dédie désormais 100% de
-          mon temps à faire de RÊVES des RÉALITÉS grâce au CODE.
+          Un joyeux sentier, sinueux et peu encombré !
+          <br />
+          Pourtant, j'ai toujours été inspiré par les personnes possédant les
+          compétences techniques pointues pour construire quelque chose à partir
+          de rien. J'ai toujourssu qu'un jour, je grossirais leurs rangs.
+          <br />
+          <br />
+          Je dédie désormais 100% demon temps à faire de RÊVES des RÉALITÉS
+          grâce au CODE.
         </p>
       </div>
     </div>
