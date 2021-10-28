@@ -19,10 +19,11 @@ const AboutMe = ({ txtColorFade }) => {
       </div>
       <motion.div className="descriptionBox" style={{ color: txtColorFade }}>
         <p>
-          Salut, je suis un DÉVELOPPEUR FRONT END 👨🏻‍💻 en chemin ver le FULLSTACK.
+          Salut, je suis un DÉVELOPPEUR FRONT END 👨🏻‍💻 en chemin vers le
+          FULLSTACK.
           <br />
           <br />
-          J'aime travailler avec du HTML, CSS, SASS, JAVASCRIPT, REACT, NODE JS,
+          J'aime travailler sur du HTML, CSS, SASS, JAVASCRIPT, REACT, NODE JS,
           MONGO DB...
           <br />
           <BouncingBalls />
