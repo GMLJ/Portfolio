@@ -1,4 +1,5 @@
 import React from "react";
+import { motion, useTransform, useViewportScroll } from "framer-motion";
 
 //Components
 import BouncingBalls from "./elements/BouncingLogos";
@@ -6,7 +7,7 @@ import BouncingBalls from "./elements/BouncingLogos";
 //Picture
 import profile from "../../images/profile.png";
 
-const AboutMe = () => {
+const AboutMe = ({ txtColorFade }) => {
   return (
     <div className="containerAboutMe">
       <div className="rotateWebDev">
@@ -16,7 +17,7 @@ const AboutMe = () => {
       <div className="profileBox">
         <img className="profilePicture" src={profile} alt="profile" />
       </div>
-      <div className="descriptionBox">
+      <motion.div className="descriptionBox" style={{ color: txtColorFade }}>
         <p>
           Salut, je suis un DÉVELOPPEUR FRONT END 👨‍💻 en chemin ver le FULLSTACK.
           <br />
@@ -45,7 +46,7 @@ const AboutMe = () => {
           Je dédie désormais 100% de mon temps à faire de RÊVES des RÉALITÉS
           grâce au CODE.
         </p>
-      </div>
+      </motion.div>
     </div>
   );
 };
