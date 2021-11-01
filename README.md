@@ -7,7 +7,7 @@ Public repo with my portfolio website. A pretty active repo since one always wan
 Build with React with some Gsap and Framer-motion.
 
 ## 🔗 &nbsp; Links
-<img align="left" alt="matthiasGuilbert.com" width="36px" src="https://cdn-icons-png.flaticon.com/512/1150/1150626.png" />
+[<img align="left" alt="matthiasGuilbert.com" width="36px" src="https://cdn-icons-png.flaticon.com/512/1150/1150626.png" />][portfolio]
 </br>
 </br>
 
@@ -33,3 +33,4 @@ Build with React with some Gsap and Framer-motion.
 
 [greensock]: https://greensock.com/
 [framermotion]: https://www.framer.com/motion/
+[portfolio]: https://matthiasguilbert.dev
