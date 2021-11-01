@@ -26,7 +26,7 @@ export const work = [
     image: "/images/WoyaneDeFi.mp4",
     tags: ["html", "css", "sass", "js"],
     source: "https://github.com/GMLJ/Woyane-DeFi",
-    visit: "https://woyanedefi.netlify.app/#",
+    visit: "https://woyanenft.netlify.app/#",
     id: 1,
   },
 ];
