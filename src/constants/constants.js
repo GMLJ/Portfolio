@@ -20,12 +20,12 @@ export const work = [
     id: 0,
   },
   {
-    title: "Woyane Defi",
+    title: "Woyane NFT",
     description:
-      "EN COURS - Site Web de Woyane DeFi - Construction de site web 🚧  de A à Z. Services de consulting sur les sujets relevant des technologies Blockchain et NFTs.",
+      "EN COURS - Site Web de Woyane NFT - Construction de site web 🚧  de A à Z. Services de consulting sur les sujets relevant des technologies Blockchain et NFTs.",
     image: "/images/WoyaneDeFi.mp4",
     tags: ["html", "css", "sass", "js"],
-    source: "https://github.com/GMLJ/Woyane-DeFi",
+    source: "https://github.com/GMLJ/Woyane-NFT",
     visit: "https://woyanenft.netlify.app/#",
     id: 1,
   },
