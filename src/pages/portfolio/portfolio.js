@@ -13,7 +13,7 @@ import Footer from "../../components/footer/footer";
 const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
 
 const colorFadeResponsive =
-  window.innerWidth > 700 ? [0.15, 0.24] : [0.15, 0.17];
+  window.innerWidth > 700 ? [0.35, 0.45] : [0.30, 0.40];
 
 const Portfolio = ({ imageDetails }) => {
   const { scrollYProgress } = useViewportScroll();

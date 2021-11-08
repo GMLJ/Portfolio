@@ -7,10 +7,10 @@ const ParticleProjects = () => {
       params={{
         particles: {
           number: {
-            value: 15,
+            value: 10,
           },
           size: {
-            value: 40,
+            value: 30,
           },
           color: {
             value: ["#ed3833", "#ffffff", "#1b75bc"],
@@ -29,7 +29,7 @@ const ParticleProjects = () => {
           },
         },
       }}
-      height="110vh"
+      height="20vh"
     />
   );
 };

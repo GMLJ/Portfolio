@@ -42,10 +42,6 @@ const AboutMe = ({ txtColorFade }) => {
           compétences techniques pointues pour construire quelque chose à partir
           de rien. Je savais qu'un jour, indubitablement, je grossirais leurs
           rangs.
-          <br />
-          <br />
-          Je dédie désormais 100% de mon temps à faire de RÊVES des RÉALITÉS
-          grâce au CODE.
         </p>
       </motion.div>
     </div>
