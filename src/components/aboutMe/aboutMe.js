@@ -19,16 +19,14 @@ const AboutMe = ({ txtColorFade }) => {
       </div>
       <motion.div className="descriptionBox" style={{ color: txtColorFade }}>
         <p>
-          Salut, je suis un DÉVELOPPEUR FRONT END 👨🏻‍💻 en chemin vers le
-          FULLSTACK.
+          Salut, je suis Matthias, CHEF DE PROJET.
           <br />
           <br />
-          J'aime travailler sur du HTML, CSS, SASS, JAVASCRIPT, REACT, NODE JS,
-          MONGO DB...
+          J'aime aussi bidouiller en HTML, CSS, SASS, JAVASCRIPT, REACT, NODE
+          JS, MONGO DB...
           <br />
           <BouncingBalls />
           <br />
-          Les choses n'ont pourtant pas toujours été ainsi... <br />
           Avant de tomber amoureux de la programmation informatique j'ai été
           pendant 10+ années un LEADER dans de nombreux secteurs pro:
           <br />
@@ -38,10 +36,10 @@ const AboutMe = ({ txtColorFade }) => {
           <br />
           Un joyeux sentier, sinueux et peu encombré !
           <br />
-          Pourtant, j'ai toujours été inspiré par les personnes possédant les
-          compétences techniques pointues pour construire quelque chose à partir
-          de rien. Je savais qu'un jour, indubitablement, je grossirais leurs
-          rangs.
+          <br />
+          J'ai récemment perfectionné mes compétences en code dans le but
+          inavoué de transitionner vers des rôles de chef de projet dans
+          l'industrie tech 👨🏻‍💻
         </p>
       </motion.div>
     </div>

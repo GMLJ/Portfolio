@@ -570,7 +570,7 @@ header .menu:hover {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 @media (max-width: 768px) {
@@ -582,7 +582,12 @@ header .menu:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: -5rem 0 0 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .containerAboutMe {
+    margin: 2rem 0 11rem 0;
   }
 }
 
@@ -678,6 +683,7 @@ header .menu:hover {
   line-height: 1.75rem;
   font-weight: 400;
   text-justify: auto;
+  padding-bottom: 1rem;
 }
 
 @media (max-width: 768px) {
@@ -689,7 +695,7 @@ header .menu:hover {
 @media (max-width: 280px) {
   .containerAboutMe .descriptionBox p {
     font-size: 0.8rem;
-    line-height: 0.75rem;
+    line-height: 1rem;
   }
 }
 
@@ -1072,363 +1078,8 @@ header .menu:hover {
 }
 
 .projects {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  height: 110vh;
+  height: 20vh;
   background-color: #0f1624;
-  color: #f1f1f1;
-  font-size: 8rem;
-}
-
-@media (max-width: 768px) {
-  .projects {
-    font-size: 6rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .projects {
-    font-size: 2rem;
-  }
-}
-
-.projects h2 {
-  position: absolute;
-}
-
-.projects h2 span {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  display: block;
-  color: #f1f1f1;
-  letter-spacing: 8px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.projects h2 span::before {
-  content: "PROJETS";
-  opacity: 0;
-  position: absolute;
-  color: transparent;
-  background-image: repeating-linear-gradient(45deg, transparent 0, transparent 2px, #f1f1f1 2px, #f1f1f1 4px);
-  background-clip: text;
-  top: 0px;
-  left: 0;
-  z-index: -1;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.projects h2 span::after {
-  content: "PROJETS";
-  opacity: 0;
-  position: absolute;
-  color: transparent;
-  background-image: repeating-linear-gradient(135deg, transparent 0, transparent 2px, #ed3833 2px, #ed3833 4px);
-  background-clip: text;
-  top: 0px;
-  left: 0px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.projects h2 span:hover:before {
-  opacity: 1;
-  top: 10px;
-  left: 10px;
-}
-
-.projects h2 span:hover:after {
-  opacity: 1;
-  top: -10px;
-  left: -10px;
-}
-
-.projectsCardContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  place-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-  position: relative;
-  width: 100vw;
-  background-color: #0f1624;
-  padding: 1rem;
-}
-
-@media (max-width: 280px) {
-  .projectsCardContainer {
-    padding: 1.5rem;
-  }
-}
-
-.projectsCardContainer .projectsCard {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: #0f1624;
-  border-radius: 10px;
-  -webkit-box-shadow: 0px 0px 50px rgba(237, 56, 51, 0.5);
-          box-shadow: 0px 0px 50px rgba(237, 56, 51, 0.5);
-  text-align: center;
-  margin: 0 3rem 4rem 3rem;
-  width: 20rem;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
-}
-
-@media (max-width: 600px) {
-  .projectsCardContainer .projectsCard {
-    margin: 2rem 0;
-    width: 85vw;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-  }
-}
-
-.projectsCardContainer .projectsCard:hover {
-  -webkit-box-shadow: 0px 0px 300px #ed3833;
-          box-shadow: 0px 0px 300px #ed3833;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.projectsCardContainer .projectsCard .projectsImgContainer {
-  height: 10rem;
-}
-
-@media (max-width: 280px) {
-  .projectsCardContainer .projectsCard .projectsImgContainer {
-    height: 6rem;
-  }
-}
-
-.projectsCardContainer .projectsCard .projectsImgContainer img {
-  width: 100%;
-  height: 80%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  margin-bottom: 1rem;
-}
-
-@media (max-width: 600px) {
-  .projectsCardContainer .projectsCard .projectsImgContainer img {
-    margin-bottom: 0.5rem;
-  }
-}
-
-.projectsCardContainer .projectsCard .projectsHalfContainer {
-  height: 65%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.projectsCardContainer .projectsHeaderCard {
-  color: #f1f1f1;
-  position: relative;
-}
-
-.projectsCardContainer .projectsHeaderCard a {
-  font-weight: 500;
-  letter-spacing: 2px;
-  font-size: 2rem;
-  padding: 0.5rem 0;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  z-index: 20;
-  color: #f1f1f1;
-  text-decoration: none;
-}
-
-@media (max-width: 600px) {
-  .projectsCardContainer .projectsHeaderCard a {
-    font-size: 1rem;
-  }
-}
-
-.projectsCardContainer .projectsHeaderCard::before {
-  content: "";
-  position: absolute;
-  background: #f1f1f1;
-  width: 100%;
-  height: 1px;
-  bottom: 0;
-  -webkit-transform-origin: 150% 0;
-          transform-origin: 150% 0;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transition: -webkit-transform 0.4s;
-  transition: -webkit-transform 0.4s;
-  transition: transform 0.4s;
-  transition: transform 0.4s, -webkit-transform 0.4s;
-}
-
-.projectsCardContainer .projectsHeaderCard:hover::before {
-  -webkit-transform-origin: 0 0;
-          transform-origin: 0 0;
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-}
-
-.projectsCardContainer .projectsHr {
-  border: 2px solid #ed3833;
-  width: 50px;
-  margin: 20px auto;
-}
-
-.projectsCardContainer .projectsCardInfo {
-  width: 80%;
-  color: #f1f1f1;
-  font-style: 1rem;
-  line-height: 1.5rem;
-  text-align: justify;
-}
-
-@media (max-width: 600px) {
-  .projectsCardContainer .projectsCardInfo {
-    width: 90%;
-    padding: 0 20px;
-    font-size: 0.8rem;
-    line-height: 1rem;
-    text-align: center;
-  }
-}
-
-.projectsCardContainer .projectsBottomCard {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 90%;
-}
-
-@media (max-width: 600px) {
-  .projectsCardContainer .projectsBottomCard {
-    padding: 0 1rem 0 1rem;
-  }
-}
-
-.projectsCardContainer .projectsBottomCard .projectsTagList {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 90%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin-bottom: 1rem;
-}
-
-@media (max-width: 600px) {
-  .projectsCardContainer .projectsBottomCard .projectsTagList {
-    width: 95%;
-  }
-}
-
-.projectsCardContainer .projectsBottomCard .projectsTag {
-  color: #f1f1f1;
-  font-size: 1rem;
-  margin: 0 0.3rem;
-}
-
-@media (max-width: 600px) {
-  .projectsCardContainer .projectsBottomCard .projectsTag {
-    font-size: 0.8rem;
-    margin: 0 0.6rem;
-  }
-}
-
-@media (max-width: 280px) {
-  .projectsCardContainer .projectsBottomCard .projectsTag {
-    font-size: 0.6rem;
-    margin: 0 0.4rem;
-  }
-}
-
-.projectsCardContainer .projectsBottomCard .projectsBtnLink {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 90%;
-  height: 100%;
-}
-
-.projectsCardContainer .projectsBottomCard .projectsBtnLink .projectsExternalLinks {
-  text-decoration: none;
-  color: #0f1624;
-  font-size: 1.6rem;
-  margin: 0.5rem 0 1.5rem 0;
-  padding: 0.1rem 1rem;
-  background: #f1f1f1;
-  border-radius: 15px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  cursor: pointer;
-}
-
-@media (max-width: 600px) {
-  .projectsCardContainer .projectsBottomCard .projectsBtnLink .projectsExternalLinks {
-    font-size: 1rem;
-  }
-}
-
-.projectsCardContainer .projectsBottomCard .projectsBtnLink .projectsExternalLinks:hover {
-  color: #0f1624;
-  font-size: 2rem;
-  -webkit-box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8);
-          box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8);
 }
 
 .footer {
