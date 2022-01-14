@@ -2,7 +2,7 @@ import React from "react";
 import WorkCards from "../workCards/workCards";
 
 //Components
-import Particle from "./elements/Particle";
+// import Particle from "./elements/Particle";
 
 const Work = () => {
   return (
@@ -12,7 +12,7 @@ const Work = () => {
           <span>WORK</span>
         </h2>
 
-        <Particle />
+        {/* <Particle /> */}
       </div>
       <WorkCards />
     </>
