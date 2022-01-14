@@ -6,7 +6,7 @@ import Header from "../../components/header/header";
 import Hero from "../../components/hero/hero";
 import AboutMe from "../../components/aboutMe/aboutMe";
 import Work from "../../components/work/work";
-import Projects from "../../components/projects/projects";
+// import Projects from "../../components/projects/projects";
 import Footer from "../../components/footer/footer";
 
 //Ease
