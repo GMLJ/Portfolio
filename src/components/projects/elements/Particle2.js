@@ -4,7 +4,6 @@ import Particles from "react-tsparticles";
 const ParticleProjects = () => {
   return (
     <Particles
-      id="tsparticles2"
       width="100vw"
       height="20vh"
       options={{

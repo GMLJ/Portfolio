@@ -4,7 +4,6 @@ import Particles from "react-tsparticles";
 const Particle = () => {
   return (
     <Particles
-      id="tsparticles"
       width="100vw"
       options={{
         fpsLimit: 60,
