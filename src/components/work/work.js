@@ -11,9 +11,7 @@ const Work = () => {
         <h2>
           <span>WORK</span>
         </h2>
-        <div className="">
-          <Particle />
-        </div>
+        <Particle />
       </div>
       <WorkCards />
     </>

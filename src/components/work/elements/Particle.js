@@ -6,6 +6,7 @@ const Particle = () => {
     <Particles
       width="100vw"
       height="100vh"
+      className="particles"
       options={{
         fpsLimit: 60,
         interactivity: {
