@@ -2,18 +2,10 @@ import React from "react";
 import Particles from "react-tsparticles";
 
 const Particle = () => {
-  const particlesInit = (main) => {
-    console.log(main);
-  };
-
-  const particlesLoaded = (container) => {
-    console.log(container);
-  };
   return (
     <Particles
-      init={particlesInit}
-      loaded={particlesLoaded}
       width="100vw"
+      height="100vh"
       options={{
         fpsLimit: 60,
         interactivity: {
@@ -26,7 +18,7 @@ const Particle = () => {
               enable: true,
               mode: "repulse",
             },
-            // resize: true,
+            resize: true,
           },
           modes: {
             bubble: {
