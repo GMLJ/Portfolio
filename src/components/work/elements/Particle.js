@@ -4,9 +4,7 @@ import Particles from "react-tsparticles";
 const Particle = () => {
   return (
     <Particles
-      width="100vw"
-      height="100vh"
-      className="particles"
+      id="tsparticles"
       options={{
         fpsLimit: 60,
         interactivity: {

@@ -789,6 +789,12 @@ header .menu:hover {
   left: -10px;
 }
 
+.particles #tsparticles {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
 .cardContainer {
   display: -webkit-box;
   display: -ms-flexbox;
